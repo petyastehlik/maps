@@ -1,0 +1,42 @@
+{
+  "source": "TINITALY 1.1 DEM 10 m © INGV (CC BY 4.0, doi:10.13127/tinitaly/1.1), Ortofoto AGEA 2012 — Geoportale Nazionale (PCN)",
+  "centerLonLat": [
+    10.71,
+    45.7
+  ],
+  "centerProjected": [
+    633122.5704136689,
+    5062138.2684816355
+  ],
+  "projection": "EPSG:32632",
+  "bboxProjected": [
+    613122.5704136689,
+    5031638.2684816355,
+    653122.5704136689,
+    5092638.2684816355
+  ],
+  "extentMetersX": 40000,
+  "extentMetersZ": 61000,
+  "gridSizeX": 4096,
+  "gridSizeZ": 6144,
+  "minElevation": 18.7489512344946,
+  "maxElevation": 2652.566985751866,
+  "cornersLonLat": {
+    "sw": [
+      10.44612404824485,
+      45.429112634155445
+    ],
+    "se": [
+      10.957210759695972,
+      45.42149641606375
+    ],
+    "nw": [
+      10.460348112195367,
+      45.97798538772066
+    ],
+    "ne": [
+      10.97645496708069,
+      45.97022281343257
+    ]
+  }
+}

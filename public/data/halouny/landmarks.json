@@ -1,0 +1,1001 @@
+[
+ {
+  "name": "Beroun",
+  "type": "town",
+  "x": -7658,
+  "z": -9644
+ },
+ {
+  "name": "Černošice",
+  "type": "town",
+  "x": 9705,
+  "z": -6412
+ },
+ {
+  "name": "Dobřichovice",
+  "type": "town",
+  "x": 6056,
+  "z": -3611
+ },
+ {
+  "name": "Mníšek pod Brdy",
+  "type": "town",
+  "x": 4163,
+  "z": 2987
+ },
+ {
+  "name": "Řevnice",
+  "type": "town",
+  "x": 3135,
+  "z": -2538
+ },
+ {
+  "name": "Karlštejn",
+  "type": "castle",
+  "x": 91,
+  "z": -5781
+ },
+ {
+  "name": "Letní residence Velmistra řádu Křížovníků s červenou hvězdou",
+  "type": "castle",
+  "x": 6035,
+  "z": -3434
+ },
+ {
+  "name": "Osov",
+  "type": "castle",
+  "x": -8955,
+  "z": 3398
+ },
+ {
+  "name": "Řitka",
+  "type": "castle",
+  "x": 6828,
+  "z": 18
+ },
+ {
+  "name": "Třebotovská tvrz",
+  "type": "castle",
+  "x": 7763,
+  "z": -8360
+ },
+ {
+  "name": "Zámek Liteň",
+  "type": "castle",
+  "x": -3162,
+  "z": -2368
+ },
+ {
+  "name": "zámek Mníšek pod Brdy",
+  "type": "castle",
+  "x": 4003,
+  "z": 2759
+ },
+ {
+  "name": "Zámek Svinaře",
+  "type": "castle",
+  "x": -916,
+  "z": -806
+ },
+ {
+  "name": "Zámek Tetín",
+  "type": "castle",
+  "x": -5933,
+  "z": -7768
+ },
+ {
+  "name": "Běleč",
+  "type": "village",
+  "x": -921,
+  "z": -3124
+ },
+ {
+  "name": "Bratřínov",
+  "type": "village",
+  "x": 9384,
+  "z": 6385
+ },
+ {
+  "name": "Bubovice",
+  "type": "village",
+  "x": -933,
+  "z": -9374
+ },
+ {
+  "name": "Bykoš",
+  "type": "village",
+  "x": -9628,
+  "z": -821
+ },
+ {
+  "name": "Černolice",
+  "type": "village",
+  "x": 7566,
+  "z": -1414
+ },
+ {
+  "name": "Čisovice",
+  "type": "village",
+  "x": 7919,
+  "z": 3855
+ },
+ {
+  "name": "Hatě",
+  "type": "village",
+  "x": -2539,
+  "z": 400
+ },
+ {
+  "name": "Hlásná Třebaň",
+  "type": "village",
+  "x": 593,
+  "z": -3782
+ },
+ {
+  "name": "Hostim",
+  "type": "village",
+  "x": -3718,
+  "z": -8696
+ },
+ {
+  "name": "Jarov",
+  "type": "village",
+  "x": -8612,
+  "z": -7844
+ },
+ {
+  "name": "Karlík",
+  "type": "village",
+  "x": 5123,
+  "z": -4626
+ },
+ {
+  "name": "Karlštejn",
+  "type": "village",
+  "x": -320,
+  "z": -5210
+ },
+ {
+  "name": "Koněprusy",
+  "type": "village",
+  "x": -8877,
+  "z": -4971
+ },
+ {
+  "name": "Korno",
+  "type": "village",
+  "x": -3828,
+  "z": -4208
+ },
+ {
+  "name": "Kozolupy",
+  "type": "village",
+  "x": 1081,
+  "z": -9459
+ },
+ {
+  "name": "Kytín",
+  "type": "village",
+  "x": 936,
+  "z": 4310
+ },
+ {
+  "name": "Lážovice",
+  "type": "village",
+  "x": -9467,
+  "z": 1987
+ },
+ {
+  "name": "Leč",
+  "type": "village",
+  "x": -2967,
+  "z": -813
+ },
+ {
+  "name": "Lety",
+  "type": "village",
+  "x": 4623,
+  "z": -3125
+ },
+ {
+  "name": "Líšnice",
+  "type": "village",
+  "x": 8607,
+  "z": 1053
+ },
+ {
+  "name": "Liteň",
+  "type": "village",
+  "x": -3227,
+  "z": -2239
+ },
+ {
+  "name": "Malá Hraštice",
+  "type": "village",
+  "x": 4605,
+  "z": 9664
+ },
+ {
+  "name": "Malá Lečice",
+  "type": "village",
+  "x": 8805,
+  "z": 8578
+ },
+ {
+  "name": "Malý Chlumec",
+  "type": "village",
+  "x": -9007,
+  "z": 6415
+ },
+ {
+  "name": "Měňany",
+  "type": "village",
+  "x": -5356,
+  "z": -3253
+ },
+ {
+  "name": "Mořina",
+  "type": "village",
+  "x": 1772,
+  "z": -7052
+ },
+ {
+  "name": "Mořinka",
+  "type": "village",
+  "x": 3590,
+  "z": -5242
+ },
+ {
+  "name": "Nesvačily",
+  "type": "village",
+  "x": -5329,
+  "z": -15
+ },
+ {
+  "name": "Nová Ves pod Pleší",
+  "type": "village",
+  "x": 4647,
+  "z": 6946
+ },
+ {
+  "name": "Osov",
+  "type": "village",
+  "x": -8784,
+  "z": 3638
+ },
+ {
+  "name": "Osovec",
+  "type": "village",
+  "x": -8156,
+  "z": 3090
+ },
+ {
+  "name": "Podbrdy",
+  "type": "village",
+  "x": -5455,
+  "z": 2021
+ },
+ {
+  "name": "Roblín",
+  "type": "village",
+  "x": 4731,
+  "z": -7651
+ },
+ {
+  "name": "Rovina",
+  "type": "village",
+  "x": 2697,
+  "z": -3657
+ },
+ {
+  "name": "Rymaně",
+  "type": "village",
+  "x": 5523,
+  "z": 4220
+ },
+ {
+  "name": "Řitka",
+  "type": "village",
+  "x": 7320,
+  "z": 272
+ },
+ {
+  "name": "Senešnice",
+  "type": "village",
+  "x": 6992,
+  "z": 6943
+ },
+ {
+  "name": "Skuhrov",
+  "type": "village",
+  "x": -3861,
+  "z": 1085
+ },
+ {
+  "name": "Solopisky",
+  "type": "village",
+  "x": 7915,
+  "z": -7204
+ },
+ {
+  "name": "Srbsko",
+  "type": "village",
+  "x": -3731,
+  "z": -6035
+ },
+ {
+  "name": "Stříbrná Lhota",
+  "type": "village",
+  "x": 2649,
+  "z": 2910
+ },
+ {
+  "name": "Suchomasty",
+  "type": "village",
+  "x": -9928,
+  "z": -2252
+ },
+ {
+  "name": "Svatý Jan pod Skalou",
+  "type": "village",
+  "x": -3289,
+  "z": -9599
+ },
+ {
+  "name": "Svinaře",
+  "type": "village",
+  "x": -902,
+  "z": -593
+ },
+ {
+  "name": "Tetín",
+  "type": "village",
+  "x": -5838,
+  "z": -7732
+ },
+ {
+  "name": "Tobolka",
+  "type": "village",
+  "x": -6624,
+  "z": -4824
+ },
+ {
+  "name": "Trněný Újezd",
+  "type": "village",
+  "x": 2849,
+  "z": -9043
+ },
+ {
+  "name": "Třebotov",
+  "type": "village",
+  "x": 7855,
+  "z": -8355
+ },
+ {
+  "name": "Velká Hraštice",
+  "type": "village",
+  "x": 5528,
+  "z": 9992
+ },
+ {
+  "name": "Velká Lečice",
+  "type": "village",
+  "x": 7815,
+  "z": 9313
+ },
+ {
+  "name": "Velký Chlumec",
+  "type": "village",
+  "x": -8824,
+  "z": 5507
+ },
+ {
+  "name": "Vinařice",
+  "type": "village",
+  "x": -7023,
+  "z": -1523
+ },
+ {
+  "name": "Vižina",
+  "type": "village",
+  "x": -7109,
+  "z": 2436
+ },
+ {
+  "name": "Vonoklasy",
+  "type": "village",
+  "x": 6572,
+  "z": -6095
+ },
+ {
+  "name": "Voznice",
+  "type": "village",
+  "x": 253,
+  "z": 7964
+ },
+ {
+  "name": "Všenory",
+  "type": "village",
+  "x": 8139,
+  "z": -3383
+ },
+ {
+  "name": "Všeradice",
+  "type": "village",
+  "x": -6777,
+  "z": 662
+ },
+ {
+  "name": "Zadní Třebaň",
+  "type": "village",
+  "x": 1298,
+  "z": -3322
+ },
+ {
+  "name": "Zahořany",
+  "type": "village",
+  "x": 5991,
+  "z": 5155
+ },
+ {
+  "name": "Aglaia",
+  "type": "peak",
+  "x": -2629,
+  "z": 8185,
+  "ele": 491
+ },
+ {
+  "name": "Babka",
+  "type": "peak",
+  "x": 2777,
+  "z": -12,
+  "ele": 506
+ },
+ {
+  "name": "Babka",
+  "type": "peak",
+  "x": 9027,
+  "z": -7224,
+  "ele": 365
+ },
+ {
+  "name": "Bacín",
+  "type": "peak",
+  "x": -6600,
+  "z": -1936,
+  "ele": 499
+ },
+ {
+  "name": "Boubová",
+  "type": "peak",
+  "x": -2966,
+  "z": -8063
+ },
+ {
+  "name": "Brdlák",
+  "type": "peak",
+  "x": -3837,
+  "z": -5184,
+  "ele": 341
+ },
+ {
+  "name": "Brdo",
+  "type": "peak",
+  "x": -5359,
+  "z": 4546,
+  "ele": 603
+ },
+ {
+  "name": "Bukovka",
+  "type": "peak",
+  "x": 5649,
+  "z": -5616,
+  "ele": 387
+ },
+ {
+  "name": "Čabrak",
+  "type": "peak",
+  "x": 5085,
+  "z": -6110,
+  "ele": 411
+ },
+ {
+  "name": "Červená Hlína",
+  "type": "peak",
+  "x": 7576,
+  "z": -2100,
+  "ele": 467
+ },
+ {
+  "name": "Čeřinka",
+  "type": "peak",
+  "x": -797,
+  "z": -8985
+ },
+ {
+  "name": "Damil",
+  "type": "peak",
+  "x": -6694,
+  "z": -7739,
+  "ele": 396
+ },
+ {
+  "name": "Dobřich",
+  "type": "peak",
+  "x": 5099,
+  "z": -564,
+  "ele": 523
+ },
+ {
+  "name": "Doutnáč",
+  "type": "peak",
+  "x": -2141,
+  "z": -8030,
+  "ele": 433
+ },
+ {
+  "name": "Haknová",
+  "type": "peak",
+  "x": 837,
+  "z": -5515,
+  "ele": 409
+ },
+ {
+  "name": "Herinky",
+  "type": "peak",
+  "x": -4743,
+  "z": -9417,
+  "ele": 440
+ },
+ {
+  "name": "Hořejší křemeny",
+  "type": "peak",
+  "x": -1623,
+  "z": 6029,
+  "ele": 464
+ },
+ {
+  "name": "Hořejší křemeny",
+  "type": "peak",
+  "x": -1336,
+  "z": 5860,
+  "ele": 468
+ },
+ {
+  "name": "Hradec",
+  "type": "peak",
+  "x": -7545,
+  "z": 7339,
+  "ele": 628
+ },
+ {
+  "name": "Hvíždinec",
+  "type": "peak",
+  "x": 5293,
+  "z": -1420,
+  "ele": 478
+ },
+ {
+  "name": "Hvíždinec",
+  "type": "peak",
+  "x": 4821,
+  "z": -1241,
+  "ele": 478
+ },
+ {
+  "name": "Charvát",
+  "type": "peak",
+  "x": -7260,
+  "z": 5876,
+  "ele": 640
+ },
+ {
+  "name": "Chlum",
+  "type": "peak",
+  "x": 6409,
+  "z": -2177,
+  "ele": 444
+ },
+ {
+  "name": "Javorka",
+  "type": "peak",
+  "x": -439,
+  "z": -5815,
+  "ele": 384
+ },
+ {
+  "name": "Jistevník",
+  "type": "peak",
+  "x": -4551,
+  "z": 4157,
+  "ele": 606
+ },
+ {
+  "name": "Kámen",
+  "type": "peak",
+  "x": 8975,
+  "z": -2771,
+  "ele": 414
+ },
+ {
+  "name": "Kamenná",
+  "type": "peak",
+  "x": 4021,
+  "z": -924,
+  "ele": 470
+ },
+ {
+  "name": "Kazatelna",
+  "type": "peak",
+  "x": -5759,
+  "z": 8353,
+  "ele": 531
+ },
+ {
+  "name": "Kněží hora",
+  "type": "peak",
+  "x": 91,
+  "z": -6053,
+  "ele": 363
+ },
+ {
+  "name": "Kulivá hora",
+  "type": "peak",
+  "x": 8778,
+  "z": -8308,
+  "ele": 390
+ },
+ {
+  "name": "Liška",
+  "type": "peak",
+  "x": -6565,
+  "z": 5513,
+  "ele": 642
+ },
+ {
+  "name": "Malinová",
+  "type": "peak",
+  "x": -3871,
+  "z": 7786,
+  "ele": 507
+ },
+ {
+  "name": "Matterhorn",
+  "type": "peak",
+  "x": -4350,
+  "z": -7723
+ },
+ {
+  "name": "Městská hora",
+  "type": "peak",
+  "x": -8269,
+  "z": -9586,
+  "ele": 295
+ },
+ {
+  "name": "Mramor",
+  "type": "peak",
+  "x": -4722,
+  "z": -1920,
+  "ele": 470
+ },
+ {
+  "name": "Na Čihadle",
+  "type": "peak",
+  "x": -4300,
+  "z": -4707,
+  "ele": 389
+ },
+ {
+  "name": "Na Krásné Vyhlídce",
+  "type": "peak",
+  "x": 6576,
+  "z": -1929
+ },
+ {
+  "name": "Na Soudném",
+  "type": "peak",
+  "x": -676,
+  "z": 3069,
+  "ele": 574
+ },
+ {
+  "name": "Obora",
+  "type": "peak",
+  "x": -3862,
+  "z": 8813,
+  "ele": 462
+ },
+ {
+  "name": "Pišťák",
+  "type": "peak",
+  "x": 2060,
+  "z": 75,
+  "ele": 460
+ },
+ {
+  "name": "Pleš",
+  "type": "peak",
+  "x": 5723,
+  "z": 6403,
+  "ele": 490
+ },
+ {
+  "name": "Plešivec",
+  "type": "peak",
+  "x": 94,
+  "z": -5297,
+  "ele": 366
+ },
+ {
+  "name": "Políčko",
+  "type": "peak",
+  "x": 2119,
+  "z": -4661,
+  "ele": 366
+ },
+ {
+  "name": "Prostřední hora",
+  "type": "peak",
+  "x": -1199,
+  "z": -5862,
+  "ele": 383
+ },
+ {
+  "name": "Ratinka",
+  "type": "peak",
+  "x": -7721,
+  "z": -7892,
+  "ele": 350
+ },
+ {
+  "name": "Roudný",
+  "type": "peak",
+  "x": -6087,
+  "z": 5066,
+  "ele": 636
+ },
+ {
+  "name": "Skalice",
+  "type": "peak",
+  "x": 3909,
+  "z": -4102,
+  "ele": 316
+ },
+ {
+  "name": "Skalka",
+  "type": "peak",
+  "x": 3763,
+  "z": 1444,
+  "ele": 553
+ },
+ {
+  "name": "Spálený",
+  "type": "peak",
+  "x": -3860,
+  "z": 7089,
+  "ele": 551
+ },
+ {
+  "name": "Stožec",
+  "type": "peak",
+  "x": -5153,
+  "z": 5140,
+  "ele": 601
+ },
+ {
+  "name": "Strážný vrch",
+  "type": "peak",
+  "x": 3534,
+  "z": -375,
+  "ele": 518
+ },
+ {
+  "name": "Střevíc",
+  "type": "peak",
+  "x": -3118,
+  "z": -4590,
+  "ele": 385
+ },
+ {
+  "name": "Studený Vrch",
+  "type": "peak",
+  "x": -9438,
+  "z": 7953,
+  "ele": 660
+ },
+ {
+  "name": "Svatojánská skála",
+  "type": "peak",
+  "x": -3017,
+  "z": -9707
+ },
+ {
+  "name": "Šamor",
+  "type": "peak",
+  "x": -5696,
+  "z": -1326,
+  "ele": 481
+ },
+ {
+  "name": "Tobolský vrch",
+  "type": "peak",
+  "x": -6958,
+  "z": -5547,
+  "ele": 467
+ },
+ {
+  "name": "Točná",
+  "type": "peak",
+  "x": -502,
+  "z": 5617,
+  "ele": 505
+ },
+ {
+  "name": "Třesina",
+  "type": "peak",
+  "x": -3365,
+  "z": -9131
+ },
+ {
+  "name": "U Červeného kříže",
+  "type": "peak",
+  "x": 2392,
+  "z": 1840,
+  "ele": 548
+ },
+ {
+  "name": "U Lávek",
+  "type": "peak",
+  "x": 903,
+  "z": 1644,
+  "ele": 563
+ },
+ {
+  "name": "V Doubcích",
+  "type": "peak",
+  "x": 277,
+  "z": -2915,
+  "ele": 312
+ },
+ {
+  "name": "Velká skála",
+  "type": "peak",
+  "x": 6231,
+  "z": -6297
+ },
+ {
+  "name": "Voškov",
+  "type": "peak",
+  "x": -884,
+  "z": -3857,
+  "ele": 370
+ },
+ {
+  "name": "Vrážky",
+  "type": "peak",
+  "x": -570,
+  "z": 2627,
+  "ele": 577
+ },
+ {
+  "name": "Vršek",
+  "type": "peak",
+  "x": 6976,
+  "z": -5821,
+  "ele": 354
+ },
+ {
+  "name": "Vysoká hora",
+  "type": "peak",
+  "x": -1793,
+  "z": -7349,
+  "ele": 423
+ },
+ {
+  "name": "Vysoká stráň",
+  "type": "peak",
+  "x": -2768,
+  "z": -8931,
+  "ele": 425
+ },
+ {
+  "name": "Výška",
+  "type": "peak",
+  "x": 1349,
+  "z": -6606,
+  "ele": 425
+ },
+ {
+  "name": "Za lípou",
+  "type": "peak",
+  "x": -5610,
+  "z": -6895,
+  "ele": 376
+ },
+ {
+  "name": "Zlatý kůň",
+  "type": "peak",
+  "x": -8931,
+  "z": -4464,
+  "ele": 475
+ },
+ {
+  "name": "Bítov",
+  "type": "hamlet",
+  "x": -8779,
+  "z": -5899
+ },
+ {
+  "name": "Brodce",
+  "type": "hamlet",
+  "x": -4499,
+  "z": 9560
+ },
+ {
+  "name": "Dolní Roblín",
+  "type": "hamlet",
+  "x": 3739,
+  "z": -7098
+ },
+ {
+  "name": "Halouny",
+  "type": "hamlet",
+  "x": 499,
+  "z": 106
+ },
+ {
+  "name": "Hodyně",
+  "type": "hamlet",
+  "x": -1728,
+  "z": 101
+ },
+ {
+  "name": "Chouzavá",
+  "type": "hamlet",
+  "x": 1277,
+  "z": 5939
+ },
+ {
+  "name": "Kala",
+  "type": "hamlet",
+  "x": 7075,
+  "z": -7583
+ },
+ {
+  "name": "Koda",
+  "type": "hamlet",
+  "x": -5063,
+  "z": -5607
+ },
+ {
+  "name": "Kuchařík",
+  "type": "hamlet",
+  "x": 4955,
+  "z": -9169
+ },
+ {
+  "name": "Leč",
+  "type": "hamlet",
+  "x": -3444,
+  "z": -229
+ },
+ {
+  "name": "Lhotka",
+  "type": "hamlet",
+  "x": -314,
+  "z": -1698
+ },
+ {
+  "name": "Nové Dvory",
+  "type": "hamlet",
+  "x": -8395,
+  "z": 2253
+ },
+ {
+  "name": "Rochota",
+  "type": "hamlet",
+  "x": -788,
+  "z": 1546
+ }
+]

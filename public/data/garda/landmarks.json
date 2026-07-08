@@ -1,0 +1,8208 @@
+[
+ {
+  "name": "Arco",
+  "type": "town",
+  "x": 13137,
+  "z": -24543
+ },
+ {
+  "name": "Bussolengo",
+  "type": "town",
+  "x": 11185,
+  "z": 24858
+ },
+ {
+  "name": "Desenzano del Garda",
+  "type": "town",
+  "x": -12825,
+  "z": 25880
+ },
+ {
+  "name": "Lonato del Garda",
+  "type": "town",
+  "x": -17062,
+  "z": 26898
+ },
+ {
+  "name": "Maderno",
+  "type": "town",
+  "x": -7906,
+  "z": 6770
+ },
+ {
+  "name": "Negrar di Valpolicella",
+  "type": "town",
+  "x": 18365,
+  "z": 18515
+ },
+ {
+  "name": "Pescantina",
+  "type": "town",
+  "x": 12947,
+  "z": 23790
+ },
+ {
+  "name": "Peschiera del Garda",
+  "type": "town",
+  "x": -788,
+  "z": 29032
+ },
+ {
+  "name": "Riva del Garda",
+  "type": "town",
+  "x": 9624,
+  "z": -20752
+ },
+ {
+  "name": "Salò",
+  "type": "town",
+  "x": -14587,
+  "z": 10778
+ },
+ {
+  "name": "San Pietro in Cariano",
+  "type": "town",
+  "x": 14199,
+  "z": 19588
+ },
+ {
+  "name": "Sant'Ambrogio di Valpolicella",
+  "type": "town",
+  "x": 10140,
+  "z": 19548
+ },
+ {
+  "name": "Sirmione",
+  "type": "town",
+  "x": -7501,
+  "z": 23177
+ },
+ {
+  "name": "Bastione",
+  "type": "castle",
+  "x": 9333,
+  "z": -20758
+ },
+ {
+  "name": "Castel Drena",
+  "type": "castle",
+  "x": 17109,
+  "z": -30384
+ },
+ {
+  "name": "Castel Penede",
+  "type": "castle",
+  "x": 13251,
+  "z": -19649
+ },
+ {
+  "name": "Castel Romano",
+  "type": "castle",
+  "x": -5736,
+  "z": -25835
+ },
+ {
+  "name": "Castello di Arco",
+  "type": "castle",
+  "x": 13271,
+  "z": -25013
+ },
+ {
+  "name": "Castello di Campo",
+  "type": "castle",
+  "x": 4224,
+  "z": 256
+ },
+ {
+  "name": "Castello di Carzago",
+  "type": "castle",
+  "x": -19515,
+  "z": 19515
+ },
+ {
+  "name": "Castello di Desenzano del Garda",
+  "type": "castle",
+  "x": -12902,
+  "z": 25896
+ },
+ {
+  "name": "Castello di Drugolo",
+  "type": "castle",
+  "x": -17794,
+  "z": 22465
+ },
+ {
+  "name": "Castello di Lazise",
+  "type": "castle",
+  "x": 2225,
+  "z": 21739
+ },
+ {
+  "name": "Castello di Moniga",
+  "type": "castle",
+  "x": -13408,
+  "z": 19580
+ },
+ {
+  "name": "Castello di Padenghe",
+  "type": "castle",
+  "x": -15907,
+  "z": 21820
+ },
+ {
+  "name": "Castello di Sabbionara D'Avio",
+  "type": "castle",
+  "x": 18686,
+  "z": -5595
+ },
+ {
+  "name": "Castello di Soiano",
+  "type": "castle",
+  "x": -14913,
+  "z": 18049
+ },
+ {
+  "name": "Castello di Tenno",
+  "type": "castle",
+  "x": 9020,
+  "z": -24293
+ },
+ {
+  "name": "Castello San Giovanni",
+  "type": "castle",
+  "x": -13486,
+  "z": -11194
+ },
+ {
+  "name": "Castello Santa Barbara",
+  "type": "castle",
+  "x": -13830,
+  "z": -14538
+ },
+ {
+  "name": "Castello Scaligero",
+  "type": "castle",
+  "x": 7512,
+  "z": -7521
+ },
+ {
+  "name": "Osservatorio",
+  "type": "castle",
+  "x": 18175,
+  "z": -18501
+ },
+ {
+  "name": "Palazzo Cervi",
+  "type": "castle",
+  "x": 3629,
+  "z": 5100
+ },
+ {
+  "name": "Palazzo del Caffaro",
+  "type": "castle",
+  "x": -14279,
+  "z": -13713
+ },
+ {
+  "name": "Palazzo Eccheli Baisi",
+  "type": "castle",
+  "x": 18692,
+  "z": -13396
+ },
+ {
+  "name": "Pergolana",
+  "type": "castle",
+  "x": 2100,
+  "z": 20634
+ },
+ {
+  "name": "Polveriera Forte Ronchi",
+  "type": "castle",
+  "x": -23,
+  "z": 28363
+ },
+ {
+  "name": "Rocca di Lonato",
+  "type": "castle",
+  "x": -16935,
+  "z": 26687
+ },
+ {
+  "name": "Rocca di Riva del Garda",
+  "type": "castle",
+  "x": 9821,
+  "z": -20708
+ },
+ {
+  "name": "Rocca Scaligera",
+  "type": "castle",
+  "x": -7438,
+  "z": 23239
+ },
+ {
+  "name": "Sito del fu Castel Merlino",
+  "type": "castle",
+  "x": -6162,
+  "z": -27973
+ },
+ {
+  "name": "Torre Catullo",
+  "type": "castle",
+  "x": 1075,
+  "z": 16932
+ },
+ {
+  "name": "Vecchio castello d'ingresso",
+  "type": "castle",
+  "x": 939,
+  "z": 27235
+ },
+ {
+  "name": "Villa Carlotti",
+  "type": "castle",
+  "x": 6723,
+  "z": 10262
+ },
+ {
+  "name": "Affi",
+  "type": "village",
+  "x": 5530,
+  "z": 16098
+ },
+ {
+  "name": "Albarè",
+  "type": "village",
+  "x": 4119,
+  "z": 14142
+ },
+ {
+  "name": "Albisano",
+  "type": "village",
+  "x": -369,
+  "z": 9859
+ },
+ {
+  "name": "Anfo",
+  "type": "village",
+  "x": -16971,
+  "z": -7039
+ },
+ {
+  "name": "Arbizzano",
+  "type": "village",
+  "x": 18398,
+  "z": 22523
+ },
+ {
+  "name": "Arcè",
+  "type": "village",
+  "x": 11166,
+  "z": 24065
+ },
+ {
+  "name": "Armo",
+  "type": "village",
+  "x": -9136,
+  "z": -7719
+ },
+ {
+  "name": "Assenza",
+  "type": "village",
+  "x": 5525,
+  "z": -3130
+ },
+ {
+  "name": "Avio",
+  "type": "village",
+  "x": 17595,
+  "z": -4157
+ },
+ {
+  "name": "Bagolino",
+  "type": "village",
+  "x": -19501,
+  "z": -13346
+ },
+ {
+  "name": "Baitoni",
+  "type": "village",
+  "x": -13367,
+  "z": -11654
+ },
+ {
+  "name": "Balconi",
+  "type": "village",
+  "x": 13150,
+  "z": 22540
+ },
+ {
+  "name": "Barbarano",
+  "type": "village",
+  "x": -12136,
+  "z": 9697
+ },
+ {
+  "name": "Bardolino",
+  "type": "village",
+  "x": 1471,
+  "z": 16912
+ },
+ {
+  "name": "Bariaga",
+  "type": "village",
+  "x": -17889,
+  "z": 13503
+ },
+ {
+  "name": "Bassana",
+  "type": "village",
+  "x": -3943,
+  "z": 28021
+ },
+ {
+  "name": "Basson",
+  "type": "village",
+  "x": 15426,
+  "z": 27093
+ },
+ {
+  "name": "Belluno Veronese",
+  "type": "village",
+  "x": 14772,
+  "z": 1188
+ },
+ {
+  "name": "Bersone",
+  "type": "village",
+  "x": -6515,
+  "z": -26878
+ },
+ {
+  "name": "Besagno",
+  "type": "village",
+  "x": 19854,
+  "z": -15815
+ },
+ {
+  "name": "Bezzecca",
+  "type": "village",
+  "x": 131,
+  "z": -21893
+ },
+ {
+  "name": "Biacesa di Ledro",
+  "type": "village",
+  "x": 7026,
+  "z": -18553
+ },
+ {
+  "name": "Bollone",
+  "type": "village",
+  "x": -10101,
+  "z": -4249
+ },
+ {
+  "name": "Bolognano",
+  "type": "village",
+  "x": 14533,
+  "z": -24029
+ },
+ {
+  "name": "Bondone",
+  "type": "village",
+  "x": -12565,
+  "z": -11551
+ },
+ {
+  "name": "Braga",
+  "type": "village",
+  "x": 9181,
+  "z": 7725
+ },
+ {
+  "name": "Brentino",
+  "type": "village",
+  "x": 12772,
+  "z": 6107
+ },
+ {
+  "name": "Brentonico",
+  "type": "village",
+  "x": 18829,
+  "z": -13635
+ },
+ {
+  "name": "Breonio",
+  "type": "village",
+  "x": 15316,
+  "z": 8072
+ },
+ {
+  "name": "Briano",
+  "type": "village",
+  "x": -3637,
+  "z": -1581
+ },
+ {
+  "name": "Broglie",
+  "type": "village",
+  "x": -3126,
+  "z": 30342
+ },
+ {
+  "name": "Ca' Rossa",
+  "type": "village",
+  "x": -11495,
+  "z": -16961
+ },
+ {
+  "name": "Cadria",
+  "type": "village",
+  "x": -5321,
+  "z": -8322
+ },
+ {
+  "name": "Campi",
+  "type": "village",
+  "x": 7356,
+  "z": -23659
+ },
+ {
+  "name": "Campione del Garda",
+  "type": "village",
+  "x": 2891,
+  "z": -5934
+ },
+ {
+  "name": "Camporengo",
+  "type": "village",
+  "x": 7157,
+  "z": 17407
+ },
+ {
+  "name": "Capovalle",
+  "type": "village",
+  "x": -12986,
+  "z": -5786
+ },
+ {
+  "name": "Caprino Veronese",
+  "type": "village",
+  "x": 6862,
+  "z": 10305
+ },
+ {
+  "name": "Carpeneda",
+  "type": "village",
+  "x": -18383,
+  "z": 5845
+ },
+ {
+  "name": "Cassone",
+  "type": "village",
+  "x": 6094,
+  "z": -3942
+ },
+ {
+  "name": "Castel Condino",
+  "type": "village",
+  "x": -8826,
+  "z": -23647
+ },
+ {
+  "name": "Castelletto",
+  "type": "village",
+  "x": 3219,
+  "z": 1378
+ },
+ {
+  "name": "Castello",
+  "type": "village",
+  "x": -15240,
+  "z": 14877
+ },
+ {
+  "name": "Castelnuovo del Garda",
+  "type": "village",
+  "x": 4568,
+  "z": 28978
+ },
+ {
+  "name": "Castion Veronese",
+  "type": "village",
+  "x": 1570,
+  "z": 10373
+ },
+ {
+  "name": "Castione",
+  "type": "village",
+  "x": 18546,
+  "z": -15686
+ },
+ {
+  "name": "Castrezzone",
+  "type": "village",
+  "x": -18597,
+  "z": 17208
+ },
+ {
+  "name": "Cavaion Veronese",
+  "type": "village",
+  "x": 5077,
+  "z": 17641
+ },
+ {
+  "name": "Cavalcaselle",
+  "type": "village",
+  "x": 1914,
+  "z": 29430
+ },
+ {
+  "name": "Cazzano",
+  "type": "village",
+  "x": 19854,
+  "z": -13456
+ },
+ {
+  "name": "Cecina",
+  "type": "village",
+  "x": -6221,
+  "z": 5171
+ },
+ {
+  "name": "Ceniga",
+  "type": "village",
+  "x": 14230,
+  "z": -28261
+ },
+ {
+  "name": "Cimego",
+  "type": "village",
+  "x": -8038,
+  "z": -23385
+ },
+ {
+  "name": "Cisano",
+  "type": "village",
+  "x": 1672,
+  "z": 18860
+ },
+ {
+  "name": "Colà",
+  "type": "village",
+  "x": 3122,
+  "z": 25290
+ },
+ {
+  "name": "Cologna",
+  "type": "village",
+  "x": 9713,
+  "z": -24076
+ },
+ {
+  "name": "Cologna",
+  "type": "village",
+  "x": -6114,
+  "z": -25486
+ },
+ {
+  "name": "Colombare",
+  "type": "village",
+  "x": -7477,
+  "z": 26012
+ },
+ {
+  "name": "Condino",
+  "type": "village",
+  "x": -8920,
+  "z": -20854
+ },
+ {
+  "name": "Corrubbio di Negarine",
+  "type": "village",
+  "x": 15571,
+  "z": 23205
+ },
+ {
+  "name": "Costa",
+  "type": "village",
+  "x": -5517,
+  "z": -3622
+ },
+ {
+  "name": "Costermano sul Garda",
+  "type": "village",
+  "x": 2609,
+  "z": 12652
+ },
+ {
+  "name": "Creto",
+  "type": "village",
+  "x": -6059,
+  "z": -26524
+ },
+ {
+  "name": "Cunettone",
+  "type": "village",
+  "x": -14729,
+  "z": 12836
+ },
+ {
+  "name": "Daone",
+  "type": "village",
+  "x": -7479,
+  "z": -27312
+ },
+ {
+  "name": "Darzo",
+  "type": "village",
+  "x": -12804,
+  "z": -15524
+ },
+ {
+  "name": "Dolcè",
+  "type": "village",
+  "x": 11347,
+  "z": 10786
+ },
+ {
+  "name": "Domegliara",
+  "type": "village",
+  "x": 9290,
+  "z": 19972
+ },
+ {
+  "name": "Drena",
+  "type": "village",
+  "x": 17525,
+  "z": -30336
+ },
+ {
+  "name": "Dro",
+  "type": "village",
+  "x": 14961,
+  "z": -29404
+ },
+ {
+  "name": "Ferrara di Monte Baldo",
+  "type": "village",
+  "x": 11296,
+  "z": 2314
+ },
+ {
+  "name": "Fontechel",
+  "type": "village",
+  "x": 18231,
+  "z": -13409
+ },
+ {
+  "name": "Fosse",
+  "type": "village",
+  "x": 17791,
+  "z": 5712
+ },
+ {
+  "name": "Fumane",
+  "type": "village",
+  "x": 13954,
+  "z": 17144
+ },
+ {
+  "name": "Gaino",
+  "type": "village",
+  "x": -7350,
+  "z": 5226
+ },
+ {
+  "name": "Garda",
+  "type": "village",
+  "x": 180,
+  "z": 13817
+ },
+ {
+  "name": "Gardone Riviera",
+  "type": "village",
+  "x": -11572,
+  "z": 9263
+ },
+ {
+  "name": "Gargagnago",
+  "type": "village",
+  "x": 12074,
+  "z": 18663
+ },
+ {
+  "name": "Gargnano",
+  "type": "village",
+  "x": -3593,
+  "z": 1394
+ },
+ {
+  "name": "Gavazzo",
+  "type": "village",
+  "x": 9639,
+  "z": -23882
+ },
+ {
+  "name": "Chiarano",
+  "type": "village",
+  "x": 11920,
+  "z": -24821
+ },
+ {
+  "name": "Idro",
+  "type": "village",
+  "x": -18113,
+  "z": -3834
+ },
+ {
+  "name": "Lazise",
+  "type": "village",
+  "x": 2260,
+  "z": 21603
+ },
+ {
+  "name": "Lenzumo",
+  "type": "village",
+  "x": 809,
+  "z": -23683
+ },
+ {
+  "name": "Limone sul Garda",
+  "type": "village",
+  "x": 6063,
+  "z": -12816
+ },
+ {
+  "name": "Locca",
+  "type": "village",
+  "x": 704,
+  "z": -22153
+ },
+ {
+  "name": "Lodrone",
+  "type": "village",
+  "x": -13857,
+  "z": -14130
+ },
+ {
+  "name": "Loppio",
+  "type": "village",
+  "x": 16789,
+  "z": -17719
+ },
+ {
+  "name": "Lubiara",
+  "type": "village",
+  "x": 8955,
+  "z": 10333
+ },
+ {
+  "name": "Lugagnano",
+  "type": "village",
+  "x": 14638,
+  "z": 29397
+ },
+ {
+  "name": "Lugana",
+  "type": "village",
+  "x": -6254,
+  "z": 26643
+ },
+ {
+  "name": "Luch",
+  "type": "village",
+  "x": 19057,
+  "z": -29885
+ },
+ {
+  "name": "Magasa",
+  "type": "village",
+  "x": -7503,
+  "z": -8891
+ },
+ {
+  "name": "Magugnano",
+  "type": "village",
+  "x": 4419,
+  "z": -904
+ },
+ {
+  "name": "Malcesine",
+  "type": "village",
+  "x": 7628,
+  "z": -7320
+ },
+ {
+  "name": "Mancalacqua",
+  "type": "village",
+  "x": 13565,
+  "z": 29411
+ },
+ {
+  "name": "Manerba del Garda",
+  "type": "village",
+  "x": -12032,
+  "z": 16979
+ },
+ {
+  "name": "Manzano",
+  "type": "village",
+  "x": 18505,
+  "z": -18838
+ },
+ {
+  "name": "Marano di Valpolicella",
+  "type": "village",
+  "x": 16395,
+  "z": 15630
+ },
+ {
+  "name": "Marciaga",
+  "type": "village",
+  "x": 470,
+  "z": 11983
+ },
+ {
+  "name": "Marniga",
+  "type": "village",
+  "x": 4216,
+  "z": -508
+ },
+ {
+  "name": "Masi di Vigo",
+  "type": "village",
+  "x": 19844,
+  "z": -30006
+ },
+ {
+  "name": "Massone",
+  "type": "village",
+  "x": 14393,
+  "z": -25115
+ },
+ {
+  "name": "Mezzolago",
+  "type": "village",
+  "x": 2737,
+  "z": -20203
+ },
+ {
+  "name": "Moerna",
+  "type": "village",
+  "x": -10123,
+  "z": -6358
+ },
+ {
+  "name": "Molina",
+  "type": "village",
+  "x": 15892,
+  "z": 9385
+ },
+ {
+  "name": "Molina di Ledro",
+  "type": "village",
+  "x": 4682,
+  "z": -19145
+ },
+ {
+  "name": "Moniga del Garda",
+  "type": "village",
+  "x": -13058,
+  "z": 19323
+ },
+ {
+  "name": "Monte",
+  "type": "village",
+  "x": 10615,
+  "z": 14550
+ },
+ {
+  "name": "Montericco",
+  "type": "village",
+  "x": 19806,
+  "z": 22805
+ },
+ {
+  "name": "Montinelle",
+  "type": "village",
+  "x": -11253,
+  "z": 16625
+ },
+ {
+  "name": "Morgnaga",
+  "type": "village",
+  "x": -12064,
+  "z": 9130
+ },
+ {
+  "name": "Muscoline",
+  "type": "village",
+  "x": -19038,
+  "z": 15661
+ },
+ {
+  "name": "Muslone",
+  "type": "village",
+  "x": -1416,
+  "z": -1258
+ },
+ {
+  "name": "Nago",
+  "type": "village",
+  "x": 13549,
+  "z": -20044
+ },
+ {
+  "name": "Navazzo",
+  "type": "village",
+  "x": -5863,
+  "z": 1782
+ },
+ {
+  "name": "Navene",
+  "type": "village",
+  "x": 9725,
+  "z": -11227
+ },
+ {
+  "name": "Nomesino",
+  "type": "village",
+  "x": 19219,
+  "z": -18839
+ },
+ {
+  "name": "Pacengo",
+  "type": "village",
+  "x": 1391,
+  "z": 25873
+ },
+ {
+  "name": "Padenghe sul Garda",
+  "type": "village",
+  "x": -15454,
+  "z": 21473
+ },
+ {
+  "name": "Pai di Sopra",
+  "type": "village",
+  "x": 1273,
+  "z": 5193
+ },
+ {
+  "name": "Pai di Sotto",
+  "type": "village",
+  "x": 1110,
+  "z": 5022
+ },
+ {
+  "name": "Palazzolo",
+  "type": "village",
+  "x": 9007,
+  "z": 27253
+ },
+ {
+  "name": "Palude",
+  "type": "village",
+  "x": -15151,
+  "z": 14624
+ },
+ {
+  "name": "Parona",
+  "type": "village",
+  "x": 19175,
+  "z": 24409
+ },
+ {
+  "name": "Pastrengo",
+  "type": "village",
+  "x": 7502,
+  "z": 22904
+ },
+ {
+  "name": "Pazzon",
+  "type": "village",
+  "x": 9220,
+  "z": 8802
+ },
+ {
+  "name": "Pedemonte",
+  "type": "village",
+  "x": 16772,
+  "z": 21492
+ },
+ {
+  "name": "Peri",
+  "type": "village",
+  "x": 15123,
+  "z": 4613
+ },
+ {
+  "name": "Persone",
+  "type": "village",
+  "x": -10625,
+  "z": -7937
+ },
+ {
+  "name": "Pesina",
+  "type": "village",
+  "x": 3772,
+  "z": 11126
+ },
+ {
+  "name": "Pezza",
+  "type": "village",
+  "x": 16033,
+  "z": 15377
+ },
+ {
+  "name": "Pieve di Ledro",
+  "type": "village",
+  "x": 1254,
+  "z": -21163
+ },
+ {
+  "name": "Polpenazze del Garda",
+  "type": "village",
+  "x": -15658,
+  "z": 16854
+ },
+ {
+  "name": "Ponte Caffaro",
+  "type": "village",
+  "x": -14343,
+  "z": -13345
+ },
+ {
+  "name": "Portese",
+  "type": "village",
+  "x": -12070,
+  "z": 11897
+ },
+ {
+  "name": "Porto",
+  "type": "village",
+  "x": 4978,
+  "z": -2108
+ },
+ {
+  "name": "Prada",
+  "type": "village",
+  "x": 19054,
+  "z": -11684
+ },
+ {
+  "name": "Prada",
+  "type": "village",
+  "x": 5658,
+  "z": 3211
+ },
+ {
+  "name": "Pranzo",
+  "type": "village",
+  "x": 7953,
+  "z": -24900
+ },
+ {
+  "name": "Praso",
+  "type": "village",
+  "x": -6259,
+  "z": -27590
+ },
+ {
+  "name": "Pregasina",
+  "type": "village",
+  "x": 8548,
+  "z": -17046
+ },
+ {
+  "name": "Prezzo",
+  "type": "village",
+  "x": -6609,
+  "z": -25984
+ },
+ {
+  "name": "Prun",
+  "type": "village",
+  "x": 19083,
+  "z": 13423
+ },
+ {
+  "name": "Puegnago del Garda",
+  "type": "village",
+  "x": -15210,
+  "z": 14925
+ },
+ {
+  "name": "Pulciano",
+  "type": "village",
+  "x": -6971,
+  "z": 5624
+ },
+ {
+  "name": "Rest",
+  "type": "village",
+  "x": -6488,
+  "z": -8960
+ },
+ {
+  "name": "Riccomassimo",
+  "type": "village",
+  "x": -15933,
+  "z": -13922
+ },
+ {
+  "name": "Rivalta",
+  "type": "village",
+  "x": 14375,
+  "z": 4571
+ },
+ {
+  "name": "Rivoli Veronese",
+  "type": "village",
+  "x": 8244,
+  "z": 14048
+ },
+ {
+  "name": "Roè",
+  "type": "village",
+  "x": -16283,
+  "z": 8504
+ },
+ {
+  "name": "Roè Volciano",
+  "type": "village",
+  "x": -16497,
+  "z": 9581
+ },
+ {
+  "name": "Ronzo-Chienis",
+  "type": "village",
+  "x": 18185,
+  "z": -21509
+ },
+ {
+  "name": "Rubiana",
+  "type": "village",
+  "x": 5845,
+  "z": 9684
+ },
+ {
+  "name": "Sabbionara",
+  "type": "village",
+  "x": 18855,
+  "z": -4905
+ },
+ {
+  "name": "San Benedetto di Lugana",
+  "type": "village",
+  "x": -2690,
+  "z": 27959
+ },
+ {
+  "name": "San Felice del Benaco",
+  "type": "village",
+  "x": -12083,
+  "z": 12522
+ },
+ {
+  "name": "San Floriano",
+  "type": "village",
+  "x": 15904,
+  "z": 19869
+ },
+ {
+  "name": "San Giorgio",
+  "type": "village",
+  "x": 11727,
+  "z": -22413
+ },
+ {
+  "name": "San Giorgio in Salici",
+  "type": "village",
+  "x": 6762,
+  "z": 30173
+ },
+ {
+  "name": "San Martino",
+  "type": "village",
+  "x": 13950,
+  "z": -25468
+ },
+ {
+  "name": "San Martino della Battaglia",
+  "type": "village",
+  "x": -8144,
+  "z": 29214
+ },
+ {
+  "name": "San Rocco",
+  "type": "village",
+  "x": 16262,
+  "z": 14592
+ },
+ {
+  "name": "San Vito",
+  "type": "village",
+  "x": 18217,
+  "z": 20178
+ },
+ {
+  "name": "San Zeno di Montagna",
+  "type": "village",
+  "x": 1367,
+  "z": 7591
+ },
+ {
+  "name": "Sandrà",
+  "type": "village",
+  "x": 6471,
+  "z": 26502
+ },
+ {
+  "name": "Sano",
+  "type": "village",
+  "x": 18440,
+  "z": -16659
+ },
+ {
+  "name": "Sant'Alessandro",
+  "type": "village",
+  "x": 11357,
+  "z": -21353
+ },
+ {
+  "name": "Sant'Anna d'Alfaedo",
+  "type": "village",
+  "x": 19001,
+  "z": 7629
+ },
+ {
+  "name": "Santa Maria",
+  "type": "village",
+  "x": 18247,
+  "z": 21170
+ },
+ {
+  "name": "Settimo",
+  "type": "village",
+  "x": 15714,
+  "z": 24285
+ },
+ {
+  "name": "Soiano del Lago",
+  "type": "village",
+  "x": -15000,
+  "z": 19442
+ },
+ {
+  "name": "Solarolo",
+  "type": "village",
+  "x": -12032,
+  "z": 16902
+ },
+ {
+  "name": "Sommavilla",
+  "type": "village",
+  "x": 5859,
+  "z": -3035
+ },
+ {
+  "name": "Sona",
+  "type": "village",
+  "x": 10232,
+  "z": 29403
+ },
+ {
+  "name": "Soprazocco",
+  "type": "village",
+  "x": -18307,
+  "z": 12403
+ },
+ {
+  "name": "Sorne",
+  "type": "village",
+  "x": 18614,
+  "z": -12392
+ },
+ {
+  "name": "Spiazzi",
+  "type": "village",
+  "x": 11221,
+  "z": 5553
+ },
+ {
+  "name": "Storo",
+  "type": "village",
+  "x": -10454,
+  "z": -16354
+ },
+ {
+  "name": "Tenno",
+  "type": "village",
+  "x": 9000,
+  "z": -24520
+ },
+ {
+  "name": "Tiarno di Sopra",
+  "type": "village",
+  "x": -3592,
+  "z": -20864
+ },
+ {
+  "name": "Tiarno di Sotto",
+  "type": "village",
+  "x": -2284,
+  "z": -21478
+ },
+ {
+  "name": "Tignale",
+  "type": "village",
+  "x": 821,
+  "z": -4439
+ },
+ {
+  "name": "Torbe",
+  "type": "village",
+  "x": 18426,
+  "z": 15083
+ },
+ {
+  "name": "Torbole",
+  "type": "village",
+  "x": 12512,
+  "z": -19100
+ },
+ {
+  "name": "Tormini",
+  "type": "village",
+  "x": -17483,
+  "z": 10203
+ },
+ {
+  "name": "Torri del Benaco",
+  "type": "village",
+  "x": -1548,
+  "z": 10097
+ },
+ {
+  "name": "Toscolano",
+  "type": "village",
+  "x": -7133,
+  "z": 6261
+ },
+ {
+  "name": "Toscolano Maderno",
+  "type": "village",
+  "x": -7653,
+  "z": 7431
+ },
+ {
+  "name": "Tremosine sul Garda",
+  "type": "village",
+  "x": 3779,
+  "z": -7983
+ },
+ {
+  "name": "Treviso Bresciano",
+  "type": "village",
+  "x": -19207,
+  "z": -1083
+ },
+ {
+  "name": "Turano",
+  "type": "village",
+  "x": -9059,
+  "z": -6539
+ },
+ {
+  "name": "Valgatara",
+  "type": "village",
+  "x": 16270,
+  "z": 18138
+ },
+ {
+  "name": "Valle San Felice",
+  "type": "village",
+  "x": 17255,
+  "z": -19254
+ },
+ {
+  "name": "Valvestino",
+  "type": "village",
+  "x": -9118,
+  "z": -6713
+ },
+ {
+  "name": "Varignano",
+  "type": "village",
+  "x": 10974,
+  "z": -24726
+ },
+ {
+  "name": "Varone",
+  "type": "village",
+  "x": 9686,
+  "z": -23297
+ },
+ {
+  "name": "Vesta",
+  "type": "village",
+  "x": -14710,
+  "z": -8396
+ },
+ {
+  "name": "Vigne",
+  "type": "village",
+  "x": 11522,
+  "z": -24967
+ },
+ {
+  "name": "Villa di Salò",
+  "type": "village",
+  "x": -15379,
+  "z": 12341
+ },
+ {
+  "name": "Villanuova sul Clisi",
+  "type": "village",
+  "x": -19741,
+  "z": 11317
+ },
+ {
+  "name": "Ville Del Monte",
+  "type": "village",
+  "x": 8243,
+  "z": -25746
+ },
+ {
+  "name": "Vilmezzano",
+  "type": "village",
+  "x": 8474,
+  "z": 8470
+ },
+ {
+  "name": "Vobarno",
+  "type": "village",
+  "x": -16274,
+  "z": 6590
+ },
+ {
+  "name": "Volargne",
+  "type": "village",
+  "x": 9210,
+  "z": 16733
+ },
+ {
+  "name": "Volciano",
+  "type": "village",
+  "x": -16594,
+  "z": 9997
+ },
+ {
+  "name": "Anticima del Monte Castello",
+  "type": "peak",
+  "x": -7023,
+  "z": 3696,
+  "ele": 848
+ },
+ {
+  "name": "Bezplel",
+  "type": "peak",
+  "x": -11898,
+  "z": -8900,
+  "ele": 1540
+ },
+ {
+  "name": "Bocca della Fratta",
+  "type": "peak",
+  "x": -11510,
+  "z": 7273,
+  "ele": 659
+ },
+ {
+  "name": "Bocca di Valle",
+  "type": "peak",
+  "x": -10162,
+  "z": -10246,
+  "ele": 1392
+ },
+ {
+  "name": "Cambiarèc'",
+  "type": "peak",
+  "x": -939,
+  "z": -29799,
+  "ele": 1926
+ },
+ {
+  "name": "Carpene",
+  "type": "peak",
+  "x": 16554,
+  "z": -18136,
+  "ele": 499
+ },
+ {
+  "name": "Castellini",
+  "type": "peak",
+  "x": 18290,
+  "z": -18912,
+  "ele": 788
+ },
+ {
+  "name": "Castello di Vico",
+  "type": "peak",
+  "x": -12137,
+  "z": -5570,
+  "ele": 969
+ },
+ {
+  "name": "Cavallino Fobbia",
+  "type": "peak",
+  "x": -14497,
+  "z": -2830,
+  "ele": 1261
+ },
+ {
+  "name": "Cima al Bal",
+  "type": "peak",
+  "x": 7434,
+  "z": -17221,
+  "ele": 1260
+ },
+ {
+  "name": "Cima Alpini",
+  "type": "peak",
+  "x": -6460,
+  "z": -21589,
+  "ele": 1385
+ },
+ {
+  "name": "Cima Angli",
+  "type": "peak",
+  "x": -5589,
+  "z": -22654,
+  "ele": 1540
+ },
+ {
+  "name": "Cima Avèz",
+  "type": "peak",
+  "x": -4696,
+  "z": -14670,
+  "ele": 1895
+ },
+ {
+  "name": "Cima Bandiera",
+  "type": "peak",
+  "x": 3005,
+  "z": -15565,
+  "ele": 1361
+ },
+ {
+  "name": "Cima Baone",
+  "type": "peak",
+  "x": 12430,
+  "z": -25732,
+  "ele": 480
+ },
+ {
+  "name": "Cima Borei",
+  "type": "peak",
+  "x": -6066,
+  "z": -19853,
+  "ele": 1585
+ },
+ {
+  "name": "Cima Borghetto",
+  "type": "peak",
+  "x": 19896,
+  "z": -2189,
+  "ele": 1279
+ },
+ {
+  "name": "Cima Bus de Balì",
+  "type": "peak",
+  "x": -4770,
+  "z": -10673,
+  "ele": 1736
+ },
+ {
+  "name": "Cima Bussa",
+  "type": "peak",
+  "x": -2255,
+  "z": -13840,
+  "ele": 1522
+ },
+ {
+  "name": "Cima Capi",
+  "type": "peak",
+  "x": 8803,
+  "z": -19041,
+  "ele": 909
+ },
+ {
+  "name": "Cima Caset",
+  "type": "peak",
+  "x": -1556,
+  "z": -18496,
+  "ele": 1748
+ },
+ {
+  "name": "Cima Cereto Chetoi",
+  "type": "peak",
+  "x": -17283,
+  "z": -8830,
+  "ele": 934
+ },
+ {
+  "name": "Cima Cingla",
+  "type": "peak",
+  "x": -2030,
+  "z": -24477,
+  "ele": 1661
+ },
+ {
+  "name": "Cima Clevet",
+  "type": "peak",
+  "x": -12840,
+  "z": -24592,
+  "ele": 2147
+ },
+ {
+  "name": "Cima Cocchetti",
+  "type": "peak",
+  "x": -19036,
+  "z": -159,
+  "ele": 743
+ },
+ {
+  "name": "Cima Comer",
+  "type": "peak",
+  "x": -2993,
+  "z": -1310,
+  "ele": 1281
+ },
+ {
+  "name": "Cima Cornone",
+  "type": "peak",
+  "x": -14664,
+  "z": -1107
+ },
+ {
+  "name": "Cima Costabella",
+  "type": "peak",
+  "x": 8519,
+  "z": 1009,
+  "ele": 2053
+ },
+ {
+  "name": "Cima Crènch",
+  "type": "peak",
+  "x": -16892,
+  "z": -4899,
+  "ele": 779
+ },
+ {
+  "name": "Cima d'Oro",
+  "type": "peak",
+  "x": 5733,
+  "z": -21202,
+  "ele": 1802
+ },
+ {
+  "name": "Cima de Busna",
+  "type": "peak",
+  "x": -2026,
+  "z": -30425,
+  "ele": 1701
+ },
+ {
+  "name": "Cima de le Pré",
+  "type": "peak",
+  "x": 9295,
+  "z": -111,
+  "ele": 2119
+ },
+ {
+  "name": "Cima de Maìma",
+  "type": "peak",
+  "x": -1522,
+  "z": -30454,
+  "ele": 1764
+ },
+ {
+  "name": "Cima dei Sospiri",
+  "type": "peak",
+  "x": 3218,
+  "z": -12162,
+  "ele": 1266
+ },
+ {
+  "name": "Cima del Dil",
+  "type": "peak",
+  "x": -2584,
+  "z": -14658,
+  "ele": 1807
+ },
+ {
+  "name": "Cima del Fratone",
+  "type": "peak",
+  "x": -4878,
+  "z": -13105,
+  "ele": 1794
+ },
+ {
+  "name": "Cima del Levrer",
+  "type": "peak",
+  "x": -4652,
+  "z": -14031,
+  "ele": 1810
+ },
+ {
+  "name": "Cima della Nara (Cima dei Coi)",
+  "type": "peak",
+  "x": 7035,
+  "z": -16187,
+  "ele": 1376
+ },
+ {
+  "name": "Cima delle Carbonere",
+  "type": "peak",
+  "x": -2207,
+  "z": -7275,
+  "ele": 1166
+ },
+ {
+  "name": "Cima delle Frate",
+  "type": "peak",
+  "x": -12011,
+  "z": -7200,
+  "ele": 1447
+ },
+ {
+  "name": "Cima delle Pozzette",
+  "type": "peak",
+  "x": 11177,
+  "z": -4916,
+  "ele": 2132
+ },
+ {
+  "name": "Cima delle Sclape",
+  "type": "peak",
+  "x": 218,
+  "z": -13612,
+  "ele": 1534
+ },
+ {
+  "name": "Cima delle Volte",
+  "type": "peak",
+  "x": -116,
+  "z": -11886,
+  "ele": 1422
+ },
+ {
+  "name": "Cima di Berlinghera",
+  "type": "peak",
+  "x": -4559,
+  "z": -11248,
+  "ele": 1775
+ },
+ {
+  "name": "Cima di Blumone",
+  "type": "peak",
+  "x": -18899,
+  "z": -29920,
+  "ele": 2565
+ },
+ {
+  "name": "Cima di Bondolo",
+  "type": "peak",
+  "x": -17534,
+  "z": -25489,
+  "ele": 2550
+ },
+ {
+  "name": "Cima di Camerone",
+  "type": "peak",
+  "x": -3801,
+  "z": -12869,
+  "ele": 1395
+ },
+ {
+  "name": "Cima di Camiolo",
+  "type": "peak",
+  "x": -7946,
+  "z": -6060,
+  "ele": 1235
+ },
+ {
+  "name": "Cima di Mughera",
+  "type": "peak",
+  "x": 6082,
+  "z": -14428,
+  "ele": 1161
+ },
+ {
+  "name": "Cima di Mughera",
+  "type": "peak",
+  "x": -3250,
+  "z": -7483,
+  "ele": 1331
+ },
+ {
+  "name": "Cima di Paraine",
+  "type": "peak",
+  "x": -15900,
+  "z": 5376,
+  "ele": 704
+ },
+ {
+  "name": "Cima di Pario",
+  "type": "peak",
+  "x": -15753,
+  "z": -4593,
+  "ele": 907
+ },
+ {
+  "name": "Cima di Traval",
+  "type": "peak",
+  "x": -826,
+  "z": -6670,
+  "ele": 1187
+ },
+ {
+  "name": "Cima di Vil",
+  "type": "peak",
+  "x": 5112,
+  "z": -16209,
+  "ele": 1601
+ },
+ {
+  "name": "Cima Doie",
+  "type": "peak",
+  "x": -16254,
+  "z": -24683,
+  "ele": 2383
+ },
+ {
+  "name": "Cima Fane",
+  "type": "peak",
+  "x": -16336,
+  "z": -2489,
+  "ele": 1155
+ },
+ {
+  "name": "Cima Fobbia",
+  "type": "peak",
+  "x": -15452,
+  "z": -2684,
+  "ele": 1175
+ },
+ {
+  "name": "Cima Fontana Calda",
+  "type": "peak",
+  "x": -18415,
+  "z": 79,
+  "ele": 848
+ },
+ {
+  "name": "Cima Ganone",
+  "type": "peak",
+  "x": -14320,
+  "z": -2382,
+  "ele": 1317
+ },
+ {
+  "name": "Cima Giavarina",
+  "type": "peak",
+  "x": -17499,
+  "z": 177,
+  "ele": 970
+ },
+ {
+  "name": "Cima Gusauer",
+  "type": "peak",
+  "x": -6426,
+  "z": -7198,
+  "ele": 1400
+ },
+ {
+  "name": "Cima Ingorello",
+  "type": "peak",
+  "x": -12594,
+  "z": -3881,
+  "ele": 1365
+ },
+ {
+  "name": "Cima Larici",
+  "type": "peak",
+  "x": 8017,
+  "z": -15433
+ },
+ {
+  "name": "Cima Lasdruna",
+  "type": "peak",
+  "x": -18900,
+  "z": 3341,
+  "ele": 963
+ },
+ {
+  "name": "Cima Longino",
+  "type": "peak",
+  "x": 10786,
+  "z": -4178,
+  "ele": 2179
+ },
+ {
+  "name": "Cima Mandra",
+  "type": "peak",
+  "x": 6327,
+  "z": 5044,
+  "ele": 1295
+ },
+ {
+  "name": "Cima Maresse",
+  "type": "peak",
+  "x": -12177,
+  "z": -25238,
+  "ele": 2102
+ },
+ {
+  "name": "Cima Matteo Cili",
+  "type": "peak",
+  "x": -17176,
+  "z": -25259,
+  "ele": 2431
+ },
+ {
+  "name": "Cima Mezzane",
+  "type": "peak",
+  "x": -5770,
+  "z": 2710,
+  "ele": 514
+ },
+ {
+  "name": "Cima Moltrino",
+  "type": "peak",
+  "x": -14108,
+  "z": -1083,
+  "ele": 1392
+ },
+ {
+  "name": "Cima Mughera",
+  "type": "peak",
+  "x": 471,
+  "z": -10930,
+  "ele": 1272
+ },
+ {
+  "name": "Cima Nanzone",
+  "type": "peak",
+  "x": 11353,
+  "z": -27449,
+  "ele": 1134
+ },
+ {
+  "name": "Cima Nodice",
+  "type": "peak",
+  "x": 8338,
+  "z": -17624,
+  "ele": 859
+ },
+ {
+  "name": "Cima Ones",
+  "type": "peak",
+  "x": -17053,
+  "z": -860,
+  "ele": 903
+ },
+ {
+  "name": "Cima Ora",
+  "type": "peak",
+  "x": -19106,
+  "z": -10034,
+  "ele": 1534
+ },
+ {
+  "name": "Cima Palone",
+  "type": "peak",
+  "x": -5097,
+  "z": -23414,
+  "ele": 1641
+ },
+ {
+  "name": "Cima Paloni",
+  "type": "peak",
+  "x": 12329,
+  "z": -1074,
+  "ele": 1582
+ },
+ {
+  "name": "Cima Parì",
+  "type": "peak",
+  "x": 3869,
+  "z": -22971,
+  "ele": 1991
+ },
+ {
+  "name": "Cima Pase",
+  "type": "peak",
+  "x": -10401,
+  "z": -9263,
+  "ele": 1529
+ },
+ {
+  "name": "Cima Pilastro",
+  "type": "peak",
+  "x": 335,
+  "z": -14083,
+  "ele": 1387
+ },
+ {
+  "name": "Cima Pissola",
+  "type": "peak",
+  "x": -11644,
+  "z": -25721,
+  "ele": 2063
+ },
+ {
+  "name": "Cima Prà della Baziva",
+  "type": "peak",
+  "x": 10283,
+  "z": -2464,
+  "ele": 2207
+ },
+ {
+  "name": "Cima Pubregn",
+  "type": "peak",
+  "x": -944,
+  "z": -18751,
+  "ele": 1775
+ },
+ {
+  "name": "Cima Rinalt",
+  "type": "peak",
+  "x": -1960,
+  "z": -19367,
+  "ele": 1422
+ },
+ {
+  "name": "Cima Rocca",
+  "type": "peak",
+  "x": 8279,
+  "z": -19335,
+  "ele": 1090
+ },
+ {
+  "name": "Cima Saline",
+  "type": "peak",
+  "x": -16633,
+  "z": -1887,
+  "ele": 1168
+ },
+ {
+  "name": "Cima Sat",
+  "type": "peak",
+  "x": 8323,
+  "z": -20876,
+  "ele": 1245
+ },
+ {
+  "name": "Cima Sclapa",
+  "type": "peak",
+  "x": 4398,
+  "z": -22602,
+  "ele": 1887
+ },
+ {
+  "name": "Cima Sest",
+  "type": "peak",
+  "x": -5263,
+  "z": -16314,
+  "ele": 1375
+ },
+ {
+  "name": "Cima Spessa",
+  "type": "peak",
+  "x": -9588,
+  "z": -13282,
+  "ele": 1821
+ },
+ {
+  "name": "Cima Strussia",
+  "type": "peak",
+  "x": 7508,
+  "z": -17308,
+  "ele": 1238
+ },
+ {
+  "name": "Cima Telegrafo",
+  "type": "peak",
+  "x": 9376,
+  "z": -867,
+  "ele": 2200
+ },
+ {
+  "name": "Cima Tignalga",
+  "type": "peak",
+  "x": -1305,
+  "z": -9348,
+  "ele": 1409
+ },
+ {
+  "name": "Cima Tiveign",
+  "type": "peak",
+  "x": 1784,
+  "z": -16529,
+  "ele": 1522
+ },
+ {
+  "name": "Cima Tombea",
+  "type": "peak",
+  "x": -6817,
+  "z": -11676,
+  "ele": 1946
+ },
+ {
+  "name": "Cima Traverso",
+  "type": "peak",
+  "x": -12937,
+  "z": -3037,
+  "ele": 1264
+ },
+ {
+  "name": "Cima Tuflungo",
+  "type": "peak",
+  "x": 661,
+  "z": -15726,
+  "ele": 1710
+ },
+ {
+  "name": "Cima Vai",
+  "type": "peak",
+  "x": -2334,
+  "z": -19882,
+  "ele": 1287
+ },
+ {
+  "name": "Cima Val Scura",
+  "type": "peak",
+  "x": -19924,
+  "z": -6759,
+  "ele": 1391
+ },
+ {
+  "name": "Cima Valcaelli",
+  "type": "peak",
+  "x": -18196,
+  "z": -9746,
+  "ele": 1360
+ },
+ {
+  "name": "Cima Valdes",
+  "type": "peak",
+  "x": 7166,
+  "z": -20548,
+  "ele": 1575
+ },
+ {
+  "name": "Cima Valdritta (Monte Baldo)",
+  "type": "peak",
+  "x": 10355,
+  "z": -3164,
+  "ele": 2218
+ },
+ {
+  "name": "Cima Visì",
+  "type": "peak",
+  "x": -6814,
+  "z": -19422,
+  "ele": 1590
+ },
+ {
+  "name": "Cima Zolver",
+  "type": "peak",
+  "x": -14321,
+  "z": 1259,
+  "ele": 997
+ },
+ {
+  "name": "Cime del Costone",
+  "type": "peak",
+  "x": -3854,
+  "z": -9643,
+  "ele": 1726
+ },
+ {
+  "name": "Cingolo Rosso",
+  "type": "peak",
+  "x": -12778,
+  "z": -9178,
+  "ele": 1170
+ },
+ {
+  "name": "Cingolo Rosso",
+  "type": "peak",
+  "x": -14209,
+  "z": -24699,
+  "ele": 2182
+ },
+ {
+  "name": "Coal Santo",
+  "type": "peak",
+  "x": 8982,
+  "z": 564,
+  "ele": 2072
+ },
+ {
+  "name": "Col de Perpetue",
+  "type": "peak",
+  "x": -16096,
+  "z": -19485,
+  "ele": 2008
+ },
+ {
+  "name": "Col Pasovri",
+  "type": "peak",
+  "x": -3253,
+  "z": -17300,
+  "ele": 1663
+ },
+ {
+  "name": "Col Plagna",
+  "type": "peak",
+  "x": -1609,
+  "z": -21877,
+  "ele": 1027
+ },
+ {
+  "name": "Colle di Santo Stefano",
+  "type": "peak",
+  "x": 404,
+  "z": -21974,
+  "ele": 725
+ },
+ {
+  "name": "Colma de Dalghen",
+  "type": "peak",
+  "x": -6822,
+  "z": -21413,
+  "ele": 1430
+ },
+ {
+  "name": "Colme di Pravecchio",
+  "type": "peak",
+  "x": 16925,
+  "z": -7973,
+  "ele": 1545
+ },
+ {
+  "name": "Colme di Vignola",
+  "type": "peak",
+  "x": 18831,
+  "z": -7853,
+  "ele": 1583
+ },
+ {
+  "name": "Con da Trat",
+  "type": "peak",
+  "x": 3864,
+  "z": -25029,
+  "ele": 1751
+ },
+ {
+  "name": "Corna Bussarola",
+  "type": "peak",
+  "x": -15364,
+  "z": 7822,
+  "ele": 604
+ },
+ {
+  "name": "Corna Ceresola",
+  "type": "peak",
+  "x": -15579,
+  "z": 4880,
+  "ele": 868
+ },
+ {
+  "name": "Corna del Sera",
+  "type": "peak",
+  "x": -8897,
+  "z": 3237,
+  "ele": 1367
+ },
+ {
+  "name": "Corna Frea",
+  "type": "peak",
+  "x": 8469,
+  "z": -19832,
+  "ele": 1204
+ },
+ {
+  "name": "Corna Pagana",
+  "type": "peak",
+  "x": -19491,
+  "z": -11012,
+  "ele": 1446
+ },
+ {
+  "name": "Corna Piana",
+  "type": "peak",
+  "x": 14561,
+  "z": -10634,
+  "ele": 1736
+ },
+ {
+  "name": "Corna Rossa",
+  "type": "peak",
+  "x": -7390,
+  "z": -10908,
+  "ele": 1653
+ },
+ {
+  "name": "Corna Rossa",
+  "type": "peak",
+  "x": -10222,
+  "z": -2886,
+  "ele": 1229
+ },
+ {
+  "name": "Corna Vecchia",
+  "type": "peak",
+  "x": 3124,
+  "z": -13751,
+  "ele": 1415
+ },
+ {
+  "name": "Corni di Groli",
+  "type": "peak",
+  "x": -17956,
+  "z": -18657
+ },
+ {
+  "name": "Corno Balotto Alto",
+  "type": "peak",
+  "x": -18875,
+  "z": -20595,
+  "ele": 2069
+ },
+ {
+  "name": "Corno d'Aquilio",
+  "type": "peak",
+  "x": 18219,
+  "z": 2757,
+  "ele": 1545
+ },
+ {
+  "name": "Corno dei Giù",
+  "type": "peak",
+  "x": 911,
+  "z": -29396,
+  "ele": 2052
+ },
+ {
+  "name": "Corno dell'Avrinone",
+  "type": "peak",
+  "x": 1703,
+  "z": -16102,
+  "ele": 1524
+ },
+ {
+  "name": "Corno della Marogna",
+  "type": "peak",
+  "x": -564,
+  "z": -15165,
+  "ele": 1951
+ },
+ {
+  "name": "Corno della Paura",
+  "type": "peak",
+  "x": 17550,
+  "z": -7590,
+  "ele": 1518
+ },
+ {
+  "name": "Corno della Tor",
+  "type": "peak",
+  "x": -16495,
+  "z": -15714,
+  "ele": 1397
+ },
+ {
+  "name": "Corno di Corlach",
+  "type": "peak",
+  "x": 15235,
+  "z": -4561
+ },
+ {
+  "name": "Corno di Lumar",
+  "type": "peak",
+  "x": 140,
+  "z": -28979,
+  "ele": 2007
+ },
+ {
+  "name": "Corno di Pichea",
+  "type": "peak",
+  "x": 4071,
+  "z": -27318,
+  "ele": 2138
+ },
+ {
+  "name": "Corno Gallina",
+  "type": "peak",
+  "x": 14857,
+  "z": -6075
+ },
+ {
+  "name": "Corno Mozzo",
+  "type": "peak",
+  "x": 19546,
+  "z": 2765,
+  "ele": 1535
+ },
+ {
+  "name": "Corno Nero",
+  "type": "peak",
+  "x": 3244,
+  "z": -13201,
+  "ele": 1405
+ },
+ {
+  "name": "Corno Spezzato",
+  "type": "peak",
+  "x": -1943,
+  "z": -16750,
+  "ele": 1759
+ },
+ {
+  "name": "Corno Val Verdi",
+  "type": "peak",
+  "x": -19065,
+  "z": -15691,
+  "ele": 1662
+ },
+ {
+  "name": "Costone delle Cornelle",
+  "type": "peak",
+  "x": -17210,
+  "z": -19765,
+  "ele": 2201
+ },
+ {
+  "name": "Costone di Dolò",
+  "type": "peak",
+  "x": -18011,
+  "z": -19192,
+  "ele": 2192
+ },
+ {
+  "name": "Croce di Ceniga",
+  "type": "peak",
+  "x": 13873,
+  "z": -27675,
+  "ele": 390
+ },
+ {
+  "name": "Dalvra Alta",
+  "type": "peak",
+  "x": 3187,
+  "z": -11408,
+  "ele": 1082
+ },
+ {
+  "name": "Dalvra Bassa",
+  "type": "peak",
+  "x": 3291,
+  "z": -10726,
+  "ele": 915
+ },
+ {
+  "name": "Dega",
+  "type": "peak",
+  "x": 3993,
+  "z": -12093,
+  "ele": 904
+ },
+ {
+  "name": "Degara",
+  "type": "peak",
+  "x": -3169,
+  "z": -11024,
+  "ele": 1101
+ },
+ {
+  "name": "Dòs Abelan",
+  "type": "peak",
+  "x": -4145,
+  "z": -30473,
+  "ele": 804
+ },
+ {
+  "name": "Dos Alt",
+  "type": "peak",
+  "x": 16118,
+  "z": -20099
+ },
+ {
+  "name": "Dos da Crus",
+  "type": "peak",
+  "x": -5465,
+  "z": -7503,
+  "ele": 1088
+ },
+ {
+  "name": "Dos da Trat",
+  "type": "peak",
+  "x": 3747,
+  "z": -23729,
+  "ele": 1840
+ },
+ {
+  "name": "Dos de Cala",
+  "type": "peak",
+  "x": 8629,
+  "z": -16672,
+  "ele": 576
+ },
+ {
+  "name": "Dos de la Cronèla",
+  "type": "peak",
+  "x": 14261,
+  "z": -18009,
+  "ele": 706
+ },
+ {
+  "name": "Dos de la vecia",
+  "type": "peak",
+  "x": 11406,
+  "z": -28584
+ },
+ {
+  "name": "Dos de la zòca",
+  "type": "peak",
+  "x": 14864,
+  "z": -16982,
+  "ele": 930
+ },
+ {
+  "name": "Dos de Ovri",
+  "type": "peak",
+  "x": -3024,
+  "z": -17761,
+  "ele": 1429
+ },
+ {
+  "name": "Dos de Portole",
+  "type": "peak",
+  "x": -16554,
+  "z": -19805,
+  "ele": 2118
+ },
+ {
+  "name": "Dos de Trat",
+  "type": "peak",
+  "x": 3037,
+  "z": -18647,
+  "ele": 981
+ },
+ {
+  "name": "Dos dei Frassini",
+  "type": "peak",
+  "x": 14438,
+  "z": -18082,
+  "ele": 702
+ },
+ {
+  "name": "Dos del castel",
+  "type": "peak",
+  "x": 14985,
+  "z": -29810
+ },
+ {
+  "name": "Dos del Mazuc",
+  "type": "peak",
+  "x": -5167,
+  "z": -14953,
+  "ele": 1565
+ },
+ {
+  "name": "Dos dela Cita",
+  "type": "peak",
+  "x": -6120,
+  "z": -15921,
+  "ele": 1151
+ },
+ {
+  "name": "Dòs dèla madunina",
+  "type": "peak",
+  "x": -14901,
+  "z": -9549
+ },
+ {
+  "name": "Dos dele Strie",
+  "type": "peak",
+  "x": 8761,
+  "z": -24517,
+  "ele": 363
+ },
+ {
+  "name": "Dos di Laven",
+  "type": "peak",
+  "x": -12129,
+  "z": -21479,
+  "ele": 1885
+ },
+ {
+  "name": "Dos di Sas",
+  "type": "peak",
+  "x": -8166,
+  "z": -5044,
+  "ele": 1010
+ },
+ {
+  "name": "Dos La Canal",
+  "type": "peak",
+  "x": -14168,
+  "z": -18248,
+  "ele": 1806
+ },
+ {
+  "name": "Dos Pelà",
+  "type": "peak",
+  "x": 17879,
+  "z": -30256
+ },
+ {
+  "name": "Dos Remit",
+  "type": "peak",
+  "x": 14377,
+  "z": -16366,
+  "ele": 1223
+ },
+ {
+  "name": "Dos Spiades",
+  "type": "peak",
+  "x": -16876,
+  "z": 1400,
+  "ele": 885
+ },
+ {
+  "name": "Doss Alto",
+  "type": "peak",
+  "x": 17513,
+  "z": -15636,
+  "ele": 746
+ },
+ {
+  "name": "Doss Casina",
+  "type": "peak",
+  "x": 13460,
+  "z": -16932,
+  "ele": 979
+ },
+ {
+  "name": "Dòss dé Póze",
+  "type": "peak",
+  "x": 16539,
+  "z": -19945,
+  "ele": 856
+ },
+ {
+  "name": "Doss dei Morti",
+  "type": "peak",
+  "x": -8711,
+  "z": -30333,
+  "ele": 2183
+ },
+ {
+  "name": "Doss del Clef",
+  "type": "peak",
+  "x": 13269,
+  "z": -28417,
+  "ele": 769
+ },
+ {
+  "name": "Doss del Mosca",
+  "type": "peak",
+  "x": 12913,
+  "z": -15725,
+  "ele": 967
+ },
+ {
+  "name": "Doss dela Torta",
+  "type": "peak",
+  "x": 3557,
+  "z": -29685,
+  "ele": 2156
+ },
+ {
+  "name": "Doss della Barchessa",
+  "type": "peak",
+  "x": 15339,
+  "z": -18346,
+  "ele": 554
+ },
+ {
+  "name": "Doss della Ruzza",
+  "type": "peak",
+  "x": 6289,
+  "z": -30019,
+  "ele": 1224
+ },
+ {
+  "name": "Doss Grande",
+  "type": "peak",
+  "x": 15644,
+  "z": -28014,
+  "ele": 582
+ },
+ {
+  "name": "Doss'Alto di Nago",
+  "type": "peak",
+  "x": 15150,
+  "z": -17863,
+  "ele": 707
+ },
+ {
+  "name": "Dosso Anses",
+  "type": "peak",
+  "x": -17052,
+  "z": -14090,
+  "ele": 1130
+ },
+ {
+  "name": "Dosso Barata",
+  "type": "peak",
+  "x": -6627,
+  "z": 1614,
+  "ele": 674
+ },
+ {
+  "name": "Dosso Camerelle",
+  "type": "peak",
+  "x": -12482,
+  "z": -2266,
+  "ele": 963
+ },
+ {
+  "name": "Dosso Clemone",
+  "type": "peak",
+  "x": 2128,
+  "z": -12927,
+  "ele": 925
+ },
+ {
+  "name": "Dosso Corpaglione",
+  "type": "peak",
+  "x": -13594,
+  "z": -1713,
+  "ele": 1170
+ },
+ {
+  "name": "Dosso Covolo",
+  "type": "peak",
+  "x": -18317,
+  "z": 7240,
+  "ele": 757
+ },
+ {
+  "name": "Dosso d'Enziana",
+  "type": "peak",
+  "x": 5163,
+  "z": -30441,
+  "ele": 1971
+ },
+ {
+  "name": "Dosso dei Cavalli",
+  "type": "peak",
+  "x": 6326,
+  "z": 5913,
+  "ele": 1304
+ },
+ {
+  "name": "Dosso dei Laghi",
+  "type": "peak",
+  "x": -17121,
+  "z": -22863,
+  "ele": 2122
+ },
+ {
+  "name": "Dosso dei Morti",
+  "type": "peak",
+  "x": 13707,
+  "z": -6449
+ },
+ {
+  "name": "Dosso dei Roveri",
+  "type": "peak",
+  "x": 12065,
+  "z": -13035,
+  "ele": 1065
+ },
+ {
+  "name": "Dosso dei Tre Termini",
+  "type": "peak",
+  "x": -12864,
+  "z": -1491,
+  "ele": 1102
+ },
+ {
+  "name": "Dosso del Lupo",
+  "type": "peak",
+  "x": -15358,
+  "z": -3786,
+  "ele": 1037
+ },
+ {
+  "name": "Dosso del Matto",
+  "type": "peak",
+  "x": -18959,
+  "z": -19205,
+  "ele": 2102
+ },
+ {
+  "name": "Dosso del Vento",
+  "type": "peak",
+  "x": -8425,
+  "z": -15470,
+  "ele": 1005
+ },
+ {
+  "name": "Dosso dell'Asino",
+  "type": "peak",
+  "x": -287,
+  "z": -6308,
+  "ele": 1195
+ },
+ {
+  "name": "Dosso dell'Ora",
+  "type": "peak",
+  "x": -17421,
+  "z": 1873,
+  "ele": 852
+ },
+ {
+  "name": "Dosso della Croce",
+  "type": "peak",
+  "x": -14629,
+  "z": -18706,
+  "ele": 1869
+ },
+ {
+  "name": "Dosso della fame",
+  "type": "peak",
+  "x": -4380,
+  "z": -13598,
+  "ele": 1800
+ },
+ {
+  "name": "Dosso della Forca",
+  "type": "peak",
+  "x": 1055,
+  "z": -5129,
+  "ele": 905
+ },
+ {
+  "name": "Dosso della Volpe",
+  "type": "peak",
+  "x": -4018,
+  "z": -1393,
+  "ele": 1002
+ },
+ {
+  "name": "Dosso delle Api",
+  "type": "peak",
+  "x": -16131,
+  "z": 781,
+  "ele": 676
+ },
+ {
+  "name": "Dosso delle Saette",
+  "type": "peak",
+  "x": -7403,
+  "z": -11365,
+  "ele": 1883
+ },
+ {
+  "name": "Dosso di Coste dell'Era",
+  "type": "peak",
+  "x": -8624,
+  "z": -1927,
+  "ele": 973
+ },
+ {
+  "name": "Dosso di Mezzo",
+  "type": "peak",
+  "x": -13481,
+  "z": 894,
+  "ele": 1063
+ },
+ {
+  "name": "Dosso di Purla",
+  "type": "peak",
+  "x": -18208,
+  "z": 1859,
+  "ele": 985
+ },
+ {
+  "name": "Dosso di Seaoi",
+  "type": "peak",
+  "x": 3986,
+  "z": -24390,
+  "ele": 1800
+ },
+ {
+  "name": "Dosso Gümer",
+  "type": "peak",
+  "x": -494,
+  "z": -4547,
+  "ele": 800
+ },
+ {
+  "name": "Dosso le Prade",
+  "type": "peak",
+  "x": -10338,
+  "z": 3366,
+  "ele": 1511
+ },
+ {
+  "name": "Dosso Matti",
+  "type": "peak",
+  "x": -17391,
+  "z": -19410,
+  "ele": 2172
+ },
+ {
+  "name": "Dosso Moreont Alto",
+  "type": "peak",
+  "x": 12195,
+  "z": -9837,
+  "ele": 1522
+ },
+ {
+  "name": "Dosso Piano",
+  "type": "peak",
+  "x": -3518,
+  "z": -7673,
+  "ele": 1209
+ },
+ {
+  "name": "Dosso Piemp",
+  "type": "peak",
+  "x": -141,
+  "z": -5885,
+  "ele": 1212
+ },
+ {
+  "name": "Dosso Ravizzola",
+  "type": "peak",
+  "x": 5100,
+  "z": -14719,
+  "ele": 907
+ },
+ {
+  "name": "Dosso Rotondo",
+  "type": "peak",
+  "x": -15627,
+  "z": -18589,
+  "ele": 1850
+ },
+ {
+  "name": "Dosso Saiano",
+  "type": "peak",
+  "x": 15301,
+  "z": -23681,
+  "ele": 343
+ },
+ {
+  "name": "Dosso Sassello",
+  "type": "peak",
+  "x": -19257,
+  "z": -4941,
+  "ele": 1000
+ },
+ {
+  "name": "Dosso Spirano",
+  "type": "peak",
+  "x": 11772,
+  "z": -12394,
+  "ele": 875
+ },
+ {
+  "name": "Dosso Trabacù",
+  "type": "peak",
+  "x": -17283,
+  "z": -21386,
+  "ele": 2208
+ },
+ {
+  "name": "Dosso Ververs",
+  "type": "peak",
+  "x": -10829,
+  "z": 1922,
+  "ele": 1034
+ },
+ {
+  "name": "Flesch",
+  "type": "peak",
+  "x": -3001,
+  "z": -27727
+ },
+ {
+  "name": "Fogarie",
+  "type": "peak",
+  "x": -8734,
+  "z": 295,
+  "ele": 890
+ },
+ {
+  "name": "Forseul",
+  "type": "peak",
+  "x": -11776,
+  "z": 1828,
+  "ele": 1356
+ },
+ {
+  "name": "Gabiola",
+  "type": "peak",
+  "x": -3788,
+  "z": -10970,
+  "ele": 1334
+ },
+ {
+  "name": "Gavardina",
+  "type": "peak",
+  "x": 2578,
+  "z": -30061,
+  "ele": 2047
+ },
+ {
+  "name": "Grotta Daei",
+  "type": "peak",
+  "x": 8375,
+  "z": -20054,
+  "ele": 1301
+ },
+ {
+  "name": "Grotta Rossa",
+  "type": "peak",
+  "x": -14785,
+  "z": -22378,
+  "ele": 2192
+ },
+ {
+  "name": "Guarda",
+  "type": "peak",
+  "x": -16792,
+  "z": 8146,
+  "ele": 467
+ },
+ {
+  "name": "Il Dossone",
+  "type": "peak",
+  "x": -12363,
+  "z": -6796,
+  "ele": 1414
+ },
+ {
+  "name": "La Cocca",
+  "type": "peak",
+  "x": 1527,
+  "z": -10203,
+  "ele": 994
+ },
+ {
+  "name": "La Colma",
+  "type": "peak",
+  "x": 1024,
+  "z": -12986,
+  "ele": 1092
+ },
+ {
+  "name": "La Rocca",
+  "type": "peak",
+  "x": 563,
+  "z": 14522,
+  "ele": 283
+ },
+ {
+  "name": "La Rocca",
+  "type": "peak",
+  "x": -4895,
+  "z": -17461,
+  "ele": 1195
+ },
+ {
+  "name": "La Rocca",
+  "type": "peak",
+  "x": 2567,
+  "z": -24872,
+  "ele": 1474
+ },
+ {
+  "name": "La Roda",
+  "type": "peak",
+  "x": -566,
+  "z": -28223,
+  "ele": 2168
+ },
+ {
+  "name": "Lastè di Tolghe",
+  "type": "peak",
+  "x": 12944,
+  "z": -11963
+ },
+ {
+  "name": "Marmera",
+  "type": "peak",
+  "x": -13067,
+  "z": 2384,
+  "ele": 1398
+ },
+ {
+  "name": "Mazza di Pichea",
+  "type": "peak",
+  "x": 3627,
+  "z": -25893,
+  "ele": 1879
+ },
+ {
+  "name": "Monte Alberelletti",
+  "type": "peak",
+  "x": -8374,
+  "z": -395,
+  "ele": 845
+ },
+ {
+  "name": "Monte Alberelli",
+  "type": "peak",
+  "x": -9632,
+  "z": 163,
+  "ele": 1165
+ },
+ {
+  "name": "Monte Altissimo di Nago",
+  "type": "peak",
+  "x": 13633,
+  "z": -12555,
+  "ele": 2079
+ },
+ {
+  "name": "Monte Alto",
+  "type": "peak",
+  "x": -13906,
+  "z": 28031,
+  "ele": 168
+ },
+ {
+  "name": "Monte Alto",
+  "type": "peak",
+  "x": -15772,
+  "z": 21091,
+  "ele": 224
+ },
+ {
+  "name": "Monte Are",
+  "type": "peak",
+  "x": -1557,
+  "z": 12844,
+  "ele": 372
+ },
+ {
+  "name": "Monte Avertis",
+  "type": "peak",
+  "x": -6316,
+  "z": 980,
+  "ele": 915
+ },
+ {
+  "name": "Monte Bandiera",
+  "type": "peak",
+  "x": 99,
+  "z": 10633,
+  "ele": 460
+ },
+ {
+  "name": "Monte Basia",
+  "type": "peak",
+  "x": -16367,
+  "z": 15840,
+  "ele": 279
+ },
+ {
+  "name": "Monte Bastia",
+  "type": "peak",
+  "x": -18281,
+  "z": -1365,
+  "ele": 926
+ },
+ {
+  "name": "Monte Belpo",
+  "type": "peak",
+  "x": 4223,
+  "z": 9067,
+  "ele": 884
+ },
+ {
+  "name": "Monte Ben",
+  "type": "peak",
+  "x": 16151,
+  "z": -27268,
+  "ele": 706
+ },
+ {
+  "name": "Monte Beole",
+  "type": "peak",
+  "x": -4286,
+  "z": -559,
+  "ele": 1021
+ },
+ {
+  "name": "Monte Bespoli",
+  "type": "peak",
+  "x": -16522,
+  "z": 15191,
+  "ele": 321
+ },
+ {
+  "name": "Monte Bestone",
+  "type": "peak",
+  "x": 4272,
+  "z": -11005,
+  "ele": 917
+ },
+ {
+  "name": "Monte Besum",
+  "type": "peak",
+  "x": -18751,
+  "z": 1736,
+  "ele": 1115
+ },
+ {
+  "name": "Monte Biaena",
+  "type": "peak",
+  "x": 19816,
+  "z": -20766,
+  "ele": 1618
+ },
+ {
+  "name": "Monte Biaina",
+  "type": "peak",
+  "x": 11874,
+  "z": -28612,
+  "ele": 1412
+ },
+ {
+  "name": "Monte Boccale",
+  "type": "peak",
+  "x": -15255,
+  "z": 15617,
+  "ele": 240
+ },
+ {
+  "name": "Monte Boia",
+  "type": "peak",
+  "x": -17526,
+  "z": -25547,
+  "ele": 2582
+ },
+ {
+  "name": "Monte Brassina",
+  "type": "peak",
+  "x": -16989,
+  "z": 17408,
+  "ele": 332
+ },
+ {
+  "name": "Monte Bre",
+  "type": "peak",
+  "x": -2023,
+  "z": 13329,
+  "ele": 303
+ },
+ {
+  "name": "Monte Brealone",
+  "type": "peak",
+  "x": -16260,
+  "z": -22966,
+  "ele": 2265
+ },
+ {
+  "name": "Monte Breda",
+  "type": "peak",
+  "x": -18189,
+  "z": -11028,
+  "ele": 1504
+ },
+ {
+  "name": "Monte Brione",
+  "type": "peak",
+  "x": 12331,
+  "z": -20839,
+  "ele": 376
+ },
+ {
+  "name": "Monte Bruffione",
+  "type": "peak",
+  "x": -17511,
+  "z": -26557,
+  "ele": 2665
+ },
+ {
+  "name": "Monte Brugnolo",
+  "type": "peak",
+  "x": 15823,
+  "z": -21576,
+  "ele": 1180
+ },
+ {
+  "name": "Monte Cadria",
+  "type": "peak",
+  "x": -1473,
+  "z": -26488,
+  "ele": 2250
+ },
+ {
+  "name": "Monte Calva",
+  "type": "peak",
+  "x": -13443,
+  "z": -9527,
+  "ele": 1193
+ },
+ {
+  "name": "Monte Calzolagne",
+  "type": "peak",
+  "x": 315,
+  "z": 9371,
+  "ele": 408
+ },
+ {
+  "name": "Monte Caminala",
+  "type": "peak",
+  "x": -5195,
+  "z": -1064,
+  "ele": 1053
+ },
+ {
+  "name": "Monte Camisino",
+  "type": "peak",
+  "x": -15742,
+  "z": -5750,
+  "ele": 862
+ },
+ {
+  "name": "Monte Campo",
+  "type": "peak",
+  "x": 15588,
+  "z": -12678,
+  "ele": 1667
+ },
+ {
+  "name": "Monte Campuccio",
+  "type": "peak",
+  "x": -14719,
+  "z": 4158,
+  "ele": 1091
+ },
+ {
+  "name": "Monte Canale",
+  "type": "peak",
+  "x": -18970,
+  "z": -5522,
+  "ele": 975
+ },
+ {
+  "name": "Monte Canale",
+  "type": "peak",
+  "x": -17202,
+  "z": 18220,
+  "ele": 341
+ },
+ {
+  "name": "Monte Canforal",
+  "type": "peak",
+  "x": 754,
+  "z": 9755,
+  "ele": 426
+ },
+ {
+  "name": "Monte Caplone",
+  "type": "peak",
+  "x": -5589,
+  "z": -11240,
+  "ele": 1976
+ },
+ {
+  "name": "Monte Caprile",
+  "type": "peak",
+  "x": -17053,
+  "z": 18454,
+  "ele": 343
+ },
+ {
+  "name": "Monte Carena",
+  "type": "peak",
+  "x": -18175,
+  "z": -15814,
+  "ele": 1954
+ },
+ {
+  "name": "Monte Caret",
+  "type": "peak",
+  "x": 3071,
+  "z": -23428,
+  "ele": 1793
+ },
+ {
+  "name": "Monte Carone",
+  "type": "peak",
+  "x": 5094,
+  "z": -16046,
+  "ele": 1621
+ },
+ {
+  "name": "Monte Carzen",
+  "type": "peak",
+  "x": -11518,
+  "z": -3595,
+  "ele": 1505
+ },
+ {
+  "name": "Monte Cas",
+  "type": "peak",
+  "x": 1917,
+  "z": -5010,
+  "ele": 779
+ },
+ {
+  "name": "Monte Casarole",
+  "type": "peak",
+  "x": -672,
+  "z": -8590,
+  "ele": 1140
+ },
+ {
+  "name": "Monte Castelcucco",
+  "type": "peak",
+  "x": 12390,
+  "z": 2081,
+  "ele": 1051
+ },
+ {
+  "name": "Monte Castelle (1)",
+  "type": "peak",
+  "x": 4136,
+  "z": 4638,
+  "ele": 973
+ },
+ {
+  "name": "Monte Castelle(2)",
+  "type": "peak",
+  "x": 4196,
+  "z": 4290,
+  "ele": 983
+ },
+ {
+  "name": "Monte Castello di Gaino",
+  "type": "peak",
+  "x": -6832,
+  "z": 3606,
+  "ele": 866
+ },
+ {
+  "name": "Monte Castelon",
+  "type": "peak",
+  "x": 15799,
+  "z": 14836,
+  "ele": 591
+ },
+ {
+  "name": "Monte Castenicola",
+  "type": "peak",
+  "x": -7233,
+  "z": 7,
+  "ele": 750
+ },
+ {
+  "name": "Monte Censo",
+  "type": "peak",
+  "x": -17105,
+  "z": -8132,
+  "ele": 1013
+ },
+ {
+  "name": "Monte Cerbiolo",
+  "type": "peak",
+  "x": 14254,
+  "z": -2019,
+  "ele": 1559
+ },
+ {
+  "name": "Monte Cervo",
+  "type": "peak",
+  "x": -17689,
+  "z": 14961,
+  "ele": 363
+ },
+ {
+  "name": "Monte Cimo",
+  "type": "peak",
+  "x": 11746,
+  "z": 5881,
+  "ele": 956
+ },
+ {
+  "name": "Monte Cingla",
+  "type": "peak",
+  "x": -11310,
+  "z": -9277,
+  "ele": 1670
+ },
+ {
+  "name": "Monte Cingolo",
+  "type": "peak",
+  "x": -17017,
+  "z": 5438,
+  "ele": 630
+ },
+ {
+  "name": "Monte Cocca",
+  "type": "peak",
+  "x": 2661,
+  "z": -21798,
+  "ele": 1405
+ },
+ {
+  "name": "Monte Cola",
+  "type": "peak",
+  "x": 14897,
+  "z": -7155,
+  "ele": 1338
+ },
+ {
+  "name": "Monte Colodri",
+  "type": "peak",
+  "x": 13355,
+  "z": -25904,
+  "ele": 400
+ },
+ {
+  "name": "Monte Colt",
+  "type": "peak",
+  "x": 13699,
+  "z": -27342,
+  "ele": 434
+ },
+ {
+  "name": "Monte Cor",
+  "type": "peak",
+  "x": 12589,
+  "z": 4252,
+  "ele": 1018
+ },
+ {
+  "name": "Monte Cordespino",
+  "type": "peak",
+  "x": 10350,
+  "z": 9967,
+  "ele": 623
+ },
+ {
+  "name": "Monte Corno",
+  "type": "peak",
+  "x": -305,
+  "z": -19269,
+  "ele": 1730
+ },
+ {
+  "name": "Monte Corno",
+  "type": "peak",
+  "x": -14200,
+  "z": 24154,
+  "ele": 153
+ },
+ {
+  "name": "Monte Corno",
+  "type": "peak",
+  "x": 19546,
+  "z": -1206,
+  "ele": 1355
+ },
+ {
+  "name": "Monte Corno",
+  "type": "peak",
+  "x": 15561,
+  "z": 6288,
+  "ele": 904
+ },
+ {
+  "name": "Monte Coro",
+  "type": "peak",
+  "x": -17663,
+  "z": 7600,
+  "ele": 753
+ },
+ {
+  "name": "Monte Costalunga",
+  "type": "peak",
+  "x": -15174,
+  "z": 20105,
+  "ele": 191
+ },
+ {
+  "name": "Monte Covolo",
+  "type": "peak",
+  "x": -18469,
+  "z": 11458,
+  "ele": 552
+ },
+ {
+  "name": "Monte Creino",
+  "type": "peak",
+  "x": 16392,
+  "z": -21163,
+  "ele": 1290
+ },
+ {
+  "name": "Monte Creta",
+  "type": "peak",
+  "x": 15412,
+  "z": 9779,
+  "ele": 807
+ },
+ {
+  "name": "Monte Croce",
+  "type": "peak",
+  "x": -12823,
+  "z": 13818,
+  "ele": 182
+ },
+ {
+  "name": "Monte Croce",
+  "type": "peak",
+  "x": 179,
+  "z": 9757,
+  "ele": 407
+ },
+ {
+  "name": "Monte Croce di Perlé",
+  "type": "peak",
+  "x": -16817,
+  "z": -3319,
+  "ele": 1031
+ },
+ {
+  "name": "Monte Crocetta",
+  "type": "peak",
+  "x": 14816,
+  "z": 8021,
+  "ele": 949
+ },
+ {
+  "name": "Monte Cul",
+  "type": "peak",
+  "x": -18499,
+  "z": 1482,
+  "ele": 1050
+ },
+ {
+  "name": "Monte Curma",
+  "type": "peak",
+  "x": -19341,
+  "z": -1427,
+  "ele": 882
+ },
+ {
+  "name": "Monte dei Pini",
+  "type": "peak",
+  "x": -2358,
+  "z": -23048,
+  "ele": 1454
+ },
+ {
+  "name": "Monte del Costone",
+  "type": "peak",
+  "x": -3761,
+  "z": -7144,
+  "ele": 1213
+ },
+ {
+  "name": "Monte del Gelo",
+  "type": "peak",
+  "x": -17817,
+  "z": -29865,
+  "ele": 2618
+ },
+ {
+  "name": "Monte dell'Era",
+  "type": "peak",
+  "x": -8348,
+  "z": -1264,
+  "ele": 677
+ },
+ {
+  "name": "Monte della Pianiga",
+  "type": "peak",
+  "x": -15155,
+  "z": 30086,
+  "ele": 159
+ },
+ {
+  "name": "Monte della Rovere",
+  "type": "peak",
+  "x": -17106,
+  "z": 21765,
+  "ele": 279
+ },
+ {
+  "name": "Monte della Valle",
+  "type": "peak",
+  "x": -17974,
+  "z": 20268,
+  "ele": 258
+ },
+ {
+  "name": "Monte delle Fogge",
+  "type": "peak",
+  "x": -50,
+  "z": -17777,
+  "ele": 1358
+ },
+ {
+  "name": "Monte delle Fontane",
+  "type": "peak",
+  "x": -17168,
+  "z": 17688,
+  "ele": 323
+ },
+ {
+  "name": "Monte delle Monache",
+  "type": "peak",
+  "x": -13184,
+  "z": 18657,
+  "ele": 141
+ },
+ {
+  "name": "Monte Denervo",
+  "type": "peak",
+  "x": -3416,
+  "z": -2706,
+  "ele": 1461
+ },
+ {
+  "name": "Monte Dossioli",
+  "type": "peak",
+  "x": 13547,
+  "z": -7018
+ },
+ {
+  "name": "Monte Faita",
+  "type": "peak",
+  "x": -18714,
+  "z": 14235,
+  "ele": 350
+ },
+ {
+  "name": "Monte Falò",
+  "type": "peak",
+  "x": -16676,
+  "z": 24057,
+  "ele": 270
+ },
+ {
+  "name": "Monte Fassane",
+  "type": "peak",
+  "x": -9591,
+  "z": -2014,
+  "ele": 1186
+ },
+ {
+  "name": "Monte Festas",
+  "type": "peak",
+  "x": -2292,
+  "z": -10481,
+  "ele": 949
+ },
+ {
+  "name": "Monte Folmone",
+  "type": "peak",
+  "x": -18705,
+  "z": 2135,
+  "ele": 1061
+ },
+ {
+  "name": "Monte Fontane",
+  "type": "peak",
+  "x": 126,
+  "z": 9504,
+  "ele": 404
+ },
+ {
+  "name": "Monte Forame",
+  "type": "peak",
+  "x": -14279,
+  "z": 3094,
+  "ele": 1318
+ },
+ {
+  "name": "Monte Forametto",
+  "type": "peak",
+  "x": -14594,
+  "z": 3211,
+  "ele": 1239
+ },
+ {
+  "name": "Monte Forca",
+  "type": "peak",
+  "x": -17017,
+  "z": 14568,
+  "ele": 365
+ },
+ {
+  "name": "Monte Forzane",
+  "type": "peak",
+  "x": -5115,
+  "z": -443,
+  "ele": 947
+ },
+ {
+  "name": "Monte Frassini",
+  "type": "peak",
+  "x": -17599,
+  "z": 2773,
+  "ele": 770
+ },
+ {
+  "name": "Monte Fubia",
+  "type": "peak",
+  "x": 9283,
+  "z": -9902,
+  "ele": 458
+ },
+ {
+  "name": "Monte Gallo",
+  "type": "peak",
+  "x": -17842,
+  "z": 908,
+  "ele": 1144
+ },
+ {
+  "name": "Monte Garda",
+  "type": "peak",
+  "x": 16443,
+  "z": -19727,
+  "ele": 876
+ },
+ {
+  "name": "Monte Gas",
+  "type": "peak",
+  "x": -7780,
+  "z": -5334,
+  "ele": 1128
+ },
+ {
+  "name": "Monte Giovo",
+  "type": "peak",
+  "x": 19365,
+  "z": -15719,
+  "ele": 645
+ },
+ {
+  "name": "Monte Giovo",
+  "type": "peak",
+  "x": -6081,
+  "z": -22315,
+  "ele": 1339
+ },
+ {
+  "name": "Monte Gozzolo",
+  "type": "peak",
+  "x": -15328,
+  "z": 19751,
+  "ele": 257
+ },
+ {
+  "name": "Monte Guarda",
+  "type": "peak",
+  "x": -18949,
+  "z": 16363,
+  "ele": 301
+ },
+ {
+  "name": "Monte Guarda",
+  "type": "peak",
+  "x": -15543,
+  "z": 15170,
+  "ele": 253
+ },
+ {
+  "name": "Monte Guil",
+  "type": "peak",
+  "x": 6372,
+  "z": -15281,
+  "ele": 1322
+ },
+ {
+  "name": "Monte Lavanech",
+  "type": "peak",
+  "x": -13514,
+  "z": -27644,
+  "ele": 2228
+ },
+ {
+  "name": "Monte Lavino",
+  "type": "peak",
+  "x": -3902,
+  "z": -14570,
+  "ele": 1837
+ },
+ {
+  "name": "Monte Lavino",
+  "type": "peak",
+  "x": -10676,
+  "z": 6385,
+  "ele": 906
+ },
+ {
+  "name": "Monte Lenzino",
+  "type": "peak",
+  "x": 59,
+  "z": 11011,
+  "ele": 479
+ },
+ {
+  "name": "Monte Loffa",
+  "type": "peak",
+  "x": 17227,
+  "z": 6470,
+  "ele": 1055
+ },
+ {
+  "name": "Monte Lungo",
+  "type": "peak",
+  "x": -13779,
+  "z": 28950,
+  "ele": 169
+ },
+ {
+  "name": "Monte Luppia",
+  "type": "peak",
+  "x": -1180,
+  "z": 12515,
+  "ele": 413
+ },
+ {
+  "name": "Monte Luzzago",
+  "type": "peak",
+  "x": -16594,
+  "z": 13239,
+  "ele": 365
+ },
+ {
+  "name": "Monte Magla",
+  "type": "peak",
+  "x": -12118,
+  "z": -839,
+  "ele": 972
+ },
+ {
+  "name": "Monte Magno",
+  "type": "peak",
+  "x": -6437,
+  "z": -1464,
+  "ele": 1046
+ },
+ {
+  "name": "Monte Malocco",
+  "type": "peak",
+  "x": -16880,
+  "z": 30408,
+  "ele": 182
+ },
+ {
+  "name": "Monte Manos",
+  "type": "peak",
+  "x": -13420,
+  "z": -3833,
+  "ele": 1516
+ },
+ {
+  "name": "Monte Marognon",
+  "type": "peak",
+  "x": 14489,
+  "z": 13214,
+  "ele": 705
+ },
+ {
+  "name": "Monte Masua",
+  "type": "peak",
+  "x": 18396,
+  "z": 10290,
+  "ele": 925
+ },
+ {
+  "name": "Monte Melino",
+  "type": "peak",
+  "x": -8409,
+  "z": -25013,
+  "ele": 1382
+ },
+ {
+  "name": "Monte Misole",
+  "type": "peak",
+  "x": -17030,
+  "z": 4185,
+  "ele": 601
+ },
+ {
+  "name": "Monte Misone",
+  "type": "peak",
+  "x": 8976,
+  "z": -28569,
+  "ele": 1803
+ },
+ {
+  "name": "Monte Mondero",
+  "type": "peak",
+  "x": -14884,
+  "z": 14461,
+  "ele": 240
+ },
+ {
+  "name": "Monte Montarione",
+  "type": "peak",
+  "x": 16415,
+  "z": 2053,
+  "ele": 628
+ },
+ {
+  "name": "Monte Moscal",
+  "type": "peak",
+  "x": 4520,
+  "z": 15657,
+  "ele": 427
+ },
+ {
+  "name": "Monte Motta",
+  "type": "peak",
+  "x": 8900,
+  "z": 8067,
+  "ele": 572
+ },
+ {
+  "name": "Monte Murazzo",
+  "type": "peak",
+  "x": -3591,
+  "z": -11876,
+  "ele": 1364
+ },
+ {
+  "name": "Monte Nagià Grom",
+  "type": "peak",
+  "x": 18168,
+  "z": -18488,
+  "ele": 787
+ },
+ {
+  "name": "Monte Nai",
+  "type": "peak",
+  "x": 1791,
+  "z": -8513,
+  "ele": 855
+ },
+ {
+  "name": "Monte Nota",
+  "type": "peak",
+  "x": 1997,
+  "z": -15615,
+  "ele": 1350
+ },
+ {
+  "name": "Monte Nota",
+  "type": "peak",
+  "x": -1879,
+  "z": -4272,
+  "ele": 880
+ },
+ {
+  "name": "Monte Nozzolo Grande",
+  "type": "peak",
+  "x": -2575,
+  "z": -25383,
+  "ele": 2029
+ },
+ {
+  "name": "Monte Nozzolo Piccolo",
+  "type": "peak",
+  "x": -3201,
+  "z": -25731,
+  "ele": 1923
+ },
+ {
+  "name": "Monte Nugoli",
+  "type": "peak",
+  "x": 4074,
+  "z": 8595,
+  "ele": 848
+ },
+ {
+  "name": "Monte Nuvolo",
+  "type": "peak",
+  "x": -16334,
+  "z": 29939,
+  "ele": 233
+ },
+ {
+  "name": "Monte Paghera",
+  "type": "peak",
+  "x": -18575,
+  "z": -6186,
+  "ele": 1122
+ },
+ {
+  "name": "Monte Palaer",
+  "type": "peak",
+  "x": 7337,
+  "z": -15295,
+  "ele": 1073
+ },
+ {
+  "name": "Monte Palina",
+  "type": "peak",
+  "x": -4758,
+  "z": -1648,
+  "ele": 1143
+ },
+ {
+  "name": "Monte Pallotto",
+  "type": "peak",
+  "x": -10593,
+  "z": -2264,
+  "ele": 1366
+ },
+ {
+  "name": "Monte Pastelletto",
+  "type": "peak",
+  "x": 14284,
+  "z": 9038,
+  "ele": 1031
+ },
+ {
+  "name": "Monte Pastello",
+  "type": "peak",
+  "x": 12478,
+  "z": 12569,
+  "ele": 1127
+ },
+ {
+  "name": "Monte Penni",
+  "type": "peak",
+  "x": -5638,
+  "z": -4139,
+  "ele": 1077
+ },
+ {
+  "name": "Monte Percasil",
+  "type": "peak",
+  "x": -3954,
+  "z": -948,
+  "ele": 1043
+ },
+ {
+  "name": "Monte Piazze",
+  "type": "peak",
+  "x": -18156,
+  "z": 13227,
+  "ele": 308
+ },
+ {
+  "name": "Monte Pietra di Rasoio",
+  "type": "peak",
+  "x": -15975,
+  "z": -23610,
+  "ele": 2242
+ },
+ {
+  "name": "Monte Pinel",
+  "type": "peak",
+  "x": -9226,
+  "z": -3474,
+  "ele": 1067
+ },
+ {
+  "name": "Monte Pizzocolo",
+  "type": "peak",
+  "x": -9123,
+  "z": 3182,
+  "ele": 1581
+ },
+ {
+  "name": "Monte Pler",
+  "type": "peak",
+  "x": -5487,
+  "z": 234,
+  "ele": 962
+ },
+ {
+  "name": "Monte Porle",
+  "type": "peak",
+  "x": -19336,
+  "z": -7509,
+  "ele": 1341
+ },
+ {
+  "name": "Monte Porre",
+  "type": "peak",
+  "x": -17265,
+  "z": -306,
+  "ele": 977
+ },
+ {
+  "name": "Monte Prà",
+  "type": "peak",
+  "x": -7356,
+  "z": -3385,
+  "ele": 991
+ },
+ {
+  "name": "Monte Pracalvis",
+  "type": "peak",
+  "x": -10790,
+  "z": 86,
+  "ele": 1161
+ },
+ {
+  "name": "Monte Pralta",
+  "type": "peak",
+  "x": -9711,
+  "z": -7936,
+  "ele": 1223
+ },
+ {
+  "name": "Monte Preals",
+  "type": "peak",
+  "x": 4516,
+  "z": -12420,
+  "ele": 890
+ },
+ {
+  "name": "Monte Procace",
+  "type": "peak",
+  "x": -17951,
+  "z": -2378,
+  "ele": 1009
+ },
+ {
+  "name": "Monte Pugna",
+  "type": "peak",
+  "x": 12128,
+  "z": 14260,
+  "ele": 721
+ },
+ {
+  "name": "Monte Puria",
+  "type": "peak",
+  "x": -2531,
+  "z": -9093,
+  "ele": 1473
+ },
+ {
+  "name": "Monte Puttola",
+  "type": "peak",
+  "x": -17341,
+  "z": -498,
+  "ele": 976
+ },
+ {
+  "name": "Monte Re",
+  "type": "peak",
+  "x": -10717,
+  "z": 16386,
+  "ele": 158
+ },
+ {
+  "name": "Monte Recciago",
+  "type": "peak",
+  "x": -14806,
+  "z": 24877,
+  "ele": 127
+ },
+ {
+  "name": "Monte Remà",
+  "type": "peak",
+  "x": -15357,
+  "z": -26392,
+  "ele": 2375
+ },
+ {
+  "name": "Monte Renico",
+  "type": "peak",
+  "x": -18897,
+  "z": 9135,
+  "ele": 886
+ },
+ {
+  "name": "Monte Riosecco",
+  "type": "peak",
+  "x": -14241,
+  "z": -3302,
+  "ele": 1288
+ },
+ {
+  "name": "Monte Risare",
+  "type": "peak",
+  "x": 3089,
+  "z": 7132,
+  "ele": 878
+ },
+ {
+  "name": "Monte Rocca",
+  "type": "peak",
+  "x": 9135,
+  "z": 14811,
+  "ele": 265
+ },
+ {
+  "name": "Monte Rocchetta",
+  "type": "peak",
+  "x": -1204,
+  "z": -2644,
+  "ele": 912
+ },
+ {
+  "name": "Monte S.Giustina",
+  "type": "peak",
+  "x": 16544,
+  "z": -19392,
+  "ele": 749
+ },
+ {
+  "name": "Monte San Bartolomeo",
+  "type": "peak",
+  "x": -14432,
+  "z": 9286,
+  "ele": 569
+ },
+ {
+  "name": "Monte San Bernardo",
+  "type": "peak",
+  "x": 19600,
+  "z": -19651,
+  "ele": 1226
+ },
+ {
+  "name": "Monte San Macario",
+  "type": "peak",
+  "x": -17068,
+  "z": 14027,
+  "ele": 331
+ },
+ {
+  "name": "Monte San Martino",
+  "type": "peak",
+  "x": 7798,
+  "z": -24352
+ },
+ {
+  "name": "Monte San Pietro",
+  "type": "peak",
+  "x": -16345,
+  "z": 16402,
+  "ele": 290
+ },
+ {
+  "name": "Monte San Pietro",
+  "type": "peak",
+  "x": 9766,
+  "z": -26669,
+  "ele": 1067
+ },
+ {
+  "name": "Monte Sarbano",
+  "type": "peak",
+  "x": -79,
+  "z": -20400,
+  "ele": 1298
+ },
+ {
+  "name": "Monte Sedole",
+  "type": "peak",
+  "x": -15710,
+  "z": -28770,
+  "ele": 2250
+ },
+ {
+  "name": "Monte Selvapiana",
+  "type": "peak",
+  "x": -19833,
+  "z": 9338,
+  "ele": 966
+ },
+ {
+  "name": "Monte Semonte",
+  "type": "peak",
+  "x": -16044,
+  "z": 14782
+ },
+ {
+  "name": "Monte Sercine",
+  "type": "peak",
+  "x": -17789,
+  "z": 4321,
+  "ele": 820
+ },
+ {
+  "name": "Monte Serina",
+  "type": "peak",
+  "x": -17593,
+  "z": 16019,
+  "ele": 359
+ },
+ {
+  "name": "Monte Sernifà",
+  "type": "peak",
+  "x": -3613,
+  "z": -5773,
+  "ele": 1245
+ },
+ {
+  "name": "Monte Serosine",
+  "type": "peak",
+  "x": -17782,
+  "z": -29364,
+  "ele": 2573
+ },
+ {
+  "name": "Monte Siclone",
+  "type": "peak",
+  "x": -2435,
+  "z": -4994,
+  "ele": 966
+ },
+ {
+  "name": "Monte Soffaino",
+  "type": "peak",
+  "x": -17289,
+  "z": 15365,
+  "ele": 363
+ },
+ {
+  "name": "Monte Sottone",
+  "type": "peak",
+  "x": -18198,
+  "z": -19493,
+  "ele": 2174
+ },
+ {
+  "name": "Monte Sparavero",
+  "type": "peak",
+  "x": 7385,
+  "z": 5663,
+  "ele": 1516
+ },
+ {
+  "name": "Monte Spezie",
+  "type": "peak",
+  "x": -18935,
+  "z": -11754,
+  "ele": 1195
+ },
+ {
+  "name": "Monte Spigone",
+  "type": "peak",
+  "x": -16450,
+  "z": 20195,
+  "ele": 247
+ },
+ {
+  "name": "Monte Spino",
+  "type": "peak",
+  "x": -12247,
+  "z": 1935,
+  "ele": 1504
+ },
+ {
+  "name": "Monte Stigolo",
+  "type": "peak",
+  "x": -8078,
+  "z": -18256,
+  "ele": 1699
+ },
+ {
+  "name": "Monte Stino",
+  "type": "peak",
+  "x": -12550,
+  "z": -7170,
+  "ele": 1467
+ },
+ {
+  "name": "Monte Stivo",
+  "type": "peak",
+  "x": 19148,
+  "z": -24910,
+  "ele": 2054
+ },
+ {
+  "name": "Monte Strasse",
+  "type": "peak",
+  "x": -15702,
+  "z": 13685,
+  "ele": 301
+ },
+ {
+  "name": "Monte Stropea",
+  "type": "peak",
+  "x": -14558,
+  "z": 19023,
+  "ele": 193
+ },
+ {
+  "name": "Monte Suello",
+  "type": "peak",
+  "x": -16433,
+  "z": -12113,
+  "ele": 1012
+ },
+ {
+  "name": "Monte Tarele",
+  "type": "peak",
+  "x": -6371,
+  "z": 671,
+  "ele": 870
+ },
+ {
+  "name": "Monte Tascè",
+  "type": "peak",
+  "x": -3168,
+  "z": -9878,
+  "ele": 1223
+ },
+ {
+  "name": "Monte Telegrafo",
+  "type": "peak",
+  "x": -17880,
+  "z": -18377,
+  "ele": 2151
+ },
+ {
+  "name": "Monte Tofino",
+  "type": "peak",
+  "x": 4265,
+  "z": -27681,
+  "ele": 2151
+ },
+ {
+  "name": "Monte Tombio",
+  "type": "peak",
+  "x": 8362,
+  "z": -23400,
+  "ele": 841
+ },
+ {
+  "name": "Monte Tomeabrù",
+  "type": "peak",
+  "x": 2845,
+  "z": -22654,
+  "ele": 1732
+ },
+ {
+  "name": "Monte Trat",
+  "type": "peak",
+  "x": -13812,
+  "z": 6826,
+  "ele": 802
+ },
+ {
+  "name": "Monte Traversole",
+  "type": "peak",
+  "x": 3290,
+  "z": -14527,
+  "ele": 1441
+ },
+ {
+  "name": "Monte Tremalzo",
+  "type": "peak",
+  "x": -1188,
+  "z": -15728,
+  "ele": 1973
+ },
+ {
+  "name": "Monte Vaimane",
+  "type": "peak",
+  "x": -18631,
+  "z": -24219,
+  "ele": 2099
+ },
+ {
+  "name": "Monte Valgesca",
+  "type": "peak",
+  "x": -15773,
+  "z": 19006,
+  "ele": 243
+ },
+ {
+  "name": "Monte Valsella",
+  "type": "peak",
+  "x": -15159,
+  "z": 14315,
+  "ele": 247
+ },
+ {
+  "name": "Monte Varagna",
+  "type": "peak",
+  "x": 14058,
+  "z": -14316,
+  "ele": 1778
+ },
+ {
+  "name": "Monte Venzaghetto",
+  "type": "peak",
+  "x": -13802,
+  "z": 29703,
+  "ele": 147
+ },
+ {
+  "name": "Monte Vesta",
+  "type": "peak",
+  "x": -11288,
+  "z": -3025,
+  "ele": 1397
+ },
+ {
+  "name": "Monte Vies",
+  "type": "peak",
+  "x": -948,
+  "z": -24463,
+  "ele": 1699
+ },
+ {
+  "name": "Monte Vignola",
+  "type": "peak",
+  "x": 19978,
+  "z": -8326,
+  "ele": 1606
+ },
+ {
+  "name": "Monte Vò",
+  "type": "peak",
+  "x": -16187,
+  "z": 15296,
+  "ele": 293
+ },
+ {
+  "name": "Monte Zenone",
+  "type": "peak",
+  "x": 50,
+  "z": -11435,
+  "ele": 1425
+ },
+ {
+  "name": "Monte Zingla",
+  "type": "peak",
+  "x": -13360,
+  "z": -143,
+  "ele": 1497
+ },
+ {
+  "name": "Monti di Riva",
+  "type": "peak",
+  "x": 8873,
+  "z": -19562,
+  "ele": 865
+ },
+ {
+  "name": "Paloni di Monte Cerbiolo",
+  "type": "peak",
+  "x": 14269,
+  "z": -1698,
+  "ele": 1415
+ },
+ {
+  "name": "Pènia",
+  "type": "peak",
+  "x": 13297,
+  "z": -19786
+ },
+ {
+  "name": "Picco Deva",
+  "type": "peak",
+  "x": 9163,
+  "z": -23638
+ },
+ {
+  "name": "Picco Pianelli",
+  "type": "peak",
+  "x": -18317,
+  "z": 10745,
+  "ele": 279
+ },
+ {
+  "name": "Pinzon",
+  "type": "peak",
+  "x": 5808,
+  "z": -29752,
+  "ele": 1533
+ },
+ {
+  "name": "Pissalat",
+  "type": "peak",
+  "x": -15044,
+  "z": -27298,
+  "ele": 2167
+ },
+ {
+  "name": "Pollice",
+  "type": "peak",
+  "x": 8981,
+  "z": -19471,
+  "ele": 674
+ },
+ {
+  "name": "Pónta de Stàbol Cò",
+  "type": "peak",
+  "x": -1062,
+  "z": -28708,
+  "ele": 2024
+ },
+ {
+  "name": "Postemon",
+  "type": "peak",
+  "x": 16677,
+  "z": -8482,
+  "ele": 1545
+ },
+ {
+  "name": "Punta Basacul",
+  "type": "peak",
+  "x": -13851,
+  "z": 253,
+  "ele": 1276
+ },
+ {
+  "name": "Punta Camino",
+  "type": "peak",
+  "x": 6740,
+  "z": -14713,
+  "ele": 1008
+ },
+ {
+  "name": "Punta della Brosa",
+  "type": "peak",
+  "x": 3374,
+  "z": -12684,
+  "ele": 1288
+ },
+ {
+  "name": "Punta della Ecie",
+  "type": "peak",
+  "x": -17609,
+  "z": -24563,
+  "ele": 2388
+ },
+ {
+  "name": "Punta della Selva",
+  "type": "peak",
+  "x": 3388,
+  "z": -12391,
+  "ele": 1281
+ },
+ {
+  "name": "Punta delle Redutte",
+  "type": "peak",
+  "x": 12596,
+  "z": -1937,
+  "ele": 1611
+ },
+ {
+  "name": "Punta di Baragnolo",
+  "type": "peak",
+  "x": -3083,
+  "z": -7964,
+  "ele": 1302
+ },
+ {
+  "name": "Punta di Cisano",
+  "type": "peak",
+  "x": -3887,
+  "z": -12021,
+  "ele": 1423
+ },
+ {
+  "name": "Punta di Mois",
+  "type": "peak",
+  "x": 5286,
+  "z": -15288,
+  "ele": 1371
+ },
+ {
+  "name": "Punta di Naole",
+  "type": "peak",
+  "x": 8284,
+  "z": 4415,
+  "ele": 1660
+ },
+ {
+  "name": "Punta di Retello",
+  "type": "peak",
+  "x": -3054,
+  "z": -7088,
+  "ele": 1341
+ },
+ {
+  "name": "Punta Di Vo",
+  "type": "peak",
+  "x": 11170,
+  "z": -9612,
+  "ele": 1535
+ },
+ {
+  "name": "Punta Larici",
+  "type": "peak",
+  "x": 7936,
+  "z": -15210,
+  "ele": 907
+ },
+ {
+  "name": "Punta Molvina",
+  "type": "peak",
+  "x": 105,
+  "z": -13307,
+  "ele": 1522
+ },
+ {
+  "name": "Punta Pelata",
+  "type": "peak",
+  "x": -17289,
+  "z": -4973,
+  "ele": 632
+ },
+ {
+  "name": "Punta Pettorina",
+  "type": "peak",
+  "x": 10042,
+  "z": -1533,
+  "ele": 2192
+ },
+ {
+  "name": "Punta Piagu",
+  "type": "peak",
+  "x": 17345,
+  "z": -5739,
+  "ele": 1094
+ },
+ {
+  "name": "Punta Sascaga",
+  "type": "peak",
+  "x": 9500,
+  "z": -466,
+  "ele": 2152
+ },
+ {
+  "name": "Punta Veleno",
+  "type": "peak",
+  "x": 6452,
+  "z": 453,
+  "ele": 1192
+ },
+ {
+  "name": "Punta Vesina",
+  "type": "peak",
+  "x": -3369,
+  "z": -13342,
+  "ele": 1320
+ },
+ {
+  "name": "Rocca di Manerba",
+  "type": "peak",
+  "x": -10425,
+  "z": 16044,
+  "ele": 216
+ },
+ {
+  "name": "Rocca Fredda",
+  "type": "peak",
+  "x": -9024,
+  "z": -17684,
+  "ele": 1668
+ },
+ {
+  "name": "Rocca Pagana",
+  "type": "peak",
+  "x": -9536,
+  "z": -17340,
+  "ele": 1371
+ },
+ {
+  "name": "Rocca Pagana",
+  "type": "peak",
+  "x": -6690,
+  "z": -9955,
+  "ele": 1231
+ },
+ {
+  "name": "Rocca Pia",
+  "type": "peak",
+  "x": 17422,
+  "z": 2143,
+  "ele": 1051
+ },
+ {
+  "name": "Roccia Campei",
+  "type": "peak",
+  "x": 291,
+  "z": -28883,
+  "ele": 2062
+ },
+ {
+  "name": "Rocchetta Giochello",
+  "type": "peak",
+  "x": 7853,
+  "z": -20792,
+  "ele": 1519
+ },
+ {
+  "name": "Rocchettina",
+  "type": "peak",
+  "x": 8617,
+  "z": -21558
+ },
+ {
+  "name": "San Vito",
+  "type": "peak",
+  "x": 16994,
+  "z": -18887
+ },
+ {
+  "name": "Sasso",
+  "type": "peak",
+  "x": -10109,
+  "z": 15922
+ },
+ {
+  "name": "Scoglio di Laione",
+  "type": "peak",
+  "x": -19902,
+  "z": -29290,
+  "ele": 2594
+ },
+ {
+  "name": "Selva Alta",
+  "type": "peak",
+  "x": -13691,
+  "z": 5880,
+  "ele": 914
+ },
+ {
+  "name": "Sengia Rossa",
+  "type": "peak",
+  "x": 13098,
+  "z": 9487,
+  "ele": 825
+ },
+ {
+  "name": "Tacchetto Basso",
+  "type": "peak",
+  "x": -1396,
+  "z": -14446
+ },
+ {
+  "name": "Tre Sorelle",
+  "type": "peak",
+  "x": -6302,
+  "z": -21837,
+  "ele": 1330
+ },
+ {
+  "name": "Vetta delle Buse",
+  "type": "peak",
+  "x": 9072,
+  "z": 163,
+  "ele": 2155
+ },
+ {
+  "name": "Adamoli",
+  "type": "hamlet",
+  "x": 18285,
+  "z": 3583
+ },
+ {
+  "name": "Aer",
+  "type": "hamlet",
+  "x": -132,
+  "z": -4140
+ },
+ {
+  "name": "Agneto",
+  "type": "hamlet",
+  "x": -15611,
+  "z": 9876
+ },
+ {
+  "name": "Agrone",
+  "type": "hamlet",
+  "x": -5169,
+  "z": -28302
+ },
+ {
+  "name": "Albaré",
+  "type": "hamlet",
+  "x": 11814,
+  "z": 2692
+ },
+ {
+  "name": "Albarei",
+  "type": "hamlet",
+  "x": 17049,
+  "z": 11109
+ },
+ {
+  "name": "Alboletta",
+  "type": "hamlet",
+  "x": 10260,
+  "z": -21542
+ },
+ {
+  "name": "Alpi",
+  "type": "hamlet",
+  "x": 6466,
+  "z": 20228
+ },
+ {
+  "name": "Angleri- Anglari",
+  "type": "hamlet",
+  "x": -9686,
+  "z": -27208
+ },
+ {
+  "name": "Arera Sud",
+  "type": "hamlet",
+  "x": 13313,
+  "z": 25093
+ },
+ {
+  "name": "Argine di sopra",
+  "type": "hamlet",
+  "x": -13534,
+  "z": 10245
+ },
+ {
+  "name": "Argine di sotto",
+  "type": "hamlet",
+  "x": -13232,
+  "z": 10269
+ },
+ {
+  "name": "Arias",
+  "type": "hamlet",
+  "x": 3163,
+  "z": -7448
+ },
+ {
+  "name": "Arveaco",
+  "type": "hamlet",
+  "x": -19908,
+  "z": 1404
+ },
+ {
+  "name": "Bagnol",
+  "type": "hamlet",
+  "x": 6876,
+  "z": 23997
+ },
+ {
+  "name": "Baiaghe di Sopra",
+  "type": "hamlet",
+  "x": 16968,
+  "z": 12710
+ },
+ {
+  "name": "Baitei",
+  "type": "hamlet",
+  "x": 3249,
+  "z": 6597
+ },
+ {
+  "name": "Balbiana",
+  "type": "hamlet",
+  "x": -12811,
+  "z": 16790
+ },
+ {
+  "name": "Ballino",
+  "type": "hamlet",
+  "x": 7213,
+  "z": -29647
+ },
+ {
+  "name": "Barcesino",
+  "type": "hamlet",
+  "x": 5206,
+  "z": -19127
+ },
+ {
+  "name": "Barco",
+  "type": "hamlet",
+  "x": 17939,
+  "z": 11164
+ },
+ {
+  "name": "Barozze",
+  "type": "hamlet",
+  "x": 18795,
+  "z": 5787
+ },
+ {
+  "name": "Bassanega",
+  "type": "hamlet",
+  "x": 5043,
+  "z": -10542
+ },
+ {
+  "name": "Beati Alti",
+  "type": "hamlet",
+  "x": 903,
+  "z": 12389
+ },
+ {
+  "name": "Beati Bassi",
+  "type": "hamlet",
+  "x": 863,
+  "z": 12744
+ },
+ {
+  "name": "Benecco",
+  "type": "hamlet",
+  "x": -17486,
+  "z": 11970
+ },
+ {
+  "name": "Berniga",
+  "type": "hamlet",
+  "x": -18889,
+  "z": 10067
+ },
+ {
+  "name": "Bersaglio",
+  "type": "hamlet",
+  "x": -9409,
+  "z": -19516
+ },
+ {
+  "name": "Bertacchina",
+  "type": "hamlet",
+  "x": 17019,
+  "z": 26845
+ },
+ {
+  "name": "Betlemme",
+  "type": "hamlet",
+  "x": 14057,
+  "z": 30081
+ },
+ {
+  "name": "Bettola",
+  "type": "hamlet",
+  "x": -19272,
+  "z": 25095
+ },
+ {
+  "name": "Bezzo",
+  "type": "hamlet",
+  "x": 6457,
+  "z": 13275
+ },
+ {
+  "name": "Bezzuglio",
+  "type": "hamlet",
+  "x": -9856,
+  "z": 7590
+ },
+ {
+  "name": "Biaza",
+  "type": "hamlet",
+  "x": 3261,
+  "z": 1746
+ },
+ {
+  "name": "Bionde",
+  "type": "hamlet",
+  "x": 18509,
+  "z": 26604
+ },
+ {
+  "name": "Boar",
+  "type": "hamlet",
+  "x": 16861,
+  "z": 10822
+ },
+ {
+  "name": "Boccamagno",
+  "type": "hamlet",
+  "x": -5755,
+  "z": -1418
+ },
+ {
+  "name": "Boccino",
+  "type": "hamlet",
+  "x": 4763,
+  "z": -1504
+ },
+ {
+  "name": "Bogliaco",
+  "type": "hamlet",
+  "x": -4511,
+  "z": 2926
+ },
+ {
+  "name": "Boi",
+  "type": "hamlet",
+  "x": 5139,
+  "z": 10865
+ },
+ {
+  "name": "Boia Fornase",
+  "type": "hamlet",
+  "x": 5009,
+  "z": 10316
+ },
+ {
+  "name": "Bolcana",
+  "type": "hamlet",
+  "x": 13363,
+  "z": 21501
+ },
+ {
+  "name": "Bologni",
+  "type": "hamlet",
+  "x": 7566,
+  "z": -23502
+ },
+ {
+  "name": "Bondone",
+  "type": "hamlet",
+  "x": -18810,
+  "z": 10297
+ },
+ {
+  "name": "Bonedimane",
+  "type": "hamlet",
+  "x": 4685,
+  "z": 25211
+ },
+ {
+  "name": "Borago",
+  "type": "hamlet",
+  "x": 5514,
+  "z": -2415
+ },
+ {
+  "name": "Borghetto",
+  "type": "hamlet",
+  "x": 16891,
+  "z": -226
+ },
+ {
+  "name": "Bornade di Sopra",
+  "type": "hamlet",
+  "x": -12681,
+  "z": 28469
+ },
+ {
+  "name": "Bornade di Sotto",
+  "type": "hamlet",
+  "x": -12420,
+  "z": 28350
+ },
+ {
+  "name": "Bornico",
+  "type": "hamlet",
+  "x": -9399,
+  "z": 8305
+ },
+ {
+  "name": "Borno",
+  "type": "hamlet",
+  "x": 2396,
+  "z": 5263
+ },
+ {
+  "name": "Bossema",
+  "type": "hamlet",
+  "x": 4579,
+  "z": 19437
+ },
+ {
+  "name": "Bottenago",
+  "type": "hamlet",
+  "x": -18018,
+  "z": 18694
+ },
+ {
+  "name": "Braghizzola",
+  "type": "hamlet",
+  "x": 8983,
+  "z": 7915
+ },
+ {
+  "name": "Braila",
+  "type": "hamlet",
+  "x": 16319,
+  "z": -28636
+ },
+ {
+  "name": "Brione",
+  "type": "hamlet",
+  "x": -9791,
+  "z": -21493
+ },
+ {
+  "name": "Brodena",
+  "type": "hamlet",
+  "x": -15452,
+  "z": 29579
+ },
+ {
+  "name": "Broieschi",
+  "type": "hamlet",
+  "x": 10475,
+  "z": 8925
+ },
+ {
+  "name": "Bure",
+  "type": "hamlet",
+  "x": 13028,
+  "z": 19144
+ },
+ {
+  "name": "Bus",
+  "type": "hamlet",
+  "x": 19542,
+  "z": -11187
+ },
+ {
+  "name": "Busa",
+  "type": "hamlet",
+  "x": 17695,
+  "z": 19632
+ },
+ {
+  "name": "Ca deIovi",
+  "type": "hamlet",
+  "x": 16807,
+  "z": 12273
+ },
+ {
+  "name": "Ca del Gallo",
+  "type": "hamlet",
+  "x": 18009,
+  "z": 14185
+ },
+ {
+  "name": "Ca di Natone",
+  "type": "hamlet",
+  "x": 350,
+  "z": -7746
+ },
+ {
+  "name": "Ca Masetto",
+  "type": "hamlet",
+  "x": 17393,
+  "z": 12434
+ },
+ {
+  "name": "Ca nova",
+  "type": "hamlet",
+  "x": 19770,
+  "z": 15681
+ },
+ {
+  "name": "Cà Nova",
+  "type": "hamlet",
+  "x": 16430,
+  "z": 13241
+ },
+ {
+  "name": "Cà Sartori",
+  "type": "hamlet",
+  "x": 1765,
+  "z": 7061
+ },
+ {
+  "name": "Ca vecia",
+  "type": "hamlet",
+  "x": 17554,
+  "z": 12681
+ },
+ {
+  "name": "Ca' Camporal",
+  "type": "hamlet",
+  "x": 17391,
+  "z": 14966
+ },
+ {
+  "name": "Ca' Longa",
+  "type": "hamlet",
+  "x": 3895,
+  "z": 7526
+ },
+ {
+  "name": "Ca' Tronconi",
+  "type": "hamlet",
+  "x": 1552,
+  "z": 4493
+ },
+ {
+  "name": "Cabiana",
+  "type": "hamlet",
+  "x": -6670,
+  "z": 4686
+ },
+ {
+  "name": "Cabianco",
+  "type": "hamlet",
+  "x": -18595,
+  "z": 16517
+ },
+ {
+  "name": "Cadignano",
+  "type": "hamlet",
+  "x": 1796,
+  "z": -7271
+ },
+ {
+  "name": "Calcarole",
+  "type": "hamlet",
+  "x": 11148,
+  "z": 14674
+ },
+ {
+  "name": "Calchere",
+  "type": "hamlet",
+  "x": 8496,
+  "z": -6545
+ },
+ {
+  "name": "Calchere",
+  "type": "hamlet",
+  "x": -17700,
+  "z": -4515
+ },
+ {
+  "name": "Calmasino",
+  "type": "hamlet",
+  "x": 3711,
+  "z": 19720
+ },
+ {
+  "name": "Calvola",
+  "type": "hamlet",
+  "x": 8918,
+  "z": -25367
+ },
+ {
+  "name": "Calzerega",
+  "type": "hamlet",
+  "x": 17058,
+  "z": 11360
+ },
+ {
+  "name": "Cambrigar",
+  "type": "hamlet",
+  "x": 11219,
+  "z": 1075
+ },
+ {
+  "name": "Campagna",
+  "type": "hamlet",
+  "x": -18906,
+  "z": 27936
+ },
+ {
+  "name": "Camparso",
+  "type": "hamlet",
+  "x": 17451,
+  "z": 4255
+ },
+ {
+  "name": "Campedello",
+  "type": "hamlet",
+  "x": 10243,
+  "z": 1729
+ },
+ {
+  "name": "Campo",
+  "type": "hamlet",
+  "x": 4194,
+  "z": 235
+ },
+ {
+  "name": "Campostrin",
+  "type": "hamlet",
+  "x": 19045,
+  "z": 6773
+ },
+ {
+  "name": "Campoverde",
+  "type": "hamlet",
+  "x": -15662,
+  "z": 10805
+ },
+ {
+  "name": "Canale",
+  "type": "hamlet",
+  "x": 8493,
+  "z": -25711
+ },
+ {
+  "name": "Canale",
+  "type": "hamlet",
+  "x": 9565,
+  "z": 12464
+ },
+ {
+  "name": "Caneve",
+  "type": "hamlet",
+  "x": 13648,
+  "z": -24462
+ },
+ {
+  "name": "Canneto",
+  "type": "hamlet",
+  "x": -17849,
+  "z": 9600
+ },
+ {
+  "name": "Canova",
+  "type": "hamlet",
+  "x": 12329,
+  "z": 29491
+ },
+ {
+  "name": "Cantinegirelli",
+  "type": "hamlet",
+  "x": 3870,
+  "z": 18760
+ },
+ {
+  "name": "Canzago",
+  "type": "hamlet",
+  "x": 16279,
+  "z": 16151
+ },
+ {
+  "name": "Caorsa",
+  "type": "hamlet",
+  "x": 5312,
+  "z": 16904
+ },
+ {
+  "name": "Carazzole",
+  "type": "hamlet",
+  "x": 16500,
+  "z": 14011
+ },
+ {
+  "name": "Carvanno",
+  "type": "hamlet",
+  "x": -16651,
+  "z": 2826
+ },
+ {
+  "name": "Carzago Riviera",
+  "type": "hamlet",
+  "x": -19254,
+  "z": 19566
+ },
+ {
+  "name": "Casa Ottello",
+  "type": "hamlet",
+  "x": -264,
+  "z": 29852
+ },
+ {
+  "name": "Casalin",
+  "type": "hamlet",
+  "x": 17869,
+  "z": 9729
+ },
+ {
+  "name": "Casarole",
+  "type": "hamlet",
+  "x": 2608,
+  "z": 3915
+ },
+ {
+  "name": "Casetta Cimi",
+  "type": "hamlet",
+  "x": 7399,
+  "z": 11704
+ },
+ {
+  "name": "Casette",
+  "type": "hamlet",
+  "x": 14493,
+  "z": 22041
+ },
+ {
+  "name": "Casette Mastego Pigno Pellizzara",
+  "type": "hamlet",
+  "x": 6555,
+  "z": 18339
+ },
+ {
+  "name": "Cason",
+  "type": "hamlet",
+  "x": 16594,
+  "z": 25930
+ },
+ {
+  "name": "Cason del Chievo",
+  "type": "hamlet",
+  "x": 16582,
+  "z": 25954
+ },
+ {
+  "name": "Casone",
+  "type": "hamlet",
+  "x": 16919,
+  "z": 29735
+ },
+ {
+  "name": "Castelletto",
+  "type": "hamlet",
+  "x": -16440,
+  "z": 18529
+ },
+ {
+  "name": "Castello",
+  "type": "hamlet",
+  "x": -18428,
+  "z": 9997
+ },
+ {
+  "name": "Castello",
+  "type": "hamlet",
+  "x": 4689,
+  "z": 16867
+ },
+ {
+  "name": "Castello",
+  "type": "hamlet",
+  "x": 5152,
+  "z": -1916
+ },
+ {
+  "name": "Castelrotto",
+  "type": "hamlet",
+  "x": 15468,
+  "z": 22162
+ },
+ {
+  "name": "Castone",
+  "type": "hamlet",
+  "x": 3385,
+  "z": -7835
+ },
+ {
+  "name": "Cavalo",
+  "type": "hamlet",
+  "x": 12875,
+  "z": 14183
+ },
+ {
+  "name": "Cavecchia",
+  "type": "hamlet",
+  "x": 9728,
+  "z": 30284
+ },
+ {
+  "name": "Cazzoli",
+  "type": "hamlet",
+  "x": 7660,
+  "z": -23702
+ },
+ {
+  "name": "Cengia",
+  "type": "hamlet",
+  "x": 15798,
+  "z": 22038
+ },
+ {
+  "name": "Centenaro",
+  "type": "hamlet",
+  "x": -12312,
+  "z": 30258
+ },
+ {
+  "name": "Centurara",
+  "type": "hamlet",
+  "x": 8342,
+  "z": 30052
+ },
+ {
+  "name": "Ceole",
+  "type": "hamlet",
+  "x": 10528,
+  "z": -23708
+ },
+ {
+  "name": "Ceraino",
+  "type": "hamlet",
+  "x": 9254,
+  "z": 14072
+ },
+ {
+  "name": "Cerè",
+  "type": "hamlet",
+  "x": 19313,
+  "z": 19660
+ },
+ {
+  "name": "Ceredello di sotto",
+  "type": "hamlet",
+  "x": 5890,
+  "z": 11899
+ },
+ {
+  "name": "Cerna",
+  "type": "hamlet",
+  "x": 18017,
+  "z": 10884
+ },
+ {
+  "name": "Cillario",
+  "type": "hamlet",
+  "x": 19114,
+  "z": 23748
+ },
+ {
+  "name": "Cisano",
+  "type": "hamlet",
+  "x": -13280,
+  "z": 11805
+ },
+ {
+  "name": "Clibbio",
+  "type": "hamlet",
+  "x": -19616,
+  "z": 7292
+ },
+ {
+  "name": "Coalini",
+  "type": "hamlet",
+  "x": 10187,
+  "z": 5880
+ },
+ {
+  "name": "Coi",
+  "type": "hamlet",
+  "x": -963,
+  "z": 9785
+ },
+ {
+  "name": "Coletto",
+  "type": "hamlet",
+  "x": 6267,
+  "z": 13718
+ },
+ {
+  "name": "Coliel",
+  "type": "hamlet",
+  "x": 10693,
+  "z": 5754
+ },
+ {
+  "name": "Collio",
+  "type": "hamlet",
+  "x": -15578,
+  "z": 7250
+ },
+ {
+  "name": "Colo",
+  "type": "hamlet",
+  "x": 6249,
+  "z": 14697
+ },
+ {
+  "name": "Colombara San Vito",
+  "type": "hamlet",
+  "x": 14473,
+  "z": 25548
+ },
+ {
+  "name": "Colombara-Calmasino",
+  "type": "hamlet",
+  "x": 4803,
+  "z": 21328
+ },
+ {
+  "name": "Cominello",
+  "type": "hamlet",
+  "x": -17566,
+  "z": 29786
+ },
+ {
+  "name": "Cona",
+  "type": "hamlet",
+  "x": 18269,
+  "z": 8196
+ },
+ {
+  "name": "Contine",
+  "type": "hamlet",
+  "x": 13072,
+  "z": 21177
+ },
+ {
+  "name": "Contrada Capra",
+  "type": "hamlet",
+  "x": 1741,
+  "z": 7851
+ },
+ {
+  "name": "Corniano",
+  "type": "hamlet",
+  "x": 19206,
+  "z": -19426
+ },
+ {
+  "name": "Corno Alto",
+  "type": "hamlet",
+  "x": 16454,
+  "z": 25417
+ },
+ {
+  "name": "Corrubio",
+  "type": "hamlet",
+  "x": 19545,
+  "z": 10957
+ },
+ {
+  "name": "Cortelline",
+  "type": "hamlet",
+  "x": 2447,
+  "z": 14740
+ },
+ {
+  "name": "Costa",
+  "type": "hamlet",
+  "x": 17591,
+  "z": 11231
+ },
+ {
+  "name": "Coste",
+  "type": "hamlet",
+  "x": 18294,
+  "z": 3432
+ },
+ {
+  "name": "Coste",
+  "type": "hamlet",
+  "x": 19090,
+  "z": -30478
+ },
+ {
+  "name": "Crestena",
+  "type": "hamlet",
+  "x": 19951,
+  "z": 10070
+ },
+ {
+  "name": "Cristo-Spadi",
+  "type": "hamlet",
+  "x": 4618,
+  "z": 20387
+ },
+ {
+  "name": "Crobiol",
+  "type": "hamlet",
+  "x": 17214,
+  "z": 10677
+ },
+ {
+  "name": "Crocetta",
+  "type": "hamlet",
+  "x": 15817,
+  "z": 16125
+ },
+ {
+  "name": "Crocetta",
+  "type": "hamlet",
+  "x": 12124,
+  "z": 22146
+ },
+ {
+  "name": "Crociale",
+  "type": "hamlet",
+  "x": -13367,
+  "z": 17135
+ },
+ {
+  "name": "Crone",
+  "type": "hamlet",
+  "x": -17867,
+  "z": -4123
+ },
+ {
+  "name": "Cussaga",
+  "type": "hamlet",
+  "x": -6611,
+  "z": 5212
+ },
+ {
+  "name": "Degagna",
+  "type": "hamlet",
+  "x": -15756,
+  "z": 2217
+ },
+ {
+  "name": "Deva",
+  "type": "hamlet",
+  "x": 9084,
+  "z": -23408
+ },
+ {
+  "name": "Dom",
+  "type": "hamlet",
+  "x": 9041,
+  "z": -22339
+ },
+ {
+  "name": "Donzella",
+  "type": "hamlet",
+  "x": 5265,
+  "z": 24106
+ },
+ {
+  "name": "Dossi",
+  "type": "hamlet",
+  "x": 11346,
+  "z": 1924
+ },
+ {
+  "name": "Dosso",
+  "type": "hamlet",
+  "x": 19176,
+  "z": 16741
+ },
+ {
+  "name": "Dosso",
+  "type": "hamlet",
+  "x": 11624,
+  "z": 2787
+ },
+ {
+  "name": "Drugolo",
+  "type": "hamlet",
+  "x": -17756,
+  "z": 22484
+ },
+ {
+  "name": "Dumez",
+  "type": "hamlet",
+  "x": 8725,
+  "z": -8075
+ },
+ {
+  "name": "Enguiso",
+  "type": "hamlet",
+  "x": 967,
+  "z": -22871
+ },
+ {
+  "name": "Eno",
+  "type": "hamlet",
+  "x": -15717,
+  "z": -316
+ },
+ {
+  "name": "Facchetti",
+  "type": "hamlet",
+  "x": -19204,
+  "z": -857
+ },
+ {
+  "name": "Faino",
+  "type": "hamlet",
+  "x": 6945,
+  "z": 20360
+ },
+ {
+  "name": "Fangolino",
+  "type": "hamlet",
+  "x": 10899,
+  "z": -22929
+ },
+ {
+  "name": "Fasano di sopra",
+  "type": "hamlet",
+  "x": -9980,
+  "z": 7831
+ },
+ {
+  "name": "Fasano di sotto",
+  "type": "hamlet",
+  "x": -10009,
+  "z": 8199
+ },
+ {
+  "name": "Fasor",
+  "type": "hamlet",
+  "x": 3386,
+  "z": 1592
+ },
+ {
+  "name": "Festa",
+  "type": "hamlet",
+  "x": 17559,
+  "z": -14051
+ },
+ {
+  "name": "Foci",
+  "type": "hamlet",
+  "x": 8992,
+  "z": -22057
+ },
+ {
+  "name": "Folino",
+  "type": "hamlet",
+  "x": -6969,
+  "z": 5008
+ },
+ {
+  "name": "Fontana Fredda",
+  "type": "hamlet",
+  "x": 16602,
+  "z": 6929
+ },
+ {
+  "name": "Fontana Fredda",
+  "type": "hamlet",
+  "x": 2157,
+  "z": 26491
+ },
+ {
+  "name": "Fontanelle",
+  "type": "hamlet",
+  "x": 10203,
+  "z": -24548
+ },
+ {
+  "name": "Fontone",
+  "type": "hamlet",
+  "x": 9138,
+  "z": 29073
+ },
+ {
+  "name": "Formaga",
+  "type": "hamlet",
+  "x": -5794,
+  "z": 1255
+ },
+ {
+  "name": "Fornico",
+  "type": "hamlet",
+  "x": -5215,
+  "z": 3015
+ },
+ {
+  "name": "Fossa",
+  "type": "hamlet",
+  "x": -18331,
+  "z": 28813
+ },
+ {
+  "name": "Fraine Alte",
+  "type": "hamlet",
+  "x": 11586,
+  "z": 3849
+ },
+ {
+  "name": "Fraine Basse",
+  "type": "hamlet",
+  "x": 11464,
+  "z": 3406
+ },
+ {
+  "name": "Frapporta",
+  "type": "hamlet",
+  "x": 9037,
+  "z": -24207
+ },
+ {
+  "name": "Fratelli Rosselli",
+  "type": "hamlet",
+  "x": 9692,
+  "z": 28284
+ },
+ {
+  "name": "Frugone",
+  "type": "hamlet",
+  "x": -5384,
+  "z": -28087
+ },
+ {
+  "name": "Gaium",
+  "type": "hamlet",
+  "x": 9411,
+  "z": 16134
+ },
+ {
+  "name": "Gamberon",
+  "type": "hamlet",
+  "x": 9241,
+  "z": 9976
+ },
+ {
+  "name": "Gaon",
+  "type": "hamlet",
+  "x": 7023,
+  "z": 9446
+ },
+ {
+  "name": "Gardola",
+  "type": "hamlet",
+  "x": 725,
+  "z": -4305
+ },
+ {
+  "name": "Gardoncino",
+  "type": "hamlet",
+  "x": -11495,
+  "z": 17436
+ },
+ {
+  "name": "Gardone di Sopra",
+  "type": "hamlet",
+  "x": -11561,
+  "z": 8740
+ },
+ {
+  "name": "Gavazzo Vecchio",
+  "type": "hamlet",
+  "x": 10050,
+  "z": -23871
+ },
+ {
+  "name": "Gazzane",
+  "type": "hamlet",
+  "x": -15865,
+  "z": 8950
+ },
+ {
+  "name": "Gazzoli",
+  "type": "hamlet",
+  "x": 4677,
+  "z": 13853
+ },
+ {
+  "name": "Giacomona",
+  "type": "hamlet",
+  "x": 7901,
+  "z": 29344
+ },
+ {
+  "name": "Giare",
+  "type": "hamlet",
+  "x": 3563,
+  "z": 10831
+ },
+ {
+  "name": "Giarette",
+  "type": "hamlet",
+  "x": 7742,
+  "z": 14736
+ },
+ {
+  "name": "Girotto",
+  "type": "hamlet",
+  "x": 16685,
+  "z": 12852
+ },
+ {
+  "name": "Gnirega",
+  "type": "hamlet",
+  "x": 16812,
+  "z": 17474
+ },
+ {
+  "name": "Gorgusello di Sopra",
+  "type": "hamlet",
+  "x": 16310,
+  "z": 8455
+ },
+ {
+  "name": "Gorgusello di Sotto",
+  "type": "hamlet",
+  "x": 16085,
+  "z": 8582
+ },
+ {
+  "name": "Gralaoni-Pralesi",
+  "type": "hamlet",
+  "x": 1916,
+  "z": 19633
+ },
+ {
+  "name": "Chiodi",
+  "type": "hamlet",
+  "x": -5198,
+  "z": 27644
+ },
+ {
+  "name": "Chiodino",
+  "type": "hamlet",
+  "x": -7528,
+  "z": 30124
+ },
+ {
+  "name": "Incaffi",
+  "type": "hamlet",
+  "x": 4380,
+  "z": 16365
+ },
+ {
+  "name": "La Cà",
+  "type": "hamlet",
+  "x": 12639,
+  "z": 15173
+ },
+ {
+  "name": "La Ca'",
+  "type": "hamlet",
+  "x": 3093,
+  "z": 5020
+ },
+ {
+  "name": "La Costa",
+  "type": "hamlet",
+  "x": 18030,
+  "z": 8532
+ },
+ {
+  "name": "La Grotta",
+  "type": "hamlet",
+  "x": 11721,
+  "z": -21762
+ },
+ {
+  "name": "La Pontarola",
+  "type": "hamlet",
+  "x": 16407,
+  "z": 13709
+ },
+ {
+  "name": "La Pora",
+  "type": "hamlet",
+  "x": 2704,
+  "z": 5824
+ },
+ {
+  "name": "Lardaro",
+  "type": "hamlet",
+  "x": -4426,
+  "z": -29939
+ },
+ {
+  "name": "Lavaroni",
+  "type": "hamlet",
+  "x": 7304,
+  "z": -23449
+ },
+ {
+  "name": "le Binde",
+  "type": "hamlet",
+  "x": 9679,
+  "z": 5735
+ },
+ {
+  "name": "Le Ca'",
+  "type": "hamlet",
+  "x": 3880,
+  "z": 2781
+ },
+ {
+  "name": "Le Camille",
+  "type": "hamlet",
+  "x": 819,
+  "z": 8004
+ },
+ {
+  "name": "Le Carlotte",
+  "type": "hamlet",
+  "x": 6134,
+  "z": 22315
+ },
+ {
+  "name": "Le Tese",
+  "type": "hamlet",
+  "x": 15737,
+  "z": 13408
+ },
+ {
+  "name": "Le Vigne",
+  "type": "hamlet",
+  "x": 6441,
+  "z": -3659
+ },
+ {
+  "name": "Le Zette",
+  "type": "hamlet",
+  "x": -14378,
+  "z": 12432
+ },
+ {
+  "name": "Leano",
+  "type": "hamlet",
+  "x": 6380,
+  "z": -17132
+ },
+ {
+  "name": "Lemprato",
+  "type": "hamlet",
+  "x": -18889,
+  "z": -3524
+ },
+ {
+  "name": "Liano",
+  "type": "hamlet",
+  "x": -16765,
+  "z": 9276
+ },
+ {
+  "name": "Liano",
+  "type": "hamlet",
+  "x": -5421,
+  "z": 1107
+ },
+ {
+  "name": "Limes",
+  "type": "hamlet",
+  "x": -13445,
+  "z": -30484
+ },
+ {
+  "name": "Livrio",
+  "type": "hamlet",
+  "x": -19923,
+  "z": 2063
+ },
+ {
+  "name": "Località alle Porte",
+  "type": "hamlet",
+  "x": -8835,
+  "z": -22546
+ },
+ {
+  "name": "Località Ara Decima",
+  "type": "hamlet",
+  "x": 8194,
+  "z": 29073
+ },
+ {
+  "name": "Località Bandesà",
+  "type": "hamlet",
+  "x": 8004,
+  "z": 26521
+ },
+ {
+  "name": "Località Bragati",
+  "type": "hamlet",
+  "x": 8685,
+  "z": 26333
+ },
+ {
+  "name": "Località Case Nuove",
+  "type": "hamlet",
+  "x": 4612,
+  "z": 24794
+ },
+ {
+  "name": "località Fava",
+  "type": "hamlet",
+  "x": 18123,
+  "z": 13178
+ },
+ {
+  "name": "Località Fossagranara",
+  "type": "hamlet",
+  "x": 7443,
+  "z": 27134
+ },
+ {
+  "name": "Località Lughinetto",
+  "type": "hamlet",
+  "x": 8738,
+  "z": 25869
+ },
+ {
+  "name": "Località Mirandola",
+  "type": "hamlet",
+  "x": 5700,
+  "z": 24514
+ },
+ {
+  "name": "Località Produttiva Progni-Pangoni",
+  "type": "hamlet",
+  "x": 14446,
+  "z": 15664
+ },
+ {
+  "name": "Località Ventretti",
+  "type": "hamlet",
+  "x": 7886,
+  "z": 25650
+ },
+ {
+  "name": "Loncrino",
+  "type": "hamlet",
+  "x": -1049,
+  "z": 10090
+ },
+ {
+  "name": "Longavina",
+  "type": "hamlet",
+  "x": -19608,
+  "z": 15903
+ },
+ {
+  "name": "Lora",
+  "type": "hamlet",
+  "x": 14405,
+  "z": 23075
+ },
+ {
+  "name": "Lovere",
+  "type": "hamlet",
+  "x": -4116,
+  "z": -2270
+ },
+ {
+  "name": "Lumini",
+  "type": "hamlet",
+  "x": 3690,
+  "z": 7910
+ },
+ {
+  "name": "Macchion",
+  "type": "hamlet",
+  "x": 18251,
+  "z": 9251
+ },
+ {
+  "name": "Maclino",
+  "type": "hamlet",
+  "x": -9288,
+  "z": 7417
+ },
+ {
+  "name": "Maguzzano",
+  "type": "hamlet",
+  "x": -15731,
+  "z": 24087
+ },
+ {
+  "name": "Malacarne",
+  "type": "hamlet",
+  "x": 7272,
+  "z": -23252
+ },
+ {
+  "name": "Mama d'Avio",
+  "type": "hamlet",
+  "x": 16461,
+  "z": -948
+ },
+ {
+  "name": "Mama di Sotto",
+  "type": "hamlet",
+  "x": 16181,
+  "z": -540
+ },
+ {
+  "name": "Mandale",
+  "type": "hamlet",
+  "x": -16932,
+  "z": 8366
+ },
+ {
+  "name": "Manodiferro",
+  "type": "hamlet",
+  "x": -796,
+  "z": 30322
+ },
+ {
+  "name": "Manune",
+  "type": "hamlet",
+  "x": 15066,
+  "z": 11434
+ },
+ {
+  "name": "Mar di Oi",
+  "type": "hamlet",
+  "x": 17456,
+  "z": 11552
+ },
+ {
+  "name": "Maregnago",
+  "type": "hamlet",
+  "x": 16177,
+  "z": 18932
+ },
+ {
+  "name": "Marezzane",
+  "type": "hamlet",
+  "x": 16029,
+  "z": 12911
+ },
+ {
+  "name": "Martellengo",
+  "type": "hamlet",
+  "x": 18021,
+  "z": 4223
+ },
+ {
+  "name": "Masi d'Avio",
+  "type": "hamlet",
+  "x": 17714,
+  "z": -1714
+ },
+ {
+  "name": "Maso",
+  "type": "hamlet",
+  "x": 18080,
+  "z": 11799
+ },
+ {
+  "name": "Maso Be",
+  "type": "hamlet",
+  "x": 15885,
+  "z": -27653
+ },
+ {
+  "name": "Maso Giare",
+  "type": "hamlet",
+  "x": 14429,
+  "z": -27249
+ },
+ {
+  "name": "Maso Giare",
+  "type": "hamlet",
+  "x": 14695,
+  "z": -27428
+ },
+ {
+  "name": "Massoni",
+  "type": "hamlet",
+  "x": -4029,
+  "z": 29571
+ },
+ {
+  "name": "Mastella",
+  "type": "hamlet",
+  "x": 13019,
+  "z": 25103
+ },
+ {
+  "name": "Mazzano",
+  "type": "hamlet",
+  "x": 19507,
+  "z": 14842
+ },
+ {
+  "name": "Mazzurega",
+  "type": "hamlet",
+  "x": 12455,
+  "z": 16305
+ },
+ {
+  "name": "Menola",
+  "type": "hamlet",
+  "x": 19596,
+  "z": 13992
+ },
+ {
+  "name": "Messaga",
+  "type": "hamlet",
+  "x": -6493,
+  "z": 5361
+ },
+ {
+  "name": "Mezzane",
+  "type": "hamlet",
+  "x": -17582,
+  "z": 8837
+ },
+ {
+  "name": "Mezzavilla",
+  "type": "hamlet",
+  "x": 11175,
+  "z": 1829
+ },
+ {
+  "name": "Mezzema",
+  "type": "hamlet",
+  "x": 2836,
+  "z": -7751
+ },
+ {
+  "name": "Mignone",
+  "type": "hamlet",
+  "x": -5785,
+  "z": -3342
+ },
+ {
+  "name": "Michelazzi",
+  "type": "hamlet",
+  "x": 17560,
+  "z": 5645
+ },
+ {
+  "name": "Mirandola Bassa",
+  "type": "hamlet",
+  "x": 16564,
+  "z": 24749
+ },
+ {
+  "name": "Moglia",
+  "type": "hamlet",
+  "x": -18537,
+  "z": 4934
+ },
+ {
+  "name": "Mogno",
+  "type": "hamlet",
+  "x": 13555,
+  "z": -24824
+ },
+ {
+  "name": "Moie",
+  "type": "hamlet",
+  "x": 10014,
+  "z": 5528
+ },
+ {
+  "name": "Molane",
+  "type": "hamlet",
+  "x": 13492,
+  "z": 11643
+ },
+ {
+  "name": "Moletta",
+  "type": "hamlet",
+  "x": 13836,
+  "z": -26078
+ },
+ {
+  "name": "Molin",
+  "type": "hamlet",
+  "x": -15936,
+  "z": 10884
+ },
+ {
+  "name": "Mondrago",
+  "type": "hamlet",
+  "x": 17845,
+  "z": 12209
+ },
+ {
+  "name": "Moniga del Bosco",
+  "type": "hamlet",
+  "x": -18701,
+  "z": 15137
+ },
+ {
+  "name": "Monspigolo",
+  "type": "hamlet",
+  "x": 19018,
+  "z": 13977
+ },
+ {
+  "name": "Montalto di Gaium - Pimpine",
+  "type": "hamlet",
+  "x": 8125,
+  "z": 16372
+ },
+ {
+  "name": "Montalto di Sopra",
+  "type": "hamlet",
+  "x": 7942,
+  "z": 16100
+ },
+ {
+  "name": "Montalto di Sotto",
+  "type": "hamlet",
+  "x": 8111,
+  "z": 16966
+ },
+ {
+  "name": "Monte dall'Ora",
+  "type": "hamlet",
+  "x": 15419,
+  "z": 21413
+ },
+ {
+  "name": "Monte Noroni",
+  "type": "hamlet",
+  "x": 17091,
+  "z": 13606
+ },
+ {
+  "name": "Monte Tapino",
+  "type": "hamlet",
+  "x": -14123,
+  "z": 20277
+ },
+ {
+  "name": "Monteacuto",
+  "type": "hamlet",
+  "x": -14880,
+  "z": 13807
+ },
+ {
+  "name": "Montecucco",
+  "type": "hamlet",
+  "x": -11544,
+  "z": 8496
+ },
+ {
+  "name": "Monteriondo",
+  "type": "hamlet",
+  "x": 19050,
+  "z": 20647
+ },
+ {
+  "name": "Montesi",
+  "type": "hamlet",
+  "x": 4713,
+  "z": 12256
+ },
+ {
+  "name": "Monticelli",
+  "type": "hamlet",
+  "x": 7010,
+  "z": 20589
+ },
+ {
+  "name": "Montonale Basso",
+  "type": "hamlet",
+  "x": -11169,
+  "z": 29435
+ },
+ {
+  "name": "Moriondo di Sopra",
+  "type": "hamlet",
+  "x": -15796,
+  "z": 11865
+ },
+ {
+  "name": "Moriondo di Sotto",
+  "type": "hamlet",
+  "x": -15734,
+  "z": 11611
+ },
+ {
+  "name": "Mornaga",
+  "type": "hamlet",
+  "x": -5441,
+  "z": 3899
+ },
+ {
+  "name": "Moro Freoni",
+  "type": "hamlet",
+  "x": 14765,
+  "z": 23453
+ },
+ {
+  "name": "Moron",
+  "type": "hamlet",
+  "x": 17476,
+  "z": 19812
+ },
+ {
+  "name": "Morsone",
+  "type": "hamlet",
+  "x": -18303,
+  "z": 16128
+ },
+ {
+  "name": "Mulino di Pannone",
+  "type": "hamlet",
+  "x": 17393,
+  "z": -20203
+ },
+ {
+  "name": "Mura",
+  "type": "hamlet",
+  "x": -15446,
+  "z": 15477
+ },
+ {
+  "name": "Murla",
+  "type": "hamlet",
+  "x": 13118,
+  "z": 26164
+ },
+ {
+  "name": "Muro",
+  "type": "hamlet",
+  "x": -15091,
+  "z": 11306
+ },
+ {
+  "name": "Musaga",
+  "type": "hamlet",
+  "x": -4434,
+  "z": 1010
+ },
+ {
+  "name": "Musio",
+  "type": "hamlet",
+  "x": 3075,
+  "z": -8933
+ },
+ {
+  "name": "Nassar",
+  "type": "hamlet",
+  "x": 17523,
+  "z": 23753
+ },
+ {
+  "name": "Navesa",
+  "type": "hamlet",
+  "x": 14121,
+  "z": 11774
+ },
+ {
+  "name": "Negarine",
+  "type": "hamlet",
+  "x": 14814,
+  "z": 21882
+ },
+ {
+  "name": "Noroni",
+  "type": "hamlet",
+  "x": 17830,
+  "z": 13320
+ },
+ {
+  "name": "Novagli",
+  "type": "hamlet",
+  "x": -17235,
+  "z": 9313
+ },
+ {
+  "name": "Novezza",
+  "type": "hamlet",
+  "x": 11651,
+  "z": -1086
+ },
+ {
+  "name": "Olanda",
+  "type": "hamlet",
+  "x": 16885,
+  "z": 28371
+ },
+ {
+  "name": "Oldesio",
+  "type": "hamlet",
+  "x": 636,
+  "z": -3909
+ },
+ {
+  "name": "Oltre Stazione",
+  "type": "hamlet",
+  "x": 18246,
+  "z": 23987
+ },
+ {
+  "name": "Olzano",
+  "type": "hamlet",
+  "x": 633,
+  "z": -4672
+ },
+ {
+  "name": "Orbie",
+  "type": "hamlet",
+  "x": 18595,
+  "z": 11701
+ },
+ {
+  "name": "Ori-Vegerana",
+  "type": "hamlet",
+  "x": 9648,
+  "z": 9666
+ },
+ {
+  "name": "Ospedaletto",
+  "type": "hamlet",
+  "x": 10817,
+  "z": 21470
+ },
+ {
+  "name": "Ossan",
+  "type": "hamlet",
+  "x": 14615,
+  "z": 20755
+ },
+ {
+  "name": "Ossenigo",
+  "type": "hamlet",
+  "x": 15104,
+  "z": 2696
+ },
+ {
+  "name": "Padaro",
+  "type": "hamlet",
+  "x": 11774,
+  "z": -26113
+ },
+ {
+  "name": "Paioi",
+  "type": "hamlet",
+  "x": 18916,
+  "z": 23282
+ },
+ {
+  "name": "Paladi",
+  "type": "hamlet",
+  "x": 18026,
+  "z": 13920
+ },
+ {
+  "name": "Palazzin",
+  "type": "hamlet",
+  "x": 19953,
+  "z": 17649
+ },
+ {
+  "name": "Palazzo Bertoldi",
+  "type": "hamlet",
+  "x": 18366,
+  "z": 16801
+ },
+ {
+  "name": "Pannone",
+  "type": "hamlet",
+  "x": 17033,
+  "z": -20083
+ },
+ {
+  "name": "Pargone",
+  "type": "hamlet",
+  "x": -17458,
+  "z": 10425
+ },
+ {
+  "name": "Parisi",
+  "type": "hamlet",
+  "x": 6752,
+  "z": -23843
+ },
+ {
+  "name": "Pasina",
+  "type": "hamlet",
+  "x": 10340,
+  "z": -22939
+ },
+ {
+  "name": "Pasola",
+  "type": "hamlet",
+  "x": 2206,
+  "z": 2998
+ },
+ {
+  "name": "Passablù di sopra",
+  "type": "hamlet",
+  "x": -8293,
+  "z": -26984
+ },
+ {
+  "name": "Passablù di sotto",
+  "type": "hamlet",
+  "x": -8509,
+  "z": -27210
+ },
+ {
+  "name": "Pastoedo",
+  "type": "hamlet",
+  "x": 8469,
+  "z": -25561
+ },
+ {
+  "name": "Paverno",
+  "type": "hamlet",
+  "x": 16266,
+  "z": 17616
+ },
+ {
+  "name": "Pelizzara",
+  "type": "hamlet",
+  "x": 6934,
+  "z": 18845
+ },
+ {
+  "name": "Peracque",
+  "type": "hamlet",
+  "x": -18460,
+  "z": 9500
+ },
+ {
+  "name": "Pertegà",
+  "type": "hamlet",
+  "x": 19321,
+  "z": 12901
+ },
+ {
+  "name": "Pertica",
+  "type": "hamlet",
+  "x": 3872,
+  "z": 15067
+ },
+ {
+  "name": "Piazze",
+  "type": "hamlet",
+  "x": 10464,
+  "z": -24347
+ },
+ {
+  "name": "Picedo",
+  "type": "hamlet",
+  "x": -14933,
+  "z": 16350
+ },
+ {
+  "name": "Pieve",
+  "type": "hamlet",
+  "x": 3682,
+  "z": -7997
+ },
+ {
+  "name": "Pieve Vecchia",
+  "type": "hamlet",
+  "x": -19654,
+  "z": -3416
+ },
+ {
+  "name": "Pieve Vecchia",
+  "type": "hamlet",
+  "x": -12510,
+  "z": 15335
+ },
+ {
+  "name": "Pion",
+  "type": "hamlet",
+  "x": 2778,
+  "z": 2207
+ },
+ {
+  "name": "Piovere",
+  "type": "hamlet",
+  "x": -133,
+  "z": -3012
+ },
+ {
+  "name": "Piovezzano",
+  "type": "hamlet",
+  "x": 7347,
+  "z": 21692
+ },
+ {
+  "name": "Piscol",
+  "type": "hamlet",
+  "x": 10467,
+  "z": -23943
+ },
+ {
+  "name": "Pizzon",
+  "type": "hamlet",
+  "x": 1643,
+  "z": 9531
+ },
+ {
+  "name": "Platano",
+  "type": "hamlet",
+  "x": 8486,
+  "z": 9919
+ },
+ {
+  "name": "Pol",
+  "type": "hamlet",
+  "x": 8453,
+  "z": 22127
+ },
+ {
+  "name": "Polzone",
+  "type": "hamlet",
+  "x": 675,
+  "z": -9147
+ },
+ {
+  "name": "Pompegnino",
+  "type": "hamlet",
+  "x": -16381,
+  "z": 8032
+ },
+ {
+  "name": "Pontepier",
+  "type": "hamlet",
+  "x": -17773,
+  "z": 10185
+ },
+ {
+  "name": "Ponti",
+  "type": "hamlet",
+  "x": 3291,
+  "z": -9290
+ },
+ {
+  "name": "Ponton",
+  "type": "hamlet",
+  "x": 7947,
+  "z": 19785
+ },
+ {
+  "name": "Por",
+  "type": "hamlet",
+  "x": -5343,
+  "z": -26551
+ },
+ {
+  "name": "Porcella",
+  "type": "hamlet",
+  "x": 13531,
+  "z": 26810
+ },
+ {
+  "name": "Porcino",
+  "type": "hamlet",
+  "x": 9481,
+  "z": 9055
+ },
+ {
+  "name": "Porticcioli",
+  "type": "hamlet",
+  "x": -13454,
+  "z": 11564
+ },
+ {
+  "name": "Porton",
+  "type": "hamlet",
+  "x": 7416,
+  "z": 13698
+ },
+ {
+  "name": "Pozze",
+  "type": "hamlet",
+  "x": 19179,
+  "z": 9162
+ },
+ {
+  "name": "Pozzo",
+  "type": "hamlet",
+  "x": 5796,
+  "z": -2812
+ },
+ {
+  "name": "Pozzo",
+  "type": "hamlet",
+  "x": 1436,
+  "z": 15428
+ },
+ {
+  "name": "Pozzoi",
+  "type": "hamlet",
+  "x": 5855,
+  "z": 19340
+ },
+ {
+  "name": "Prà del Lac",
+  "type": "hamlet",
+  "x": 19255,
+  "z": -22053
+ },
+ {
+  "name": "Prabestemà",
+  "type": "hamlet",
+  "x": 3597,
+  "z": 5860
+ },
+ {
+  "name": "Prabi",
+  "type": "hamlet",
+  "x": 13594,
+  "z": -25675
+ },
+ {
+  "name": "Prabione",
+  "type": "hamlet",
+  "x": 1494,
+  "z": -5898
+ },
+ {
+  "name": "Prada Alta",
+  "type": "hamlet",
+  "x": 5560,
+  "z": 2774
+ },
+ {
+  "name": "Prada Bassa",
+  "type": "hamlet",
+  "x": 4739,
+  "z": 4229
+ },
+ {
+  "name": "Pradonego",
+  "type": "hamlet",
+  "x": 9119,
+  "z": 5866
+ },
+ {
+  "name": "Prato Saiano",
+  "type": "hamlet",
+  "x": 13384,
+  "z": -22981
+ },
+ {
+  "name": "Prè di Ledro",
+  "type": "hamlet",
+  "x": 5771,
+  "z": -18603
+ },
+ {
+  "name": "Preabocco",
+  "type": "hamlet",
+  "x": 11878,
+  "z": 8027
+ },
+ {
+  "name": "Pregasio",
+  "type": "hamlet",
+  "x": 2567,
+  "z": -6819
+ },
+ {
+  "name": "Priezzo",
+  "type": "hamlet",
+  "x": 3310,
+  "z": -8932
+ },
+ {
+  "name": "Proale",
+  "type": "hamlet",
+  "x": 19584,
+  "z": 14156
+ },
+ {
+  "name": "Prognol",
+  "type": "hamlet",
+  "x": 16294,
+  "z": 16924
+ },
+ {
+  "name": "Provale",
+  "type": "hamlet",
+  "x": 19610,
+  "z": 14115
+ },
+ {
+  "name": "Provalo",
+  "type": "hamlet",
+  "x": 19882,
+  "z": 5611
+ },
+ {
+  "name": "Pur",
+  "type": "hamlet",
+  "x": 2311,
+  "z": -18899
+ },
+ {
+  "name": "Purano",
+  "type": "hamlet",
+  "x": 15342,
+  "z": 15304
+ },
+ {
+  "name": "Quena",
+  "type": "hamlet",
+  "x": 19429,
+  "z": 16862
+ },
+ {
+  "name": "Raffa",
+  "type": "hamlet",
+  "x": -13786,
+  "z": 14451
+ },
+ {
+  "name": "Ragano",
+  "type": "hamlet",
+  "x": 7451,
+  "z": 19094
+ },
+ {
+  "name": "Ragno",
+  "type": "hamlet",
+  "x": -127,
+  "z": -4501
+ },
+ {
+  "name": "Rampeniga",
+  "type": "hamlet",
+  "x": -19768,
+  "z": 15361
+ },
+ {
+  "name": "Ravazzol",
+  "type": "hamlet",
+  "x": 15975,
+  "z": 17193
+ },
+ {
+  "name": "Ravizzoli",
+  "type": "hamlet",
+  "x": -7430,
+  "z": -26731
+ },
+ {
+  "name": "Renzano",
+  "type": "hamlet",
+  "x": -15163,
+  "z": 9531
+ },
+ {
+  "name": "Renzon",
+  "type": "hamlet",
+  "x": 8769,
+  "z": 8259
+ },
+ {
+  "name": "Reolto",
+  "type": "hamlet",
+  "x": 14058,
+  "z": 23015
+ },
+ {
+  "name": "Residences Sant'Antonio",
+  "type": "hamlet",
+  "x": -16103,
+  "z": -10896
+ },
+ {
+  "name": "Righi",
+  "type": "hamlet",
+  "x": 7012,
+  "z": -23537
+ },
+ {
+  "name": "Rionda",
+  "type": "hamlet",
+  "x": 19474,
+  "z": 18799
+ },
+ {
+  "name": "Rivoltella del Garda",
+  "type": "hamlet",
+  "x": -10499,
+  "z": 26848
+ },
+ {
+  "name": "Rivolti",
+  "type": "hamlet",
+  "x": 8680,
+  "z": 16980
+ },
+ {
+  "name": "Ronconi",
+  "type": "hamlet",
+  "x": 19933,
+  "z": 6300
+ },
+ {
+  "name": "Ronchi",
+  "type": "hamlet",
+  "x": 7000,
+  "z": 21220
+ },
+ {
+  "name": "Ronchi",
+  "type": "hamlet",
+  "x": 666,
+  "z": 27210
+ },
+ {
+  "name": "Rovizza",
+  "type": "hamlet",
+  "x": -4761,
+  "z": 28134
+ },
+ {
+  "name": "Rucco",
+  "type": "hamlet",
+  "x": -16096,
+  "z": 9473
+ },
+ {
+  "name": "Ruina",
+  "type": "hamlet",
+  "x": 8639,
+  "z": 11848
+ },
+ {
+  "name": "S. Cristina",
+  "type": "hamlet",
+  "x": 18299,
+  "z": 12786
+ },
+ {
+  "name": "Saline",
+  "type": "hamlet",
+  "x": 4451,
+  "z": 23082
+ },
+ {
+  "name": "San Bartolomeo",
+  "type": "hamlet",
+  "x": -13950,
+  "z": 9224
+ },
+ {
+  "name": "San Biagio",
+  "type": "hamlet",
+  "x": -19078,
+  "z": 12759
+ },
+ {
+  "name": "San Carlo",
+  "type": "hamlet",
+  "x": -19699,
+  "z": 15806
+ },
+ {
+  "name": "San Cipriano",
+  "type": "hamlet",
+  "x": -15465,
+  "z": 27885
+ },
+ {
+  "name": "San Faustino",
+  "type": "hamlet",
+  "x": 4328,
+  "z": 22751
+ },
+ {
+  "name": "San Giacomo",
+  "type": "hamlet",
+  "x": 9306,
+  "z": -21921
+ },
+ {
+  "name": "San Giacomo",
+  "type": "hamlet",
+  "x": -18114,
+  "z": 12271
+ },
+ {
+  "name": "San Giorgio di Valpolicella",
+  "type": "hamlet",
+  "x": 11287,
+  "z": 18036
+ },
+ {
+  "name": "San Giovanni al Monte",
+  "type": "hamlet",
+  "x": 13441,
+  "z": -30421
+ },
+ {
+  "name": "San Lorenzo",
+  "type": "hamlet",
+  "x": 1887,
+  "z": 30212
+ },
+ {
+  "name": "San Michele",
+  "type": "hamlet",
+  "x": -12187,
+  "z": 7666
+ },
+ {
+  "name": "San Michele",
+  "type": "hamlet",
+  "x": -1006,
+  "z": -10940
+ },
+ {
+  "name": "San Michele-Montecchio",
+  "type": "hamlet",
+  "x": 7994,
+  "z": 9780
+ },
+ {
+  "name": "San Peretto",
+  "type": "hamlet",
+  "x": 19127,
+  "z": 18602
+ },
+ {
+  "name": "San Pietro",
+  "type": "hamlet",
+  "x": -11916,
+  "z": 29859
+ },
+ {
+  "name": "San Polo",
+  "type": "hamlet",
+  "x": -16600,
+  "z": 29035
+ },
+ {
+  "name": "San Quirico",
+  "type": "hamlet",
+  "x": -17344,
+  "z": 14541
+ },
+ {
+  "name": "San Tomaso",
+  "type": "hamlet",
+  "x": 11221,
+  "z": -22818
+ },
+ {
+  "name": "San Tomaso",
+  "type": "hamlet",
+  "x": -15925,
+  "z": 29048
+ },
+ {
+  "name": "San Tomè",
+  "type": "hamlet",
+  "x": 14554,
+  "z": -20435
+ },
+ {
+  "name": "San Valentino",
+  "type": "hamlet",
+  "x": 15030,
+  "z": -9542
+ },
+ {
+  "name": "San Verolo",
+  "type": "hamlet",
+  "x": 2397,
+  "z": 10803
+ },
+ {
+  "name": "San Vito al Mantico",
+  "type": "hamlet",
+  "x": 14838,
+  "z": 25090
+ },
+ {
+  "name": "Sanico",
+  "type": "hamlet",
+  "x": -8996,
+  "z": 5935
+ },
+ {
+  "name": "Sant'Antonio",
+  "type": "hamlet",
+  "x": 17307,
+  "z": -17637
+ },
+ {
+  "name": "Sant'Antonio",
+  "type": "hamlet",
+  "x": -16405,
+  "z": -9860
+ },
+ {
+  "name": "Santa Barbara",
+  "type": "hamlet",
+  "x": 17360,
+  "z": -22259
+ },
+ {
+  "name": "Santa Cristina",
+  "type": "hamlet",
+  "x": 19084,
+  "z": 24037
+ },
+ {
+  "name": "Santa Cristina",
+  "type": "hamlet",
+  "x": -3025,
+  "z": 28748
+ },
+ {
+  "name": "Santa Lucia",
+  "type": "hamlet",
+  "x": 9123,
+  "z": 21935
+ },
+ {
+  "name": "Santa Maria di Laghel",
+  "type": "hamlet",
+  "x": 13016,
+  "z": -25682
+ },
+ {
+  "name": "Sasso",
+  "type": "hamlet",
+  "x": -4634,
+  "z": 750
+ },
+ {
+  "name": "Saugolo",
+  "type": "hamlet",
+  "x": 10826,
+  "z": 3394
+ },
+ {
+  "name": "Secastello",
+  "type": "hamlet",
+  "x": 2692,
+  "z": -8771
+ },
+ {
+  "name": "Sedena",
+  "type": "hamlet",
+  "x": -18006,
+  "z": 24002
+ },
+ {
+  "name": "Sega",
+  "type": "hamlet",
+  "x": 7625,
+  "z": 20059
+ },
+ {
+  "name": "Sermerio",
+  "type": "hamlet",
+  "x": 1015,
+  "z": -8376
+ },
+ {
+  "name": "Serniga",
+  "type": "hamlet",
+  "x": -13064,
+  "z": 8219
+ },
+ {
+  "name": "Sevror",
+  "type": "hamlet",
+  "x": -5955,
+  "z": -28184
+ },
+ {
+  "name": "Siberie",
+  "type": "hamlet",
+  "x": 12982,
+  "z": 30372
+ },
+ {
+  "name": "Sompriezzo",
+  "type": "hamlet",
+  "x": 2962,
+  "z": -8933
+ },
+ {
+  "name": "Sorte",
+  "type": "hamlet",
+  "x": 18747,
+  "z": 25266
+ },
+ {
+  "name": "Sottomonte",
+  "type": "hamlet",
+  "x": 13439,
+  "z": 25649
+ },
+ {
+  "name": "Sparavieri",
+  "type": "hamlet",
+  "x": 18834,
+  "z": 22960
+ },
+ {
+  "name": "Sperane",
+  "type": "hamlet",
+  "x": 3290,
+  "z": 8570
+ },
+ {
+  "name": "Spiazzi Bazzega",
+  "type": "hamlet",
+  "x": 11448,
+  "z": 6033
+ },
+ {
+  "name": "Spiazzi Piani",
+  "type": "hamlet",
+  "x": 11413,
+  "z": 6650
+ },
+ {
+  "name": "Spiazzo",
+  "type": "hamlet",
+  "x": 17720,
+  "z": 9911
+ },
+ {
+  "name": "Sportsman-Ceola",
+  "type": "hamlet",
+  "x": 721,
+  "z": 15194
+ },
+ {
+  "name": "Staffalo",
+  "type": "hamlet",
+  "x": 915,
+  "z": 27467
+ },
+ {
+  "name": "Strada",
+  "type": "hamlet",
+  "x": -5703,
+  "z": -27140
+ },
+ {
+  "name": "Supiane",
+  "type": "hamlet",
+  "x": -10454,
+  "z": 7902
+ },
+ {
+  "name": "Tacconi",
+  "type": "hamlet",
+  "x": 6622,
+  "z": 20750
+ },
+ {
+  "name": "Teggiole",
+  "type": "hamlet",
+  "x": 10026,
+  "z": -24119
+ },
+ {
+  "name": "Teglie",
+  "type": "hamlet",
+  "x": -19186,
+  "z": 4462
+ },
+ {
+  "name": "Tegnente",
+  "type": "hamlet",
+  "x": 9654,
+  "z": 23538
+ },
+ {
+  "name": "Tempesta",
+  "type": "hamlet",
+  "x": 11318,
+  "z": -15668
+ },
+ {
+  "name": "Terminei",
+  "type": "hamlet",
+  "x": 16707,
+  "z": 13956
+ },
+ {
+  "name": "Tessari",
+  "type": "hamlet",
+  "x": 10387,
+  "z": 10936
+ },
+ {
+  "name": "Tezza",
+  "type": "hamlet",
+  "x": 10783,
+  "z": 26055
+ },
+ {
+  "name": "Tezzetta",
+  "type": "hamlet",
+  "x": 10923,
+  "z": 25783
+ },
+ {
+  "name": "Tommasi",
+  "type": "hamlet",
+  "x": 18481,
+  "z": 3485
+ },
+ {
+  "name": "Tordoi",
+  "type": "hamlet",
+  "x": 18062,
+  "z": -13217
+ },
+ {
+  "name": "Tramanal",
+  "type": "hamlet",
+  "x": 19951,
+  "z": 19206
+ },
+ {
+  "name": "Tre Capitelli",
+  "type": "hamlet",
+  "x": -18203,
+  "z": -5115
+ },
+ {
+  "name": "Tre Capitelli",
+  "type": "hamlet",
+  "x": -17921,
+  "z": -5479
+ },
+ {
+  "name": "Trebbio",
+  "type": "hamlet",
+  "x": -19381,
+  "z": -993
+ },
+ {
+  "name": "Tremalzo",
+  "type": "hamlet",
+  "x": -2151,
+  "z": -15725
+ },
+ {
+  "name": "Tresnico",
+  "type": "hamlet",
+  "x": -11790,
+  "z": 7907
+ },
+ {
+  "name": "Trobiolo",
+  "type": "hamlet",
+  "x": -15876,
+  "z": 9698
+ },
+ {
+  "name": "Ustecchio",
+  "type": "hamlet",
+  "x": 4513,
+  "z": -9533
+ },
+ {
+  "name": "Vaggimàl",
+  "type": "hamlet",
+  "x": 19068,
+  "z": 10237
+ },
+ {
+  "name": "Vaialta di sopra",
+  "type": "hamlet",
+  "x": 17384,
+  "z": 13918
+ },
+ {
+  "name": "Vaialta di sotto",
+  "type": "hamlet",
+  "x": 17076,
+  "z": 14260
+ },
+ {
+  "name": "Vaio",
+  "type": "hamlet",
+  "x": 14739,
+  "z": 17778
+ },
+ {
+  "name": "Val di Fies",
+  "type": "hamlet",
+  "x": 5556,
+  "z": 1537
+ },
+ {
+  "name": "Val Senaga",
+  "type": "hamlet",
+  "x": 5548,
+  "z": 2791
+ },
+ {
+  "name": "Valdefort",
+  "type": "hamlet",
+  "x": 11256,
+  "z": 1508
+ },
+ {
+  "name": "Vallaon",
+  "type": "hamlet",
+  "x": 13686,
+  "z": 25323
+ },
+ {
+  "name": "Vallene",
+  "type": "hamlet",
+  "x": 19705,
+  "z": 4009
+ },
+ {
+  "name": "Valverde",
+  "type": "hamlet",
+  "x": -19504,
+  "z": 10915
+ },
+ {
+  "name": "Vantone",
+  "type": "hamlet",
+  "x": -16739,
+  "z": -5687
+ },
+ {
+  "name": "Vanzelle",
+  "type": "hamlet",
+  "x": 7410,
+  "z": 14789
+ },
+ {
+  "name": "Vaona",
+  "type": "hamlet",
+  "x": 18411,
+  "z": 6368
+ },
+ {
+  "name": "Varano",
+  "type": "hamlet",
+  "x": 17253,
+  "z": -20553
+ },
+ {
+  "name": "Varone",
+  "type": "hamlet",
+  "x": -9858,
+  "z": 28720
+ },
+ {
+  "name": "Venzo",
+  "type": "hamlet",
+  "x": 5023,
+  "z": -1786
+ },
+ {
+  "name": "Verago",
+  "type": "hamlet",
+  "x": 13774,
+  "z": 12710
+ },
+ {
+  "name": "Vermongoi",
+  "type": "hamlet",
+  "x": -12442,
+  "z": -30139
+ },
+ {
+  "name": "Vesio",
+  "type": "hamlet",
+  "x": 2346,
+  "z": -10350
+ },
+ {
+  "name": "Vezzane",
+  "type": "hamlet",
+  "x": 9543,
+  "z": 7492
+ },
+ {
+  "name": "Vicina",
+  "type": "hamlet",
+  "x": -13361,
+  "z": 27288
+ },
+ {
+  "name": "Vico",
+  "type": "hamlet",
+  "x": -18604,
+  "z": -1007
+ },
+ {
+  "name": "Vico",
+  "type": "hamlet",
+  "x": -12653,
+  "z": -5772
+ },
+ {
+  "name": "Viè",
+  "type": "hamlet",
+  "x": -13095,
+  "z": -5597
+ },
+ {
+  "name": "Vigole",
+  "type": "hamlet",
+  "x": -8942,
+  "z": 6708
+ },
+ {
+  "name": "Vigolo",
+  "type": "hamlet",
+  "x": 18926,
+  "z": 17677
+ },
+ {
+  "name": "Villa",
+  "type": "hamlet",
+  "x": 2358,
+  "z": -9999
+ },
+ {
+  "name": "Villa",
+  "type": "hamlet",
+  "x": 18833,
+  "z": 17413
+ },
+ {
+  "name": "Villa",
+  "type": "hamlet",
+  "x": -4027,
+  "z": 1974
+ },
+ {
+  "name": "Villa Maria",
+  "type": "hamlet",
+  "x": 13642,
+  "z": 22102
+ },
+ {
+  "name": "Villaggi Santi-San Fermo",
+  "type": "hamlet",
+  "x": 3427,
+  "z": 20391
+ },
+ {
+  "name": "Villaggio Alpino",
+  "type": "hamlet",
+  "x": 10854,
+  "z": 1245
+ },
+ {
+  "name": "Villaggio Monte Cucco",
+  "type": "hamlet",
+  "x": 12007,
+  "z": 2420
+ },
+ {
+  "name": "Villaggio Sant'Antonio",
+  "type": "hamlet",
+  "x": -16368,
+  "z": -10192
+ },
+ {
+  "name": "Villanova",
+  "type": "hamlet",
+  "x": 2677,
+  "z": 4995
+ },
+ {
+  "name": "Virle",
+  "type": "hamlet",
+  "x": 917,
+  "z": 11013
+ },
+ {
+  "name": "Vò Destro",
+  "type": "hamlet",
+  "x": 19268,
+  "z": -4461
+ },
+ {
+  "name": "Vò Sinistro",
+  "type": "hamlet",
+  "x": 19205,
+  "z": -4239
+ },
+ {
+  "name": "Voiandes",
+  "type": "hamlet",
+  "x": 1959,
+  "z": -9595
+ },
+ {
+  "name": "Volponi",
+  "type": "hamlet",
+  "x": -3576,
+  "z": 28312
+ },
+ {
+  "name": "Volta di No",
+  "type": "hamlet",
+  "x": 10155,
+  "z": -24436
+ },
+ {
+  "name": "Voltino",
+  "type": "hamlet",
+  "x": 4057,
+  "z": -9387
+ },
+ {
+  "name": "Zel",
+  "type": "hamlet",
+  "x": 1013,
+  "z": 10434
+ },
+ {
+  "name": "Zignago",
+  "type": "hamlet",
+  "x": 5479,
+  "z": -2178
+ },
+ {
+  "name": "Zivelongo",
+  "type": "hamlet",
+  "x": 17484,
+  "z": 8567
+ },
+ {
+  "name": "Zuane Brenzone",
+  "type": "hamlet",
+  "x": 7496,
+  "z": 12238
+ },
+ {
+  "name": "Zuane di Sopra",
+  "type": "hamlet",
+  "x": 7596,
+  "z": 12846
+ },
+ {
+  "name": "Zuane di Sotto",
+  "type": "hamlet",
+  "x": 7858,
+  "z": 12570
+ },
+ {
+  "name": "Zucchetti",
+  "type": "hamlet",
+  "x": 7549,
+  "z": -23078
+ },
+ {
+  "name": "Zuino",
+  "type": "hamlet",
+  "x": -5068,
+  "z": 2442
+ },
+ {
+  "name": "Zuliani",
+  "type": "hamlet",
+  "x": 3874,
+  "z": 23200
+ },
+ {
+  "name": "Zumiani",
+  "type": "hamlet",
+  "x": 7738,
+  "z": -23881
+ },
+ {
+  "name": "Zumiè",
+  "type": "hamlet",
+  "x": -13120,
+  "z": -5876
+ }
+]
