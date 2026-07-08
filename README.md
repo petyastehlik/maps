@@ -6,6 +6,10 @@ picked, then the map loads and enters by itself (last choice remembered in
 localStorage; deliberately not part of the URL). All areas share one engine — per-area config lives in
 `src/areas.js`, per-area data under `public/data/<area>/`.
 
+Live at **https://petyastehlik.github.io/maps/** — deploys via
+`.github/workflows/pages.yml` when a squashed snapshot is pushed to the
+`pages` remote (local history stays private).
+
 **Halouny · Brdy/Hřebeny** (49.8878 N, 14.1978 E — K Vodárně 132), ČÚZK open data:
 
 - **DMR 5G** — LIDAR (airborne laser scanning) terrain model, 2 m grid, EPSG:5514
