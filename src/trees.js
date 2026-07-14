@@ -32,6 +32,8 @@ const GRID = 2048;            // forest.bin resolution
 const vertexShader = /* glsl */ `
   ${heightChunkGLSL}
   uniform vec3 uCameraPos;
+  uniform sampler2D uRegion;
+  uniform float uRegionOn;
   attribute vec3 aTree;   // x, z, height
   attribute float aTint;
   varying vec2 vUvq;
@@ -50,6 +52,10 @@ const vertexShader = /* glsl */ `
     float w = 0.52 + 0.3 * fract(aTree.z * 7.31); // width variety from height hash
     // fade by shrinking (keeps the material opaque — no transparent pass)
     float grow = 1.0 - smoothstep(${(RADIUS * 0.82).toFixed(1)}, ${RADIUS.toFixed(1)}, camDist);
+    if (uRegionOn > 0.5) {
+      vec2 ruv = vec2(aTree.x / uExtent.x + 0.5, 0.5 - aTree.y / uExtent.y);
+      grow *= smoothstep(0.25, 0.75, texture2D(uRegion, ruv).r);
+    }
     vec3 local = position * vec3(h * w, h, h * w) * grow;
     vec3 world = vec3(aTree.x + local.x, ground - 0.4 + local.y, aTree.y + local.z);
     vUvq = uv;
@@ -193,6 +199,8 @@ export async function initTrees(terrainUniforms) {
       uDetailOn: terrainUniforms.uDetailOn,
       uExag: terrainUniforms.uExag,
       uExtent: terrainUniforms.uExtent,
+      uRegion: terrainUniforms.uRegion,
+      uRegionOn: terrainUniforms.uRegionOn,
       uCameraPos: terrainUniforms.uCameraPos,
       uSunDir: terrainUniforms.uSunDir,
       uSunColor: terrainUniforms.uSunColor,

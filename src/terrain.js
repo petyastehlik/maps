@@ -12,7 +12,7 @@
 
 import * as THREE from 'three';
 import { HeightField } from './HeightField.js';
-import { dataUrl } from './area.js';
+import { dataUrl, area } from './area.js';
 import { decodeGrayPNG } from './png16.js';
 
 const MESH_SEGMENTS = 2048;
@@ -108,6 +108,8 @@ const fragmentShader = /* glsl */ `
   uniform float uCloudCover;
   uniform vec2 uCloudDrift;
   uniform sampler2D uWater;    // water polygon mask, blended in place
+  uniform sampler2D uRegion;   // region-of-interest fade (1 = clear, 0 = fog)
+  uniform float uRegionOn;
   varying vec2 vUv;
   varying float vRelHeight;
   varying float vSkirt;
@@ -255,9 +257,34 @@ const fragmentShader = /* glsl */ `
     float fog = smoothstep(uFogNear, uFogFar, dist0);
     color = mix(color, uFogColor, fog);
 
+    // region of interest: beyond the border buffer the world sinks into
+    // a haze slightly lighter than the distance fog (region.png mask)
+    if (uRegionOn > 0.5) {
+      float rf = texture2D(uRegion, vUv).r;
+      color = mix(uFogColor * 1.28 + vec3(0.045), color, rf);
+    }
+
     gl_FragColor = vec4(color, 1.0);
   }
 `;
+
+/** Region-of-interest mask (region.png) → texture; flips uRegionOn. */
+async function loadRegionMask(uniforms) {
+  if (!area.regionMask) return;
+  try {
+    const blob = await (await fetch(dataUrl('region.png'))).blob();
+    // ImageBitmap ignores THREE's flipY — flip at decode: baked row 0 is
+    // north, the shader's v axis points north too
+    const bitmap = await createImageBitmap(blob, { imageOrientation: 'flipY' });
+    const t = new THREE.Texture(bitmap);
+    t.flipY = false;
+    t.colorSpace = THREE.NoColorSpace;
+    t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
+    t.needsUpdate = true;
+    uniforms.uRegion.value = t;
+    uniforms.uRegionOn.value = 1;
+  } catch { /* mask is optional — the map just shows everything */ }
+}
 
 // 1×1 zero mask so the terrain renders dry until initWater() swaps it in
 function blankWaterMask() {
@@ -511,6 +538,8 @@ export async function loadTerrain(onProgress, caps = {}) {
     uCloudCover: { value: 0.32 },
     uCloudDrift: { value: new THREE.Vector2(0.011, 0.004) },
     uWater: { value: blankWaterMask() },
+    uRegion: { value: blankWaterMask() },
+    uRegionOn: { value: 0 },
   };
 
   const makeMaterial = (edgeMode, offset) => new THREE.ShaderMaterial({
@@ -574,5 +603,6 @@ export async function loadTerrain(onProgress, caps = {}) {
   }
 
   const heightField = new HeightField(relHeights, meta);
+  loadRegionMask(material.uniforms); // async — fades in when ready
   return { mesh: group, material, heightField, meta, updateDetail };
 }

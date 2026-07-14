@@ -68,6 +68,7 @@ const overlayVertexShader = /* glsl */ `
   attribute vec2 aPerp;
   attribute float aSide;
   varying vec3 vWorldPos;
+  varying float vSide;
 
   void main() {
     float h = sampleHeight(position.xz);
@@ -75,6 +76,7 @@ const overlayVertexShader = /* glsl */ `
     float dist = distance(p, uCameraPos);
     p.xz += aPerp * (aSide * dist * uPxK);
     vWorldPos = p;
+    vSide = aSide;
     gl_Position = projectionMatrix * viewMatrix * vec4(p, 1.0);
   }
 `;
@@ -85,11 +87,14 @@ const overlayFragmentShader = /* glsl */ `
   uniform float uFogNear;
   uniform float uFogFar;
   varying vec3 vWorldPos;
+  varying float vSide;
 
   void main() {
     float dist = distance(vWorldPos, uCameraPos);
     float fade = 1.0 - smoothstep(uFogNear * 1.4, uFogFar * 1.4, dist);
-    gl_FragColor = vec4(uColor, 0.95 * fade);
+    // white casing under a signal-red core — visible on any terrain
+    vec3 color = mix(uColor, vec3(1.0), step(0.5, abs(vSide)));
+    gl_FragColor = vec4(color, 0.95 * fade);
   }
 `;
 
@@ -223,7 +228,7 @@ export async function initMtb(terrainUniforms) {
       uFogNear: terrainUniforms.uFogNear,
       uFogFar: terrainUniforms.uFogFar,
       uPxK: { value: 0 },
-      uColor: { value: new THREE.Color('#ff7a2f') },
+      uColor: { value: new THREE.Color('#e62a44') }, // brand signal red
     },
     transparent: true,
     depthWrite: false,

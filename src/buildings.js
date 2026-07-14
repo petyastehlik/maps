@@ -89,6 +89,9 @@ const fragmentShader = /* glsl */ `
   uniform float uFogFar;
   uniform vec3 uCameraPos;
   uniform float uMode;
+  uniform vec2 uExtent;
+  uniform sampler2D uRegion;
+  uniform float uRegionOn;
   varying vec3 vNormal;
   varying vec3 vWorldPos;
   varying vec3 vOrtho;
@@ -111,6 +114,13 @@ const fragmentShader = /* glsl */ `
     float dist = distance(vWorldPos, uCameraPos);
     float fog = smoothstep(uFogNear, uFogFar, dist);
     color = mix(color, uFogColor, fog);
+    if (uRegionOn > 0.5) {
+      // outside the region of interest buildings dissolve into the haze
+      vec2 ruv = vec2(vWorldPos.x / uExtent.x + 0.5, 0.5 - vWorldPos.z / uExtent.y);
+      float rf = texture2D(uRegion, ruv).r;
+      if (rf < 0.32) discard;
+      color = mix(uFogColor * 1.28 + vec3(0.045), color, rf);
+    }
     gl_FragColor = vec4(color, 1.0); // opaque — buildings are sub-pixel at the range cutoff
   }
 `;
@@ -167,6 +177,8 @@ export async function initBuildings(terrainUniforms) {
       uAmbient: terrainUniforms.uAmbient,
       uAmbientLvl: terrainUniforms.uAmbientLvl,
       uFogColor: terrainUniforms.uFogColor,
+      uRegion: terrainUniforms.uRegion,
+      uRegionOn: terrainUniforms.uRegionOn,
       uFogNear: terrainUniforms.uFogNear,
       uFogFar: terrainUniforms.uFogFar,
       uMode: terrainUniforms.uMode,

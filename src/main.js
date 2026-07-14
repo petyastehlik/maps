@@ -320,14 +320,24 @@ if (area.mtbRoutes && mtb.pick) {
     applyHighlight();
   });
 
+  // the highlight answers instantly (it's the aiming feedback), but the
+  // card waits for a settled hover — sweeping the cursor across a zoomed-out
+  // map otherwise strobes cards on every route it crosses
+  const CARD_DWELL_MS = 400;
+  let cardTimer = 0;
   const processMove = (x, y) => {
     const hit = routeAt(x, y);
     if (hit === hoveredRoute) return;
     hoveredRoute = hit;
     applyHighlight();
     canvas.style.cursor = hoveredRoute ? 'pointer' : '';
-    // hovering the line previews its card right there (clicks pin it)
-    labels.previewRoute(hoveredRoute?.sig ?? null, x, y);
+    clearTimeout(cardTimer);
+    if (hoveredRoute) {
+      const sig = hoveredRoute.sig;
+      cardTimer = setTimeout(() => labels.previewRoute(sig, x, y), CARD_DWELL_MS);
+    } else {
+      labels.previewRoute(null);
+    }
   };
   canvas.addEventListener('pointermove', (e) => {
     if (e.buttons) return; // not mid-drag
@@ -353,6 +363,7 @@ if (area.mtbRoutes && mtb.pick) {
       applyHighlight();
       return;
     }
+    clearTimeout(cardTimer);
     if (hits.length === 1) {
       labels.selectRouteAt(hits[0].sig, e.clientX, e.clientY); // pins
     } else {

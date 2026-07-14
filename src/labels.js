@@ -6,7 +6,7 @@
 // /data/info.json) that tracks its anchor on screen.
 
 import * as THREE from 'three';
-import { dataUrl, assetUrl } from './area.js';
+import { dataUrl, assetUrl, area } from './area.js';
 import { DIFF_NAMES } from './mtb.js';
 import { TRAIL_COLORS } from './trails.js';
 import { t, lang, numLocale } from './i18n.js';
@@ -69,8 +69,32 @@ const TYPE_CHIP = {
  *        lift, accent?}] — accent tints the pill (e.g. the blue address pin)
  * @param routeLabels cycle-route badge anchors from initCycling
  */
+/** Sampler for the region-of-interest mask: (x, z) → 0..1, or null. */
+async function loadRegionSampler() {
+  if (!area.regionMask) return null;
+  try {
+    const blob = await (await fetch(dataUrl('region.png'))).blob();
+    const bitmap = await createImageBitmap(blob);
+    const canvas = document.createElement('canvas');
+    canvas.width = bitmap.width;
+    canvas.height = bitmap.height;
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    ctx.drawImage(bitmap, 0, 0);
+    const { data, width, height } = ctx.getImageData(0, 0, bitmap.width, bitmap.height);
+    return (x, z, halfW, halfH) => {
+      const i = Math.round((x / (2 * halfW) + 0.5) * (width - 1));
+      const j = Math.round((z / (2 * halfH) + 0.5) * (height - 1));
+      if (i < 0 || i >= width || j < 0 || j >= height) return 0;
+      return data[(j * width + i) * 4] / 255;
+    };
+  } catch { return null; }
+}
+
 export async function initLabels({ camera, heightField, getExag, container, specials = [], routeLabels = [], onRouteSelect = null }) {
   const landmarks = await (await fetch(dataUrl('landmarks.json'))).json();
+  const regionAt = await loadRegionSampler();
+  const halfW = area.halfWidthM, halfH = area.halfHeightM;
+  const inRegion = (lm) => !regionAt || regionAt(lm.x, lm.z, halfW, halfH) >= 0.45;
   let info = {};
   try {
     const res = await fetch(dataUrl(`info_${lang}.json`));
@@ -120,6 +144,7 @@ export async function initLabels({ camera, heightField, getExag, container, spec
   for (const lm of specials) addItem(lm);
   for (const lm of landmarks) {
     if (!TIERS[lm.type]) continue;
+    if (!inRegion(lm)) continue; // fogged-out places don't advertise
     // the centre pin already says Halouny — skip the duplicate OSM node
     if (lm.name === 'Halouny') continue;
     // OSM sometimes has two nodes for one summit — keep the first
@@ -332,12 +357,12 @@ export async function initLabels({ camera, heightField, getExag, container, spec
     div.innerHTML =
       `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">` +
       `<path d="M${PAD},${H - PAD} L${pts.join(' L')} L${W - PAD},${H - PAD} Z"` +
-      ` fill="rgba(255,122,47,0.14)" stroke="none"/>` +
+      ` fill="rgba(0,79,91,0.10)" stroke="none"/>` +
       `<polyline points="${pts.join(' ')}" fill="none"` +
-      ` stroke="#ff7a2f" stroke-width="1.4"/>` +
-      `<text x="${PAD}" y="9" fill="rgba(243,234,217,0.6)"` +
+      ` stroke="#004f5b" stroke-width="1.4"/>` +
+      `<text x="${PAD}" y="9" fill="rgba(0,79,91,0.65)"` +
       ` font-size="8" font-family="IBM Plex Mono">${Math.round(max)} m</text>` +
-      `<text x="${W - PAD}" y="9" text-anchor="end" fill="rgba(243,234,217,0.6)"` +
+      `<text x="${W - PAD}" y="9" text-anchor="end" fill="rgba(0,79,91,0.65)"` +
       ` font-size="8" font-family="IBM Plex Mono">min ${Math.round(min)} m</text>` +
       `</svg>`;
     return div;

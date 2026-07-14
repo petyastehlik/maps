@@ -42,11 +42,13 @@ const ALL_AREAS = {
     // would triple the fetch and render load for nothing lake-related
     osmBuildingsBounds: { south: 45.40, west: 10.45, north: 45.99, east: 10.99 },
 
-    // high over the south basin, the whole lake running north to Riva
-    homeView: { x: -3500, z: 2000, azimuth: -0.05, polarDeg: 58, distance: 40000 },
+    // over the Trentino basin: Riva–Arco front and centre, Ledro left
+    homeView: { x: 6500, z: -17500, azimuth: -0.05, polarDeg: 56, distance: 21000 },
     pins: [],
     // the signed 7xx MTB network (routes.json) replaces the OSM line layers
     mtbRoutes: true,
+    // everything beyond Provincia di Trento +3 km sinks into fog (region.png)
+    regionMask: true,
     attributionHtml: 'elevation © <a href="https://tinitaly.pi.ingv.it" '
       + 'target="_blank">INGV — TINITALY</a> (CC BY 4.0) · Ortofoto AGEA 2012 — PCN · © '
       + '<a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>'

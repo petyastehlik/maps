@@ -8,8 +8,9 @@ import path from 'node:path';
 import { defineConfig } from 'vite';
 
 export default defineConfig(({ command, mode }) => {
-  const areas = process.env.VITE_AREAS
-    ?? (command === 'build' && mode === 'production' ? 'garda' : '');
+  // Garda only everywhere — dev included; VITE_AREAS=halouny,garda brings
+  // the second area back when needed
+  const areas = process.env.VITE_AREAS ?? 'garda';
   const shipped = areas.split(',').map((s) => s.trim()).filter(Boolean);
 
   return {

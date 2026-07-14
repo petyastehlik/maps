@@ -7,21 +7,28 @@
 <link rel="stylesheet" href="fonts/fonts.css" />
 <style>
   :root {
-    --ink: #171310;
-    --ink-veil: rgba(23, 19, 16, 0.78);
-    --paper: #f3ead9;
-    --paper-dim: rgba(243, 234, 217, 0.62);
-    --hairline: rgba(243, 234, 217, 0.16);
-    --accent: #ff7a2f;
+    /* Garda Trentino brand: petrol primary, yellow accent, cream paper
+       (tokens lifted from gardatrentino.it: --app-color-primary #004f5b,
+       accent #ffd200, footer #003E48, cream #F6F3E2) */
+    --ink: #004f5b;
+    --ink-dark: #003e48;
+    --ink-veil: rgba(246, 243, 226, 0.92);
+    --paper: #0b3038;
+    --paper-dim: rgba(0, 79, 91, 0.66);
+    --hairline: rgba(0, 79, 91, 0.22);
+    --accent: #ffd200;
+    --cream: #f6f3e2;
     --mono: 'IBM Plex Mono', monospace;
-    --serif: 'Fraunces', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+      Roboto, Arial, sans-serif; /* stand-in for the brand's LFT Etica */
+    --serif: var(--sans);
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { height: 100%; overflow: hidden; }
   body {
-    background: radial-gradient(120% 90% at 50% 0%, #2b3947 0%, #1d2530 45%, #12151c 100%);
+    background: radial-gradient(120% 90% at 50% 0%, #f6f3e2 0%, #ece7d2 55%, #dcd6bd 100%);
     color: var(--paper);
-    font-family: var(--mono);
+    font-family: var(--sans);
     font-size: 12px;
   }
   #app, #app canvas { position: absolute; inset: 0; }
@@ -29,11 +36,12 @@
 
   .panel {
     position: absolute;
-    background: var(--ink-veil);
+    background: rgba(255, 255, 255, 0.94);
     -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
     border: 1px solid var(--hairline);
-    border-radius: 3px;
+    border-radius: 4px;
+    box-shadow: 0 2px 14px rgba(0, 62, 72, 0.14);
   }
   .label {
     font-size: 9px;
@@ -51,7 +59,7 @@
   }
   #rotate-pad button {
     width: 52px; height: 52px; border-radius: 50%;
-    background: var(--ink-veil); border: 1px solid var(--hairline);
+    background: rgba(255, 255, 255, 0.94); border: 1px solid var(--hairline);
     -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
     color: var(--paper); font-size: 24px; line-height: 1; cursor: pointer;
     touch-action: none; user-select: none; -webkit-user-select: none;
@@ -59,6 +67,7 @@
   }
   #rotate-pad button:active { background: var(--accent); color: var(--ink);
     border-color: var(--accent); }
+  #panel-toggle { background: rgba(255, 255, 255, 0.94); }
   #panel-toggle {
     display: none;
     position: absolute; bottom: 14px; left: 14px; z-index: 6;
@@ -86,22 +95,22 @@
   .seg { display: flex; flex: 1; gap: 7px; }
   .seg button {
     flex: 1; padding: 7px 0;
-    background: transparent; border: 1px solid var(--hairline); border-radius: 2px;
+    background: transparent; border: 1px solid var(--hairline); border-radius: 4px;
     cursor: pointer;
     color: var(--paper-dim);
-    font-family: var(--mono); font-size: 10px;
-    letter-spacing: 0.16em; text-transform: uppercase;
+    font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
     transition: background 0.15s, color 0.15s, border-color 0.15s;
   }
-  .seg button.active { background: var(--accent); border-color: var(--accent);
-    color: var(--ink); font-weight: 500; }
-  .seg button:not(.active):hover { color: var(--paper); border-color: var(--paper-dim); }
+  .seg button.active { background: var(--ink); border-color: var(--ink);
+    color: #fff; font-weight: 600; }
+  .seg button:not(.active):hover { color: var(--ink); border-color: var(--paper-dim); }
 
   #controls input[type="range"] { flex: 1; -webkit-appearance: none; appearance: none;
     height: 2px; background: var(--hairline); border-radius: 1px; outline: none; }
   #controls input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none; appearance: none;
-    width: 13px; height: 13px; border-radius: 50%;
+    width: 14px; height: 14px; border-radius: 50%;
     background: var(--accent); border: 2px solid var(--ink);
     cursor: ew-resize;
   }
@@ -109,17 +118,17 @@
 
   #help-open {
     width: 100%; margin-top: 12px;
-    background: transparent; border: 1px solid var(--hairline); border-radius: 2px;
-    color: var(--paper-dim); font-family: var(--mono); font-size: 10px;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    padding: 7px 10px; cursor: pointer; transition: color 0.15s, border-color 0.15s;
+    background: var(--accent); border: 1px solid var(--accent); border-radius: 4px;
+    color: var(--ink); font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 8px 10px; cursor: pointer; transition: filter 0.15s;
   }
-  #help-open:hover { color: var(--paper); border-color: var(--paper-dim); }
+  #help-open:hover { filter: brightness(1.06); }
 
   /* ── help dialog ─────────────────────────────── */
   #help {
     position: absolute; inset: 0; z-index: 9;
-    background: rgba(10, 8, 7, 0.5);
+    background: rgba(0, 62, 72, 0.35);
     display: grid; place-items: center;
   }
   #help[hidden] { display: none; }
@@ -153,7 +162,7 @@
   .lm { position: absolute; left: 0; top: 0; opacity: 0; visibility: hidden;
         will-change: transform, opacity; transition: opacity 0.18s;
         pointer-events: auto; cursor: pointer; }
-  .lm:hover b { color: var(--accent) !important; }
+  .lm:hover b { color: #ffd200 !important; }
   .lm i { position: absolute; width: 3px; height: 3px; border-radius: 50%;
           left: -1.5px; top: -1.5px; background: rgba(243, 234, 217, 0.5); }
   .lm b { position: absolute; bottom: 5px; left: 0; transform: translateX(-50%);
@@ -161,19 +170,19 @@
           text-shadow: 0 1px 2px rgba(10, 8, 7, 0.85), 0 0 8px rgba(10, 8, 7, 0.45); }
   .lm.flip b { bottom: auto; top: 7px; }
   .lm-town b { font: 500 11px var(--mono); letter-spacing: 0.14em;
-               text-transform: uppercase; color: var(--paper); }
+               text-transform: uppercase; color: #f3ead9; }
   .lm-village b { font: 400 9.5px var(--mono); letter-spacing: 0.1em;
                   text-transform: uppercase; color: rgba(243, 234, 217, 0.8); }
   .lm-hamlet b { font: 400 8.5px var(--mono); letter-spacing: 0.08em;
                  text-transform: uppercase; color: rgba(243, 234, 217, 0.62); }
-  .lm-peak b { font: italic 500 12px var(--serif); letter-spacing: 0.02em;
+  .lm-peak b { font: italic 500 12px 'Fraunces', serif; letter-spacing: 0.02em;
                color: rgba(243, 234, 217, 0.88); }
   .lm-peak b small { font: 400 8.5px var(--mono); font-style: normal;
                      color: rgba(243, 234, 217, 0.55); }
   .lm-castle b { font: 600 10.5px var(--serif); letter-spacing: 0.05em;
                  color: rgba(255, 196, 142, 0.92); }
   .lm-castle i { background: rgba(255, 122, 47, 0.7); }
-  .lm-home b { font: 500 12px var(--mono); letter-spacing: 0.1em; color: var(--paper);
+  .lm-home b { font: 500 12px var(--mono); letter-spacing: 0.1em; color: #f3ead9;
                background: var(--ink-veil); border: 1px solid var(--hairline);
                border-radius: 2px; padding: 5px 10px; }
   .lm-home i { display: none; }
@@ -203,14 +212,15 @@
   /* ── landmark info card ──────────────────────── */
   #lm-popup {
     position: absolute; left: 0; top: 0; z-index: 8; width: 268px;
-    background: var(--ink-veil);
+    background: rgba(255, 255, 255, 0.96);
     -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
-    border: 1px solid var(--hairline); border-radius: 3px;
+    border: 1px solid var(--hairline); border-radius: 4px;
+    box-shadow: 0 2px 14px rgba(0, 62, 72, 0.16);
     padding: 12px 14px 12px;
   }
   #lm-popup[hidden] { display: none; }
   #lm-popup .type { margin-bottom: 4px; padding-right: 18px; }
-  #lm-popup h3 { font-family: var(--serif); font-style: italic; font-weight: 500;
+  #lm-popup h3 { font-family: var(--sans); font-weight: 700; color: var(--ink);
     font-size: 19px; line-height: 1.15; margin-bottom: 6px; }
   #lm-popup p { font-size: 11px; line-height: 1.6; color: var(--paper);
     opacity: 0.88; margin: 4px 0 2px; }
@@ -222,7 +232,8 @@
     border-radius: 2px; opacity: 0.6; cursor: pointer; transition: opacity 0.15s; }
   #lm-popup .thumbs img:hover { opacity: 0.9; }
   #lm-popup .thumbs img.on { opacity: 1; outline: 1px solid var(--accent); }
-  #lm-popup a { display: inline-block; margin-top: 8px; color: var(--accent);
+  #lm-popup a { display: inline-block; margin-top: 8px; color: var(--ink);
+    font-weight: 700;
     font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
     text-decoration: none; }
   #lm-popup a:hover { text-decoration: underline; }
@@ -266,16 +277,16 @@
     position: absolute; right: 0; top: 50%; z-index: 6;
     transform: translateY(-50%);
     writing-mode: vertical-rl; padding: 14px 7px;
-    background: var(--ink-veil); border: 1px solid var(--hairline);
-    border-right: 0; border-radius: 3px 0 0 3px;
+    background: rgba(255, 255, 255, 0.94); border: 1px solid var(--hairline);
+    border-right: 0; border-radius: 4px 0 0 4px;
     -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
     color: var(--paper-dim); font-family: var(--mono); font-size: 10px;
     letter-spacing: 0.22em; cursor: pointer;
     transition: color 0.15s, background 0.15s;
   }
   #routelist-tab:hover { color: var(--paper); }
-  #routelist-tab.active { background: var(--accent); border-color: var(--accent);
-    color: var(--ink); font-weight: 500; }
+  #routelist-tab.active { background: var(--ink); border-color: var(--ink);
+    color: #fff; font-weight: 600; }
   #routelist {
     top: 0; right: 0; bottom: 0; z-index: 7;
     width: min(438px, calc(100vw - 16px));
@@ -285,15 +296,25 @@
     display: flex; flex-direction: column;
   }
   #routelist.open { transform: translateX(0); }
+  #routelist .searchbox { position: relative; margin: 0 40px 10px 2px; }
   #routelist input {
-    margin: 0 40px 10px 2px; padding: 7px 10px;
-    background: transparent; border: 1px solid var(--hairline); border-radius: 2px;
-    color: var(--paper); font-family: var(--mono); font-size: 11px;
+    width: 100%; padding: 7px 28px 7px 10px;
+    background: #fff; border: 1px solid var(--hairline); border-radius: 4px;
+    color: var(--paper); font-family: var(--sans); font-size: 11px;
     letter-spacing: 0.05em; outline: none;
   }
-  #routelist input:focus { border-color: var(--paper-dim); }
+  #routelist input:focus { border-color: var(--ink); }
   #routelist input::placeholder { color: var(--paper-dim); opacity: 0.7; }
   #routelist input::-webkit-search-cancel-button { -webkit-appearance: none; }
+  #routelist .searchbox .clear {
+    position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+    width: 22px; height: 22px; border: 0; border-radius: 50%;
+    background: transparent; color: var(--paper-dim);
+    font-size: 15px; line-height: 1; cursor: pointer;
+  }
+  #routelist .searchbox .clear:hover { color: var(--ink);
+    background: rgba(0, 79, 91, 0.08); }
+  #routelist .searchbox .clear[hidden] { display: none; }
   #routelist .close {
     position: absolute; top: 14px; right: 12px;
     background: none; border: 0; color: var(--paper-dim);
@@ -314,8 +335,8 @@
     transition: color 0.15s, border-color 0.15s;
   }
   #routelist .sort button:hover { color: var(--paper); }
-  #routelist .sort button.on { color: var(--ink); background: var(--accent);
-    border-color: var(--accent); font-weight: 500; }
+  #routelist .sort button.on { color: #fff; background: var(--ink);
+    border-color: var(--ink); font-weight: 600; }
   #routelist .row {
     display: grid; grid-template-columns: 44px 1fr 48px 42px 40px;
     gap: 8px; align-items: center; width: 100%;
@@ -323,7 +344,7 @@
     border-bottom: 1px solid rgba(243, 234, 217, 0.07);
     font-family: var(--mono); text-align: left; cursor: pointer;
   }
-  #routelist .row:hover { background: rgba(255, 122, 47, 0.09); }
+  #routelist .row:hover { background: rgba(255, 210, 0, 0.18); }
   #routelist .row b {
     justify-self: start; padding: 2px 5px; border-radius: 2px;
     font-size: 9px; font-weight: 500; letter-spacing: 0.06em; color: #f4f1e8;
@@ -333,20 +354,20 @@
   #routelist .row.variant span { color: var(--paper-dim); }
   #routelist .row small { font-size: 9px; color: var(--paper-dim);
     text-align: right; font-variant-numeric: tabular-nums; }
-  #routelist .row small.dist { color: var(--accent); opacity: 0.8; }
+  #routelist .row small.dist { color: var(--ink); font-weight: 600; opacity: 0.85; }
 
   /* click on a shared stretch: which route did you mean? */
   #route-chooser { position: fixed; left: 0; top: 0; z-index: 8;
     min-width: 190px; padding: 5px;
-    background: var(--ink-veil); border: 1px solid var(--hairline);
-    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.97); border: 1px solid var(--hairline);
+    border-radius: 4px; box-shadow: 0 2px 14px rgba(0, 62, 72, 0.16);
     -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
   #route-chooser[hidden] { display: none; }
   #route-chooser button { display: flex; gap: 8px; align-items: center;
     width: 100%; padding: 5px 7px; background: none; border: 0;
     border-radius: 2px; font-family: var(--mono); text-align: left;
     cursor: pointer; }
-  #route-chooser button:hover { background: rgba(255, 122, 47, 0.14); }
+  #route-chooser button:hover { background: rgba(255, 210, 0, 0.22); }
   #route-chooser b { flex: none; padding: 2px 5px; border-radius: 2px;
     font-size: 9px; font-weight: 500; letter-spacing: 0.06em; color: #f4f1e8;
     background: #555; }
@@ -361,7 +382,7 @@
   #lang { position: fixed; top: 14px; left: 50%; transform: translateX(-50%); z-index: 12;
     display: flex; gap: 5px; }
   #lang button {
-    padding: 5px 9px; background: var(--ink-veil);
+    padding: 5px 9px; background: rgba(255, 255, 255, 0.94);
     border: 1px solid var(--hairline); border-radius: 2px; cursor: pointer;
     color: var(--paper-dim); font-family: var(--mono); font-size: 9px;
     letter-spacing: 0.14em;
@@ -369,14 +390,14 @@
     transition: color 0.15s, border-color 0.15s;
   }
   #lang button:hover { color: var(--paper); }
-  #lang button.on { background: var(--accent); border-color: var(--accent);
-    color: var(--ink); font-weight: 500; }
+  #lang button.on { background: var(--ink); border-color: var(--ink);
+    color: #fff; font-weight: 600; }
 
   #lm-tip { position: fixed; left: 0; top: 0; z-index: 40; max-width: 230px;
-    padding: 5px 8px; background: rgba(20, 16, 12, 0.96);
-    border: 1px solid rgba(243, 234, 217, 0.25); border-radius: 4px;
-    font: 400 9.5px var(--mono); line-height: 1.5; letter-spacing: 0.03em;
-    color: var(--paper); pointer-events: none; }
+    padding: 5px 8px; background: rgba(0, 62, 72, 0.97);
+    border: 1px solid rgba(255, 210, 0, 0.4); border-radius: 4px;
+    font: 400 9.5px var(--sans); line-height: 1.5; letter-spacing: 0.03em;
+    color: #fff; pointer-events: none; }
   #lm-tip[hidden] { display: none; }
   #lm-popup .close {
     position: absolute; top: 8px; right: 10px;
@@ -393,63 +414,68 @@
   /* ── probe readout ───────────────────────────── */
   #readout {
     position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
-    background: var(--ink-veil);
+    background: rgba(255, 255, 255, 0.94);
     -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
-    border: 1px solid var(--hairline); border-radius: 3px;
+    border: 1px solid var(--hairline); border-radius: 4px;
+    box-shadow: 0 2px 14px rgba(0, 62, 72, 0.14);
     padding: 8px 16px; font-size: 11px; letter-spacing: 0.04em;
+    font-family: var(--mono);
     white-space: nowrap; opacity: 0; transition: opacity 0.2s;
   }
   #readout.visible { opacity: 1; }
-  #readout .elev { color: var(--accent); font-weight: 500; }
+  #readout .elev { color: var(--ink); font-weight: 700; }
 
   /* ── scale bar + attribution ─────────────────── */
   #scalebar { position: absolute; bottom: 54px; right: 20px; text-align: right; }
   #scalebar .bar {
-    height: 4px; border: 1px solid var(--paper-dim); border-top: 0;
+    height: 4px; border: 1px solid rgba(255, 255, 255, 0.85); border-top: 0;
     margin-top: 3px; margin-left: auto;
+    filter: drop-shadow(0 1px 1px rgba(0, 62, 72, 0.6));
   }
-  #scalebar .label { font-size: 10px; letter-spacing: 0.1em; color: var(--paper-dim); }
+  #scalebar .label { font-size: 10px; letter-spacing: 0.1em; color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 62, 72, 0.7); font-family: var(--mono); }
   #attribution {
     position: absolute; bottom: 20px; right: 20px;
-    font-size: 9px; letter-spacing: 0.06em; color: var(--paper-dim);
+    font-size: 9px; letter-spacing: 0.06em; color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 1px 2px rgba(0, 62, 72, 0.7);
   }
-  #attribution a { color: var(--paper-dim); }
+  #attribution a { color: rgba(255, 255, 255, 0.85); }
 
   /* ── loading veil ────────────────────────────── */
   #veil {
     position: absolute; inset: 0; z-index: 10;
-    background: radial-gradient(120% 90% at 50% 0%, #2b3947 0%, #1d2530 45%, #12151c 100%);
+    background: radial-gradient(120% 90% at 50% 0%, #00606f 0%, #004f5b 55%, #003e48 100%);
     display: grid; place-items: center;
     transition: opacity 0.7s;
   }
   #veil.done { opacity: 0; pointer-events: none; }
   #veil .inner { text-align: center; }
-  #veil h1 { font-family: var(--serif); font-style: italic; font-weight: 500;
-    font-size: 56px; letter-spacing: 0.01em; }
+  #veil h1 { font-family: var(--sans); font-weight: 800;
+    font-size: 54px; letter-spacing: 0.01em; color: var(--cream); }
   #veil h1 span { color: var(--accent); }
   #veil .sub { margin-top: 10px; font-size: 11px; letter-spacing: 0.22em;
-    text-transform: uppercase; color: var(--paper-dim); }
+    text-transform: uppercase; color: rgba(246, 243, 226, 0.7); }
   #veil-areas { display: flex; gap: 10px; justify-content: center; margin-top: 22px; }
   #veil-areas button {
-    background: transparent; border: 1px solid var(--hairline); border-radius: 2px;
-    cursor: pointer; color: var(--paper-dim);
-    font-family: var(--mono); font-size: 11px;
-    letter-spacing: 0.2em; text-transform: uppercase;
-    padding: 9px 26px;
+    background: transparent; border: 1px solid rgba(246, 243, 226, 0.35); border-radius: 4px;
+    cursor: pointer; color: rgba(246, 243, 226, 0.85);
+    font-family: var(--sans); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    padding: 10px 26px;
     transition: background 0.15s, color 0.15s, border-color 0.15s;
   }
-  #veil-areas button:hover { border-color: var(--paper-dim); color: var(--paper); }
-  #veil-areas button.active { background: var(--accent); border-color: var(--accent); color: #171310; }
-  #veil-areas button.last { border-color: var(--paper-dim); }
+  #veil-areas button:hover { border-color: var(--cream); color: var(--cream); }
+  #veil-areas button.active { background: var(--accent); border-color: var(--accent); color: #004f5b; }
+  #veil-areas button.last { border-color: rgba(246, 243, 226, 0.7); }
   #veil-areas button.dim { opacity: 0.45; }
   #veil-hint { margin-top: 14px; min-height: 15px; font-size: 10px;
-    letter-spacing: 0.08em; color: var(--paper-dim); }
+    letter-spacing: 0.08em; color: rgba(246, 243, 226, 0.6); }
   #veil .progress[hidden] { display: none; }
-  #veil .progress { margin: 26px auto 0; width: 220px; height: 1px; background: var(--hairline); }
-  #veil .progress i { display: block; height: 1px; width: 0%; background: var(--accent);
+  #veil .progress { margin: 26px auto 0; width: 220px; height: 2px; background: rgba(246, 243, 226, 0.25); }
+  #veil .progress i { display: block; height: 2px; width: 0%; background: var(--accent);
     transition: width 0.3s; }
   #veil .status { margin-top: 12px; font-size: 10px; letter-spacing: 0.14em;
-    text-transform: uppercase; color: var(--paper-dim); }
+    text-transform: uppercase; color: rgba(246, 243, 226, 0.6); }
 </style>
 </head>
 <body>
@@ -457,17 +483,17 @@
 
   <div id="compass" class="panel" title="N = north" data-i18n-title>
     <svg viewBox="0 0 42 42" id="compass-needle">
-      <circle cx="21" cy="21" r="14" fill="none" stroke="rgba(243,234,217,.16)" stroke-width="1"/>
-      <path d="M21 10 L24 23 L21 20.5 L18 23 Z" fill="#ff7a2f"/>
-      <path d="M21 34 L24 23 L21 25.5 L18 23 Z" fill="rgba(243,234,217,.35)"/>
+      <circle cx="21" cy="21" r="14" fill="none" stroke="rgba(0,79,91,.25)" stroke-width="1"/>
+      <path d="M21 10 L24 23 L21 20.5 L18 23 Z" fill="#e62a44"/>
+      <path d="M21 34 L24 23 L21 25.5 L18 23 Z" fill="rgba(0,79,91,.35)"/>
       <text x="21" y="6.5" text-anchor="middle" font-size="6" font-family="IBM Plex Mono"
-            fill="#ff7a2f" font-weight="600">N</text>
+            fill="#e62a44" font-weight="600">N</text>
       <text x="21" y="41" text-anchor="middle" font-size="6" font-family="IBM Plex Mono"
-            fill="rgba(243,234,217,.55)">S</text>
+            fill="rgba(0,79,91,.6)">S</text>
       <text x="38.5" y="24" text-anchor="middle" font-size="6" font-family="IBM Plex Mono"
-            fill="rgba(243,234,217,.55)">E</text>
+            fill="rgba(0,79,91,.6)">E</text>
       <text x="3.5" y="24" text-anchor="middle" font-size="6" font-family="IBM Plex Mono"
-            fill="rgba(243,234,217,.55)" data-i18n="W">W</text>
+            fill="rgba(0,79,91,.6)" data-i18n="W">W</text>
     </svg>
   </div>
 

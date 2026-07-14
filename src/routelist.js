@@ -27,7 +27,10 @@ export function initRouteList({ routes, controls, labels }) {
   panel.id = 'routelist';
   panel.className = 'panel';
   panel.innerHTML = `
-    <input type="search" placeholder="${t('search routes…')}" spellcheck="false">
+    <div class="searchbox">
+      <input type="search" placeholder="${t('search routes…')}" spellcheck="false">
+      <button class="clear" hidden aria-label="clear">×</button>
+    </div>
     <div class="sort"><span class="label">${t('sort')}</span></div>
     <button class="close">×</button>
     <div class="rows"></div>`;
@@ -114,11 +117,18 @@ export function initRouteList({ routes, controls, labels }) {
   }
 
   const search = panel.querySelector('input');
+  const clearButton = panel.querySelector('.searchbox .clear');
   search.addEventListener('input', () => {
     const q = fold(search.value.trim());
+    clearButton.hidden = search.value === '';
     for (const row of rows.children) {
       row.hidden = q !== '' && !row.dataset.hay.includes(q) && !fuzzy(q, row.dataset.hay);
     }
+  });
+  clearButton.addEventListener('click', () => {
+    search.value = '';
+    search.dispatchEvent(new Event('input'));
+    search.focus(); // deliberate: the user is clearly mid-search here
   });
   search.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && search.value) {
@@ -133,8 +143,7 @@ export function initRouteList({ routes, controls, labels }) {
     open = v;
     panel.classList.toggle('open', v);
     tab.classList.toggle('active', v);
-    if (v && window.innerWidth >= 760) search.focus();
-    if (!v) labels.previewRoute(null);
+    if (!v) labels.previewRoute(null); // no autofocus on open — typing is opt-in
   }
   tab.addEventListener('click', () => setOpen(!open));
   panel.querySelector('.close').addEventListener('click', () => setOpen(false));
