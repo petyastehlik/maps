@@ -450,7 +450,7 @@
     position: absolute; inset: 0; z-index: 10;
     background: radial-gradient(120% 90% at 50% 0%, #00606f 0%, #004f5b 55%, #003e48 100%);
     display: grid; place-items: center;
-    transition: opacity 0.7s;
+    transition: opacity 1.3s ease;
   }
   #veil.done { opacity: 0; pointer-events: none; }
   #veil .inner { text-align: center; }
@@ -460,6 +460,7 @@
   #veil .sub { margin-top: 10px; font-size: 11px; letter-spacing: 0.22em;
     text-transform: uppercase; color: rgba(246, 243, 226, 0.7); }
   #veil-areas { display: flex; gap: 10px; justify-content: center; margin-top: 22px; }
+  #veil-areas[hidden] { display: none; } /* display:flex must not beat [hidden] */
   #veil-areas button {
     background: transparent; border: 1px solid rgba(246, 243, 226, 0.35); border-radius: 4px;
     cursor: pointer; color: rgba(246, 243, 226, 0.85);

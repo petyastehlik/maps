@@ -63,6 +63,7 @@ export class MapCameraControls {
     this.cur = { target: new THREE.Vector3(), azimuth: 0, polar: 1, distance: 6500 };
     this.goal = { target: new THREE.Vector3(), azimuth: 0, polar: 1, distance: 6500 };
     this.flight = false;        // double-click / reset glide → slower target tau
+    this.flightTau = 0.35;      // glide time constant; the intro flight slows it
     this.lift = 0;              // terrain-collision lift, smoothed separately
 
     this.drag = null;           // { mode: 'pan'|'rotate', ... }
@@ -173,6 +174,7 @@ export class MapCameraControls {
    *  deliberately NOT a gesture — finger-angle noise during a pinch made
    *  the map spin; the on-screen ⟲⟳ buttons rotate instead. */
   beginGesture() {
+    this.flightTau = 0.35;
     this.drag = null; // the one-finger pan yields to the gesture
     const [a, b] = [...this.touchPts.values()];
     this.gesture = {
@@ -381,16 +383,26 @@ export class MapCameraControls {
 
     // goal → current smoothing
     const rotTau = this.drag?.mode === 'rotate' ? 0.09 : 0.16;
-    const targetTau = this.flight ? 0.35 : 0.11;
+    const targetTau = this.flight ? this.flightTau : 0.11;
     cur.azimuth += (goal.azimuth - cur.azimuth) * damp(rotTau, dt);
     cur.polar += (goal.polar - cur.polar) * damp(rotTau, dt);
-    cur.distance += (goal.distance - cur.distance) * damp(0.12, dt);
+    cur.distance += (goal.distance - cur.distance) * damp(this.flight ? this.flightTau : 0.12, dt);
     if (!this.drag || this.drag.mode !== 'pan') {
       cur.target.x += (goal.target.x - cur.target.x) * damp(targetTau, dt);
       cur.target.z += (goal.target.z - cur.target.z) * damp(targetTau, dt);
     }
     cur.target.y += (goal.target.y - cur.target.y) * damp(0.45, dt);
-    if (this.flight && cur.target.distanceTo(goal.target) < 4) this.flight = false;
+    if (this.flight && cur.target.distanceTo(goal.target) < 6
+        && Math.abs(cur.distance - goal.distance) < goal.distance * 0.01
+        && Math.abs(cur.azimuth - goal.azimuth) < 0.01) {
+      // land exactly — the asymptote would otherwise creep for seconds
+      cur.target.copy(goal.target);
+      cur.distance = goal.distance;
+      cur.azimuth = goal.azimuth;
+      cur.polar = goal.polar;
+      this.flight = false;
+      this.flightTau = 0.35;
+    }
 
     // spherical placement — position angle saturates at POS_MAX_POLAR; any
     // remaining polar becomes an upward view pitch applied after lookAt

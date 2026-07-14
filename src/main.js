@@ -44,7 +44,10 @@ const veilTitle = document.getElementById('veil-title');
 const veilHint = document.getElementById('veil-hint');
 const veilProgress = document.querySelector('#veil .progress');
 const autoEnter = consumeAutoEnter();
-function enterMap() { veil.classList.add('done'); }
+function enterMap() {
+  veil.classList.add('done');
+  window.__enterMap?.();
+}
 
 const areaButtons = new Map();
 const veilAreas = document.getElementById('veil-areas');
@@ -88,8 +91,10 @@ for (const a of Object.values(AREAS)) {
   areaButtons.set(a.id, button);
 }
 
-if (autoEnter) {
-  showLoadingState(); // the pick already happened before the reload
+const singleArea = Object.keys(AREAS).length === 1;
+if (singleArea) veilAreas.hidden = true; // no choice — no buttons
+if (autoEnter || singleArea) {
+  showLoadingState(); // picked before the reload, or nothing to pick
 } else {
   veilTitle.innerHTML = `${t('Maps')}<span>.</span>`;
   veilProgress.hidden = true;
@@ -153,8 +158,9 @@ const controls = new MapCameraControls(
   camera, renderer.domElement, heightField, () => material.uniforms.uExag.value);
 
 const home = area.homeView;
-controls.setView(home.x, home.z, home.azimuth,
-  THREE.MathUtils.degToRad(home.polarDeg), home.distance);
+let introFlight = true; // cold start → high overview gliding down to home
+controls.setView(home.x, home.z, home.azimuth + 0.55,
+  THREE.MathUtils.degToRad(24), home.distance * 2.7);
 // returning from a lost-context reload: restore the exact previous view
 try {
   const resume = JSON.parse(sessionStorage.getItem('mapa:resume') ?? 'null');
@@ -162,6 +168,7 @@ try {
   if (resume && resume.enter === area.id) {
     controls.setView(resume.x, resume.z, resume.azimuth, resume.polar, resume.distance);
     resumeSun = resume.sun;
+    introFlight = false;
   }
 } catch { /* cold start */ }
 
@@ -578,6 +585,14 @@ renderer.setAnimationLoop(() => {
 });
 
 // hooks for scripted dogfooding (harmless in production)
+window.__enterMap = () => {
+  if (!introFlight) return;
+  introFlight = false;
+  controls.flightTau = 1.15; // one long cinematic glide down into the basin
+  controls.flyToView(home.x, home.z, home.azimuth,
+    THREE.MathUtils.degToRad(home.polarDeg), home.distance);
+};
+
 window.__map = { camera, controls, heightField, material, labels, trees, buildings, water, mtb, renderer, THREE };
 
 veilBar.style.width = '100%';
