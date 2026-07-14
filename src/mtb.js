@@ -11,7 +11,10 @@ import { fetchAsset } from './area.js';
 
 const LIFT = 9;
 
+// pills/cards keep the difficulty colours; the LINES are all one loud red —
+// seeing the routes is the whole point of the map
 export const DIFF_COLORS = { 1: '#1774d6', 2: '#d92537', 3: '#0c0c0c' };
+const LINE_COLOR = '#e8232f';
 export const DIFF_NAMES = { 1: 'easy', 2: 'moderate', 3: 'difficult' };
 
 // Difficult tours are near-black — invisible over dark forest ortho without
@@ -137,8 +140,8 @@ export async function initMtb(terrainUniforms) {
   const pickGrid = new Map(); // "cx,cz" → [{ax,az,bx,bz,r}]
   let oCase = 0; // casing verts fill the front of the buffers…
   let oCore = segmentCount * 2 * 2; // …core verts the back half
+  const c = new THREE.Color(LINE_COLOR);
   for (const r of routes) {
-    const c = new THREE.Color(DIFF_COLORS[r.difficulty] ?? DIFF_COLORS[2]);
     for (const run of r.segs) {
       for (let i = 0; i < run.length - 1; i++) {
         const [ax, az] = run[i], [bx, bz] = run[i + 1];
@@ -232,7 +235,7 @@ export async function initMtb(terrainUniforms) {
       uFogNear: terrainUniforms.uFogNear,
       uFogFar: terrainUniforms.uFogFar,
       uPxK: { value: 0 },
-      uColor: { value: new THREE.Color('#e62a44') }, // brand signal red
+      uColor: { value: new THREE.Color('#ffd200') }, // brand yellow — pops on the dimmed red net
     },
     transparent: true,
     depthWrite: false,
@@ -304,7 +307,7 @@ export async function initMtb(terrainUniforms) {
   function highlight(route) {
     if (route === highlighted) return;
     highlighted = route;
-    material.uniforms.uDim.value = route ? 0.38 : 1;
+    material.uniforms.uDim.value = route ? 0.25 : 1;
     if (!route) { overlay.visible = false; return; }
     let o = 0;
     const put = (x, z, px, pz, s) => {

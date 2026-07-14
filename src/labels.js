@@ -51,7 +51,7 @@ const TIERS = {
   village: { cull: 8_500,    priority: 3 },
   peak:    { cull: 6_000,    priority: 4 },
   hamlet:  { cull: 3_800,    priority: 5 },
-  route:   { cull: 9_000,    priority: 6 },
+  route:   { cull: Infinity, priority: 1.5, farDim: { beyond: 9_000, to: 0.55 } },
   trail:   { cull: 4_500,    priority: 7 },
 };
 const FADE_BAND = 0.18;        // fraction of cull distance used for fade-out
@@ -560,10 +560,18 @@ export async function initLabels({ camera, heightField, getExag, container, spec
       world.set(item.x, rel * exag + item.lift, item.z);
       const dist = camera.position.distanceTo(world);
       const cull = item.tier.cull;
-      const fade = cull === Infinity ? 1
+      let fade = cull === Infinity ? 1
         : dist > cull ? 0
         : Math.min(1, (cull - dist) / (cull * FADE_BAND));
-      if (fade <= 0 || item.occluded) { setOpacity(item, 0); continue; }
+      const farDim = item.tier.farDim;
+      if (farDim && dist > farDim.beyond) fade = Math.min(fade, farDim.to);
+      if (item.occluded) {
+        // route badges dim behind terrain instead of vanishing — they are
+        // the only always-on handle on a route; everything else hides
+        if (item.type === 'route') fade = Math.max(0.35, fade * 0.5);
+        else fade = 0;
+      }
+      if (fade <= 0) { setOpacity(item, 0); continue; }
 
       world.project(camera);
       if (world.z > 1 || world.x < -1.05 || world.x > 1.05 || world.y < -1.05 || world.y > 1.05) {
@@ -584,8 +592,11 @@ export async function initLabels({ camera, heightField, getExag, container, spec
     const free = (r) => !claimed.some((c) =>
       r.x0 < c.x1 && r.x1 > c.x0 && r.y0 < c.y1 && r.y1 > c.y0);
     for (const item of shown) {
+      // far-faded route pills pack tighter — at whole-map zoom the network
+      // stays labelled instead of decluttering itself away
+      const w = item.type === 'route' && item.fade < 0.7 ? item.w * 0.55 : item.w;
       const above = {
-        x0: item.sx - item.w / 2, x1: item.sx + item.w / 2,
+        x0: item.sx - w / 2, x1: item.sx + w / 2,
         y0: item.sy - item.h - 8, y1: item.sy + 4,
       };
       const below = {
