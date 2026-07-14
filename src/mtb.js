@@ -101,23 +101,38 @@ const overlayFragmentShader = /* glsl */ `
   }
 `;
 
-/** Spaced badge anchors along a route — more for the long loops. */
-function badgeAnchors(route) {
-  const anchors = [];
-  const want = route.km > 40 ? 4 : route.km > 15 ? 2 : 1;
-  const runs = [...route.segs].sort((a, b) => b.length - a.length);
-  for (const run of runs) {
-    if (anchors.length >= want) break;
-    // walk the run and drop candidates every ~400 m, keep the spaced ones
-    for (let i = 0; i < run.length; i += Math.max(1, Math.floor(run.length / 12))) {
-      const [x, z] = run[i];
-      if (anchors.every((a) => Math.hypot(a.x - x, a.z - z) > 3200)) {
-        anchors.push({ x, z });
-        if (anchors.length >= want) break;
+/** Badge anchors for the whole network at once: spaced out along each
+ *  route AND kept away from other routes' badges, so neighbours like 734
+ *  and 738 don't drop each other in the declutterer. */
+function placeBadges(routes) {
+  const placed = []; // every accepted anchor, across all routes
+  const byRoute = new Map();
+  // long routes first — they have the most anchors to fit
+  const order = [...routes].sort((a, b) => b.km - a.km);
+  for (const route of order) {
+    const want = route.km > 40 ? 4 : route.km > 15 ? 2 : 1;
+    const candidates = [];
+    for (const run of [...route.segs].sort((a, b) => b.length - a.length)) {
+      const step = Math.max(1, Math.floor(run.length / 24));
+      for (let i = 0; i < run.length; i += step) {
+        candidates.push({ x: run[i][0], z: run[i][1] });
       }
     }
+    const mine = [];
+    // cross-route spacing relaxes in steps if a route is boxed in
+    for (const minOther of [1600, 900, 400, 0]) {
+      for (const c of candidates) {
+        if (mine.length >= want) break;
+        if (!mine.every((a) => Math.hypot(a.x - c.x, a.z - c.z) > 3200)) continue;
+        if (!placed.every((a) => Math.hypot(a.x - c.x, a.z - c.z) > minOther)) continue;
+        mine.push(c);
+        placed.push(c);
+      }
+      if (mine.length >= want) break;
+    }
+    byRoute.set(route, mine);
   }
-  return anchors;
+  return byRoute;
 }
 
 export async function initMtb(terrainUniforms) {
@@ -269,9 +284,10 @@ export async function initMtb(terrainUniforms) {
   // badges: variants sit closer to the ground truth of a click than long
   // tours, so main routes declutter first (labels.js sorts by priority+dist)
   const routeLabels = [];
+  const anchorsByRoute = placeBadges(routes);
   for (const r of routes) {
     const way = r.segs.reduce((a, b) => (b.length > a.length ? b : a));
-    for (const a of badgeAnchors(r)) {
+    for (const a of anchorsByRoute.get(r) ?? []) {
       routeLabels.push({
         name: r.sig, type: 'route', x: a.x, z: a.z,
         d: r.difficulty, route: r, way,
