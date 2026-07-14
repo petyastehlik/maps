@@ -132,8 +132,10 @@ export async function initLabels({ camera, heightField, getExag, container, spec
     const item = {
       lift: LABEL_LIFT, ...lm, el,
       tier: TIERS[lm.type],
-      // approx text box for declutter (uppercase mono runs wide)
-      w: lm.name.length * 7.5 + 14, h: 16,
+      // approx text box for declutter (uppercase mono runs wide; route
+      // pills are bigger type with padding and casing)
+      w: lm.type === 'route' ? lm.name.length * 8.5 + 22 : lm.name.length * 7.5 + 14,
+      h: lm.type === 'route' ? 24 : 16,
       opacity: -1, occluded: false, sx: 0, sy: 0,
     };
     el.addEventListener('click', (e) => { e.stopPropagation(); select(item); });

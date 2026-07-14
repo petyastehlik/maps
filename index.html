@@ -51,7 +51,7 @@
   }
 
   /* ── controls ────────────────────────────────── */
-  #controls { bottom: 20px; left: 20px; padding: 14px 16px; width: 264px; }
+  #controls { bottom: 20px; left: 20px; padding: 14px 16px; width: 276px; }
   #rotate-pad {
     display: none;
     position: absolute; right: 14px; bottom: 84px; z-index: 6;
@@ -186,18 +186,20 @@
                background: var(--ink-veil); border: 1px solid var(--hairline);
                border-radius: 2px; padding: 5px 10px; }
   .lm-home i { display: none; }
-  .lm-route b { font: 500 9px var(--mono); letter-spacing: 0.06em; color: #14100c;
-                background: rgba(232, 195, 74, 0.92); padding: 2px 6px;
-                border-radius: 2px; text-shadow: none; }
+  .lm-route b { font: 700 12px var(--mono); letter-spacing: 0.05em; color: #14100c;
+                background: rgba(232, 195, 74, 0.95); padding: 3px 8px;
+                border-radius: 4px; text-shadow: none;
+                box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.9),
+                            0 1px 4px rgba(0, 40, 48, 0.5); }
   .lm-route i { background: rgba(232, 195, 74, 0.55); }
   /* official MTB routes: badge tinted by tour difficulty (modrá/červená/černá) */
   .lm-route[data-d] b { color: #f4f1e8; }
-  .lm-route[data-d="1"] b { background: rgba(58, 113, 172, 0.92); }
-  .lm-route[data-d="1"] i { background: rgba(74, 144, 217, 0.6); }
-  .lm-route[data-d="2"] b { background: rgba(190, 63, 63, 0.92); }
-  .lm-route[data-d="2"] i { background: rgba(224, 82, 82, 0.6); }
-  .lm-route[data-d="3"] b { background: rgba(28, 28, 28, 0.94); }
-  .lm-route[data-d="3"] i { background: rgba(90, 90, 90, 0.7); }
+  .lm-route[data-d="1"] b { background: rgba(23, 116, 214, 0.96); }
+  .lm-route[data-d="1"] i { background: rgba(23, 116, 214, 0.6); }
+  .lm-route[data-d="2"] b { background: rgba(217, 37, 55, 0.96); }
+  .lm-route[data-d="2"] i { background: rgba(217, 37, 55, 0.6); }
+  .lm-route[data-d="3"] b { background: rgba(12, 12, 12, 0.96); }
+  .lm-route[data-d="3"] i { background: rgba(80, 80, 80, 0.7); }
   .lm-trail b { font: 500 9px var(--mono); letter-spacing: 0.04em; color: #f4f1e8;
                 background: rgba(52, 74, 44, 0.92); padding: 2px 6px;
                 border-radius: 2px; text-shadow: none; }
@@ -371,9 +373,9 @@
   #route-chooser b { flex: none; padding: 2px 5px; border-radius: 2px;
     font-size: 9px; font-weight: 500; letter-spacing: 0.06em; color: #f4f1e8;
     background: #555; }
-  #route-chooser b[data-d="1"] { background: rgba(58, 113, 172, 0.95); }
-  #route-chooser b[data-d="2"] { background: rgba(190, 63, 63, 0.95); }
-  #route-chooser b[data-d="3"] { background: rgba(28, 28, 28, 0.95);
+  #route-chooser b[data-d="1"] { background: rgba(23, 116, 214, 0.95); }
+  #route-chooser b[data-d="2"] { background: rgba(217, 37, 55, 0.95); }
+  #route-chooser b[data-d="3"] { background: rgba(12, 12, 12, 0.95);
     box-shadow: 0 0 0 1px rgba(244, 241, 232, 0.3); }
   #route-chooser span { font-size: 10.5px; color: var(--paper);
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -504,24 +506,24 @@
   <button id="panel-toggle" class="panel" data-i18n>Controls</button>
   <div id="controls" class="panel">
     <div class="row">
-      <span class="label" style="width:64px" data-i18n>Surface</span>
+      <span class="label" style="width:74px" data-i18n>Surface</span>
       <div class="seg">
         <button id="mode-ortho" class="active" data-i18n>Ortho</button>
         <button id="mode-relief" data-i18n>Relief</button>
       </div>
     </div>
     <div class="row" title="Terrain height multiplier — 1× matches reality" data-i18n-title>
-      <span class="label" style="width:64px" data-i18n>Heights</span>
+      <span class="label" style="width:74px" data-i18n>Heights</span>
       <input type="range" id="exag" min="1" max="3" step="0.05" value="1.5" />
       <span id="exag-value">1.5×</span>
     </div>
     <div class="row" id="sun-row" title="Time of day — sun position over the map" data-i18n-title>
-      <span class="label" style="width:64px" data-i18n>Sun</span>
+      <span class="label" style="width:74px" data-i18n>Sun</span>
       <input type="range" id="sun" min="0" max="24" step="0.25" value="13" />
       <span id="sun-value">13:00</span>
     </div>
     <div class="row">
-      <span class="label" style="width:64px" data-i18n>Layers</span>
+      <span class="label" style="width:74px" data-i18n>Layers</span>
       <div class="seg">
         <button id="layer-labels" class="active" data-i18n>Names</button>
         <button id="layer-cycling" class="active" data-i18n>Bike</button>
@@ -529,7 +531,7 @@
       </div>
     </div>
     <div class="row">
-      <span class="label" style="width:64px">3D</span>
+      <span class="label" style="width:74px">3D</span>
       <div class="seg">
         <button id="layer-buildings" class="active" data-i18n>Buildings</button>
         <button id="layer-trees" class="active" data-i18n>Trees</button>

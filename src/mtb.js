@@ -11,7 +11,7 @@ import { fetchAsset } from './area.js';
 
 const LIFT = 9;
 
-export const DIFF_COLORS = { 1: '#4a90d9', 2: '#e05252', 3: '#232323' };
+export const DIFF_COLORS = { 1: '#1774d6', 2: '#d92537', 3: '#0c0c0c' };
 export const DIFF_NAMES = { 1: 'easy', 2: 'moderate', 3: 'difficult' };
 
 // Difficult tours are near-black — invisible over dark forest ortho without
@@ -35,7 +35,7 @@ const vertexShader = /* glsl */ `
     p.xz += aPerp * (aSide * dist * uPxK);
     vWorldPos = p;
     vColor = color;
-    vAlpha = 1.0 - abs(aSide) * 0.55; // casing is quieter than the core
+    vAlpha = abs(aSide) > 0.7 ? 0.5 : 1.0; // casing quieter than the cores
     gl_Position = projectionMatrix * viewMatrix * vec4(p, 1.0);
   }
 `;
@@ -124,9 +124,9 @@ export async function initMtb(terrainUniforms) {
   for (const r of routes) {
     for (const run of r.segs) segmentCount += run.length - 1;
   }
-  // 3 copies per segment: casing left/right first, coloured core last —
-  // transparent lines draw in buffer order, so the core always wins
-  const verts = segmentCount * 2 * 3;
+  // 4 copies per segment: white casing at ±1, twin core strands at ±0.35
+  // (a ~2 px stroke) — casing first, cores last so they win the blend
+  const verts = segmentCount * 2 * 4;
   const positions = new Float32Array(verts * 3);
   const colors = new Float32Array(verts * 3);
   const perp = new Float32Array(verts * 2);
@@ -136,7 +136,7 @@ export async function initMtb(terrainUniforms) {
   const CELL = 250;
   const pickGrid = new Map(); // "cx,cz" → [{ax,az,bx,bz,r}]
   let oCase = 0; // casing verts fill the front of the buffers…
-  let oCore = segmentCount * 2 * 2; // …core verts the last third
+  let oCore = segmentCount * 2 * 2; // …core verts the back half
   for (const r of routes) {
     const c = new THREE.Color(DIFF_COLORS[r.difficulty] ?? DIFF_COLORS[2]);
     for (const run of r.segs) {
@@ -154,11 +154,15 @@ export async function initMtb(terrainUniforms) {
             oCase++;
           }
         }
-        for (const [x, z] of [[ax, az], [bx, bz]]) {
-          positions[oCore * 3] = x; positions[oCore * 3 + 2] = z;
-          colors[oCore * 3] = c.r; colors[oCore * 3 + 1] = c.g;
-          colors[oCore * 3 + 2] = c.b;
-          oCore++;
+        for (const s of [-0.35, 0.35]) {
+          for (const [x, z] of [[ax, az], [bx, bz]]) {
+            positions[oCore * 3] = x; positions[oCore * 3 + 2] = z;
+            colors[oCore * 3] = c.r; colors[oCore * 3 + 1] = c.g;
+            colors[oCore * 3 + 2] = c.b;
+            perp[oCore * 2] = px; perp[oCore * 2 + 1] = pz;
+            side[oCore] = s;
+            oCore++;
+          }
         }
         const k = `${Math.floor((ax + bx) / 2 / CELL)},${Math.floor((az + bz) / 2 / CELL)}`;
         if (!pickGrid.has(k)) pickGrid.set(k, []);
@@ -238,7 +242,7 @@ export async function initMtb(terrainUniforms) {
   const pxK = (px) =>
     px * 2 * Math.tan(THREE.MathUtils.degToRad(55 / 2)) / window.innerHeight;
   const setPxK = () => {
-    material.uniforms.uPxK.value = pxK(1.3);
+    material.uniforms.uPxK.value = pxK(1.7);
     overlayMaterial.uniforms.uPxK.value = pxK(1.4);
   };
   setPxK();
