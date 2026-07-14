@@ -8,7 +8,7 @@ import { DIFF_COLORS } from './mtb.js';
 import { t, numLocale } from './i18n.js';
 
 // Torbole main square in the garda world frame (10.8773 E, 45.8715 N)
-const BASE = [12576, -19346];
+const BASE = [9333, 2455];
 
 /** First point of the GPX inside the frame = where the route starts. */
 const startOf = (r) => r.segs[0][0];
@@ -62,7 +62,7 @@ export function initRouteList({ routes, controls, labels }) {
     { key: 'ascent', label: t('climb'), title: t('total ascent') },
     { key: 'difficulty', label: t('difficulty'), title: t('official difficulty (easy → difficult)') },
   ];
-  const rowBySig = new Map();
+  const rowByUid = new Map();
   const sortBar = panel.querySelector('.sort');
   let sortKey = 'start';
   function applySort() {
@@ -72,7 +72,7 @@ export function initRouteList({ routes, controls, labels }) {
           ? a.difficulty - b.difficulty || a.km - b.km
           : a[sortKey] - b[sortKey])
         || a.sig.localeCompare(b.sig, 'en', { numeric: true }));
-    for (const r of order) rows.appendChild(rowBySig.get(r.sig)); // move = reorder
+    for (const r of order) rows.appendChild(rowByUid.get(r.uid ?? r.sig)); // move = reorder
   }
   for (const s of SORTS) {
     const b = document.createElement('button');
@@ -106,13 +106,13 @@ export function initRouteList({ routes, controls, labels }) {
     row.addEventListener('click', () => {
       const [sx, sz] = startOf(r);
       controls.flyToView(sx, sz, controls.getAzimuthalAngle(), 0.95, 3400);
-      labels.selectRoute(r.sig);
+      labels.selectRoute(r.uid ?? r.sig);
       if (window.innerWidth < 760) setOpen(false); // phone: panel covers the map
     });
     // hovering a row previews the route: highlight + its card (top-left)
-    row.addEventListener('pointerenter', () => labels.previewRoute(r.sig));
+    row.addEventListener('pointerenter', () => labels.previewRoute(r.uid ?? r.sig));
     row.addEventListener('pointerleave', () => labels.previewRoute(null));
-    rowBySig.set(r.sig, row);
+    rowByUid.set(r.uid ?? r.sig, row);
     rows.appendChild(row);
   }
 

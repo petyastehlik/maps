@@ -20,7 +20,7 @@ process.env.AREA ??= 'garda';
 const { area, cx, cy, halfW, halfH, cornersLonLat, dataDir } = resolveFrame();
 await mkdir(dataDir, { recursive: true });
 
-const GRIDX = 4096, GRIDZ = 6144;     // heightmap px (~9.8/9.9 m/px, ≈ source native)
+const GRIDX = 4608, GRIDZ = 4224;     // heightmap px (~10.2/10.3 m/px, ≈ source native)
 const ORTHO_TILE_PX = 4096;           // per quadrant and centre tile (px, square)
 const WMS_MAX = 2048;                 // PCN server cap per request
 const bboxProj = [cx - halfW, cy - halfH, cx + halfW, cy + halfH]; // UTM 32N, SW-origin
@@ -62,7 +62,7 @@ function sampleTile(t, E, N) {
 
 async function bakeDem() {
   const tiles = [];
-  for (const name of ['w50560_s10.tif', 'w50565_s10.tif', 'w50060_s10.tif', 'w50065_s10.tif']) {
+  for (const name of ['w50560_s10.tif', 'w50565_s10.tif', 'w51060_s10.tif', 'w51065_s10.tif']) {
     tiles.push(await loadTile(name));
   }
   const stepX = (halfW * 2) / GRIDX;

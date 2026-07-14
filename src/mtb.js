@@ -101,27 +101,45 @@ const overlayFragmentShader = /* glsl */ `
   }
 `;
 
-/** Badge anchors for the whole network at once: spaced out along each
- *  route AND kept away from other routes' badges, so neighbours like 734
- *  and 738 don't drop each other in the declutterer. */
+/** Badge anchors for the whole network at once. Two passes: first every
+ *  route claims ONE well-spread primary anchor (these outrank everything in
+ *  the declutterer — each route always has a number on screen), then the
+ *  long routes fill in extras every ~6 km, kept away from other badges so
+ *  neighbours like 734 and 738 don't drop each other. */
 function placeBadges(routes) {
-  const placed = []; // every accepted anchor, across all routes
+  const placed = [];
   const byRoute = new Map();
-  // long routes first — they have the most anchors to fit
   const order = [...routes].sort((a, b) => b.km - a.km);
-  for (const route of order) {
-    const want = route.km > 40 ? 4 : route.km > 15 ? 2 : 1;
-    const candidates = [];
+  const candidatesFor = (route) => {
+    const out = [];
     for (const run of [...route.segs].sort((a, b) => b.length - a.length)) {
-      const step = Math.max(1, Math.floor(run.length / 24));
+      const step = Math.max(1, Math.floor(run.length / 32));
       for (let i = 0; i < run.length; i += step) {
-        candidates.push({ x: run[i][0], z: run[i][1] });
+        out.push({ x: run[i][0], z: run[i][1] });
       }
     }
-    const mine = [];
-    // cross-route spacing relaxes in steps if a route is boxed in
-    for (const minOther of [1600, 900, 400, 0]) {
-      for (const c of candidates) {
+    return out;
+  };
+  // pass 1 — primaries, starting from each route's longest-run midpoint
+  for (const route of order) {
+    const cands = candidatesFor(route);
+    const mid = Math.floor(cands.length / 2);
+    const ordered = cands.map((_, k) => cands[(mid + k) % cands.length]);
+    let pick = null;
+    for (const minOther of [2400, 1400, 700, 0]) {
+      pick = ordered.find((c) =>
+        placed.every((a) => Math.hypot(a.x - c.x, a.z - c.z) > minOther));
+      if (pick) break;
+    }
+    placed.push(pick);
+    byRoute.set(route, [pick]);
+  }
+  // pass 2 — extras roughly every 6 km of route length
+  for (const route of order) {
+    const want = Math.max(1, Math.min(6, Math.round(route.km / 6)));
+    const mine = byRoute.get(route);
+    for (const minOther of [1600, 900, 400]) {
+      for (const c of candidatesFor(route)) {
         if (mine.length >= want) break;
         if (!mine.every((a) => Math.hypot(a.x - c.x, a.z - c.z) > 3200)) continue;
         if (!placed.every((a) => Math.hypot(a.x - c.x, a.z - c.z) > minOther)) continue;
@@ -130,7 +148,6 @@ function placeBadges(routes) {
       }
       if (mine.length >= want) break;
     }
-    byRoute.set(route, mine);
   }
   return byRoute;
 }
@@ -287,12 +304,13 @@ export async function initMtb(terrainUniforms) {
   const anchorsByRoute = placeBadges(routes);
   for (const r of routes) {
     const way = r.segs.reduce((a, b) => (b.length > a.length ? b : a));
-    for (const a of anchorsByRoute.get(r) ?? []) {
+    (anchorsByRoute.get(r) ?? []).forEach((a, i) => {
       routeLabels.push({
         name: r.sig, type: 'route', x: a.x, z: a.z,
         d: r.difficulty, route: r, way,
+        primary: i === 0, // one pill per route outranks extras of the others
       });
-    }
+    });
   }
   /** Every route within `radius` metres of a ground point, nearest first. */
   function pickAll(x, z, radius) {

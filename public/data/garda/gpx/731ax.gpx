@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx version="1.1" creator="outdooractive - http://www.outdooractive.com" xmlns="http://www.topografix.com/GPX/1/1" xmlns:oa="http://www.outdooractive.com/GPX/Extensions/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.outdooractive.com/GPX/Extensions/1 https://www.outdooractive.com/schema/gpx_extensions.xsd">
+  <metadata>
+    <name>Shortcut Pietramurata</name>
+    <author>
+      <name>Staff Outdoor Garda Trentino AC - Garda Trentino</name>
+    </author>
+    <link href="https://www.outdooractive.com/r/802918549"/>
+    <time>2026-07-01T09:07:56.390Z</time>
+    <extensions>
+      <oa:oaCategory>mountainbiking</oa:oaCategory>
+    </extensions>
+  </metadata>
+  <trk>
+    <name>Shortcut Pietramurata</name>
+    <desc>If you don’t want to do the whole route of the 731. Anello Garda Sarca, there&apos;s a shortcut at Pietramurata.</desc>
+    <type>mountainbiking</type>
+    <trkseg>
+      <trkpt lat="46.017007" lon="10.94334">
+        <ele>249.1</ele>
+        <name>46.017000,10.943341</name>
+        <extensions>
+          <oa:Extension>
+            <oa:mapZoom>17</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="46.017014" lon="10.94341">
+        <ele>248.9</ele>
+      </trkpt>
+      <trkpt lat="46.017024" lon="10.943565">
+        <ele>247.9</ele>
+      </trkpt>
+      <trkpt lat="46.017032" lon="10.94368">
+        <ele>244.8</ele>
+      </trkpt>
+      <trkpt lat="46.017035" lon="10.944083">
+        <ele>245.8</ele>
+      </trkpt>
+      <trkpt lat="46.017038" lon="10.944487">
+        <ele>246.8</ele>
+      </trkpt>
+      <trkpt lat="46.017054" lon="10.944926">
+        <ele>248.4</ele>
+      </trkpt>
+      <trkpt lat="46.017064" lon="10.945184">
+        <ele>247.9</ele>
+      </trkpt>
+      <trkpt lat="46.017068" lon="10.94528">
+        <ele>247.7</ele>
+      </trkpt>
+      <trkpt lat="46.017076" lon="10.945402">
+        <ele>247.7</ele>
+      </trkpt>
+      <trkpt lat="46.017097" lon="10.945509">
+        <ele>247.7</ele>
+      </trkpt>
+      <trkpt lat="46.017126" lon="10.945654">
+        <ele>247.6</ele>
+      </trkpt>
+      <trkpt lat="46.017198" lon="10.945846">
+        <ele>247.3</ele>
+      </trkpt>
+      <trkpt lat="46.017269" lon="10.946016">
+        <ele>247.2</ele>
+      </trkpt>
+      <trkpt lat="46.01733" lon="10.946152">
+        <ele>247.5</ele>
+      </trkpt>
+      <trkpt lat="46.01747" lon="10.946444">
+        <ele>247.5</ele>
+      </trkpt>
+      <trkpt lat="46.017504" lon="10.946501">
+        <ele>247.5</ele>
+      </trkpt>
+      <trkpt lat="46.017541" lon="10.946579">
+        <ele>247.5</ele>
+      </trkpt>
+      <trkpt lat="46.017596" lon="10.946696">
+        <ele>247.5</ele>
+      </trkpt>
+      <trkpt lat="46.017611" lon="10.946738">
+        <ele>247.4</ele>
+        <name>46.017611,10.946738</name>
+        <extensions>
+          <oa:Extension>
+            <oa:mapZoom>17</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

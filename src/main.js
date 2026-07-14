@@ -303,7 +303,7 @@ if (area.mtbRoutes && mtb.pick) {
       row.addEventListener('pointerenter', () => mtb.highlight(r));
       row.addEventListener('click', () => {
         closeChooser();
-        labels.selectRouteAt(r.sig, x, y);
+        labels.selectRouteAt(r.uid ?? r.sig, x, y);
       });
       chooser.appendChild(row);
     }
@@ -333,7 +333,7 @@ if (area.mtbRoutes && mtb.pick) {
     canvas.style.cursor = hoveredRoute ? 'pointer' : '';
     clearTimeout(cardTimer);
     if (hoveredRoute) {
-      const sig = hoveredRoute.sig;
+      const sig = hoveredRoute.uid ?? hoveredRoute.sig;
       cardTimer = setTimeout(() => labels.previewRoute(sig, x, y), CARD_DWELL_MS);
     } else {
       labels.previewRoute(null);
@@ -365,7 +365,7 @@ if (area.mtbRoutes && mtb.pick) {
     }
     clearTimeout(cardTimer);
     if (hits.length === 1) {
-      labels.selectRouteAt(hits[0].sig, e.clientX, e.clientY); // pins
+      labels.selectRouteAt(hits[0].uid ?? hits[0].sig, e.clientX, e.clientY); // pins
     } else {
       openChooser(hits, e.clientX, e.clientY);
     }

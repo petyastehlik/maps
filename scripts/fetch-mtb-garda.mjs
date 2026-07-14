@@ -203,11 +203,16 @@ fs.mkdirSync(gpxDir, { recursive: true });
 fs.mkdirSync(photoDir, { recursive: true });
 
 const routes = [];
+const usedUids = new Set();
 for (const { t, sig, frameFrac } of picked) {
   const variant = /[a-z]$/.test(sig);
+  // two official shortcuts share the signage "731a" — keys must not
+  let uid = sig;
+  while (usedUids.has(uid)) uid += 'x';
+  usedUids.add(uid);
 
   // official GPX — same endpoint as the site's download button
-  const gpxPath = path.join(gpxDir, `${sig}.gpx`);
+  const gpxPath = path.join(gpxDir, `${uid}.gpx`);
   if (!fs.existsSync(gpxPath)) {
     const gpx = await get(
       `${API}/download.tour.gpx?i=${t.id}&project=${PROJECT}&key=${KEY}`, 'buf');
@@ -277,6 +282,7 @@ for (const { t, sig, frameFrac } of picked) {
 
   routes.push({
     sig,
+    uid,
     name: t.title,
     variant,
     difficulty: t.rating?.difficulty ?? 2, // official: 1 lehká · 2 střední · 3 těžká
@@ -295,7 +301,7 @@ for (const { t, sig, frameFrac } of picked) {
     surface,
     photos,
     link: `https://www.outdooractive.com/r/${t.id}`,
-    gpx: `gpx/${sig}.gpx`,
+    gpx: `gpx/${uid}.gpx`,
     segs,
   });
   console.log(`  ${sig} ${t.title} — ${segs.length} seg(s), `

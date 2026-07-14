@@ -585,16 +585,19 @@ export async function initLabels({ camera, heightField, getExag, container, spec
       shown.push(item);
     }
 
-    // declutter: priority tiers first, nearer first inside a tier;
-    // a label whose spot above the anchor is taken tries below it before hiding
-    shown.sort((a, b) => a.tier.priority - b.tier.priority || a.dist - b.dist);
+    // declutter: priority tiers first, nearer first inside a tier; every
+    // route's PRIMARY badge outranks other routes' extra badges so each
+    // route keeps at least one number on screen
+    const prio = (i) => i.tier.priority - (i.primary ? 0.6 : 0);
+    shown.sort((a, b) => prio(a) - prio(b) || a.dist - b.dist);
     const claimed = [];
     const free = (r) => !claimed.some((c) =>
       r.x0 < c.x1 && r.x1 > c.x0 && r.y0 < c.y1 && r.y1 > c.y0);
     for (const item of shown) {
       // far-faded route pills pack tighter — at whole-map zoom the network
       // stays labelled instead of decluttering itself away
-      const w = item.type === 'route' && item.fade < 0.7 ? item.w * 0.55 : item.w;
+      const w = item.type === 'route' && item.fade < 0.7
+        ? item.w * (item.primary ? 0.42 : 0.55) : item.w;
       const above = {
         x0: item.sx - w / 2, x1: item.sx + w / 2,
         y0: item.sy - item.h - 8, y1: item.sy + 4,
@@ -608,6 +611,7 @@ export async function initLabels({ camera, heightField, getExag, container, spec
       else if (item.type !== 'home' && free(below)) { flip = true; claimed.push(below); }
       else { setOpacity(item, 0); continue; }
       item.el.classList.toggle('flip', flip);
+      if (item.type === 'route') item.el.classList.toggle('far', item.fade < 0.7);
       item.el.style.transform = `translate(${item.sx.toFixed(1)}px, ${item.sy.toFixed(1)}px)`;
       setOpacity(item, item.fade);
     }
@@ -615,10 +619,12 @@ export async function initLabels({ camera, heightField, getExag, container, spec
     positionPopup();
   }
 
+  const routeKey = (r) => r?.uid ?? r?.sig;
+
   /** Open the card of an official MTB route (route-list panel rows).
    *  Always pins — the row may already be showing this card as a preview. */
-  function selectRoute(sig) {
-    const item = items.find((i) => i.type === 'route' && i.route?.sig === sig);
+  function selectRoute(key) {
+    const item = items.find((i) => i.type === 'route' && routeKey(i.route) === key);
     if (!item) return;
     if (selected !== item) showCard(item);
     previewing = false;
@@ -626,8 +632,8 @@ export async function initLabels({ camera, heightField, getExag, container, spec
 
   /** Open a route card anchored at a screen point (clicks on the line
    *  itself — the badge may be culled, so the click position anchors it). */
-  function selectRouteAt(sig, sx, sy) {
-    const item = items.find((i) => i.type === 'route' && i.route?.sig === sig);
+  function selectRouteAt(key, sx, sy) {
+    const item = items.find((i) => i.type === 'route' && routeKey(i.route) === key);
     if (!item) return;
     if (selected !== item) showCard(item);
     previewing = false; // clicks pin
@@ -637,13 +643,13 @@ export async function initLabels({ camera, heightField, getExag, container, spec
 
   /** Hover-preview a route card (null ends the preview). A card the user
    *  clicked open (sticky) is never replaced or closed by previews. */
-  function previewRoute(sig, sx, sy) {
-    if (!sig) {
+  function previewRoute(key, sx, sy) {
+    if (!key) {
       if (previewing) closePopup();
       return;
     }
     if (selected && !previewing) return; // sticky card wins
-    const item = items.find((i) => i.type === 'route' && i.route?.sig === sig);
+    const item = items.find((i) => i.type === 'route' && routeKey(i.route) === key);
     if (!item) return;
     if (selected !== item) showCard(item);
     previewing = true;

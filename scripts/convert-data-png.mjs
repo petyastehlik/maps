@@ -39,8 +39,9 @@ async function verifyRoundtrip(png, original, depth) {
 
 async function convert(binPath, width, height, depth) {
   const pngPath = binPath.replace(/\.bin$/, '.png');
-  const bin = new Uint8Array(await readFile(binPath));
   if (existsSync(pngPath)) { console.log(`  ${path.basename(pngPath)} exists — skipping`); return; }
+  if (!existsSync(binPath)) { console.log(`  ${path.basename(binPath)} missing — skipping`); return; }
+  const bin = new Uint8Array(await readFile(binPath));
   const png = encodeGray(bin, width, height, depth);
   await verifyRoundtrip(png, bin, depth);
   await writeFile(pngPath, png);

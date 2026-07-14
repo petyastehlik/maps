@@ -30,20 +30,20 @@ const ALL_AREAS = {
   garda: {
     id: 'garda',
     title: 'Garda',
-    lat: 45.70,
-    lon: 10.71,
-    halfWidthM: 20_000,   // 40 km: Desenzano shore to the Monte Baldo crest
-    halfHeightM: 30_500,  // 61 km: Dro (N) to Peschiera (S)
+    lat: 45.8955,
+    lon: 10.7578,
+    halfWidthM: 23_599,   // 47 km: Storo/Tremalzo (W) to Rovereto & the Adige (E)
+    halfHeightM: 21_721,  // 43 km: just above Gargnano (S) to Sarche/Comano (N)
     projDef: '+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs',
     dataDir: '/data/garda',
     exagDefault: 1,
     exagAdjustable: false, // the real Alps need no help
-    // buildings only along the lake corridor — suburban Verona/Rovereto
-    // would triple the fetch and render load for nothing lake-related
-    osmBuildingsBounds: { south: 45.40, west: 10.45, north: 45.99, east: 10.99 },
+    // buildings across the visible (Trentino) part of the frame; the fogged
+    // south band needs none
+    osmBuildingsBounds: { south: 45.72, west: 10.45, north: 46.09, east: 11.06 },
 
     // over the Trentino basin: Riva–Arco front and centre, Ledro left
-    homeView: { x: 6500, z: -17500, azimuth: -0.05, polarDeg: 56, distance: 21000 },
+    homeView: { x: 7100, z: -700, azimuth: -0.05, polarDeg: 56, distance: 21000 },
     pins: [],
     // the signed 7xx MTB network (routes.json) replaces the OSM line layers
     mtbRoutes: true,

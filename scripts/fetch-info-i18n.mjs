@@ -63,6 +63,20 @@ async function summary(wiki, title) {
 }
 
 const info = JSON.parse(fs.readFileSync(path.join(dataDir, 'info.json'), 'utf8'));
+
+// landmarks that entered the frame after info.json was researched (e.g. the
+// reframe that brought in Rovereto) have no entry at all — give towns and
+// castles a shot at a Wikipedia article by name so their cards aren't empty
+try {
+  const landmarks = JSON.parse(
+    fs.readFileSync(path.join(dataDir, 'landmarks.json'), 'utf8'));
+  for (const lm of landmarks) {
+    if (!['town', 'city', 'castle'].includes(lm.type)) continue;
+    const key = `${lm.type}:${lm.name}`;
+    if (info[key]) continue;
+    info[key] = { link: `https://it.wikipedia.org/wiki/${encodeURIComponent(lm.name.replace(/ /g, '_'))}` };
+  }
+} catch { /* landmarks bake not run yet */ }
 const out = { en: {}, it: {} };
 for (const langFile of ['en', 'it']) {
   const p = path.join(dataDir, `info_${langFile}.json`);
