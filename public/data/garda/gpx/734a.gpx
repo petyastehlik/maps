@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx version="1.1" creator="outdooractive - http://www.outdooractive.com" xmlns="http://www.topografix.com/GPX/1/1" xmlns:oa="http://www.outdooractive.com/GPX/Extensions/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.outdooractive.com/GPX/Extensions/1 https://www.outdooractive.com/schema/gpx_extensions.xsd">
+  <metadata>
+    <name>Shortcut Campi</name>
+    <author>
+      <name>Staff Outdoor Garda Trentino VB - Garda Trentino</name>
+    </author>
+    <link href="https://www.outdooractive.com/r/15865364"/>
+    <time>2026-07-01T09:08:04.087Z</time>
+    <extensions>
+      <oa:oaCategory>mountainbiking</oa:oaCategory>
+    </extensions>
+  </metadata>
+  <trk>
+    <name>Shortcut Campi</name>
+    <desc>This is a variant of the 734. Malga Grassi Trail-Tour. After the village of Campi, you have the option of shortening the route by 7 km.</desc>
+    <type>mountainbiking</type>
+    <trkseg>
+      <trkpt lat="45.911932" lon="10.807704">
+        <ele>694.7</ele>
+        <name>45.911932,10.807704</name>
+        <extensions>
+          <oa:Extension>
+            <oa:mapZoom>18</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.911937" lon="10.807696">
+        <ele>694.8</ele>
+      </trkpt>
+      <trkpt lat="45.911939" lon="10.807657">
+        <ele>694.7</ele>
+      </trkpt>
+      <trkpt lat="45.91195" lon="10.80761">
+        <ele>694.8</ele>
+      </trkpt>
+      <trkpt lat="45.911978" lon="10.807497">
+        <ele>695.1</ele>
+      </trkpt>
+      <trkpt lat="45.912165" lon="10.807029">
+        <ele>696.5</ele>
+      </trkpt>
+      <trkpt lat="45.912351" lon="10.806561">
+        <ele>697.0</ele>
+      </trkpt>
+      <trkpt lat="45.912537" lon="10.806093">
+        <ele>698.0</ele>
+      </trkpt>
+      <trkpt lat="45.912555" lon="10.80605">
+        <ele>698.1</ele>
+      </trkpt>
+      <trkpt lat="45.912574" lon="10.805956">
+        <ele>698.2</ele>
+      </trkpt>
+      <trkpt lat="45.912586" lon="10.80584">
+        <ele>698.2</ele>
+      </trkpt>
+      <trkpt lat="45.912588" lon="10.805715">
+        <ele>697.9</ele>
+      </trkpt>
+      <trkpt lat="45.912582" lon="10.805672">
+        <ele>697.5</ele>
+        <name>45.912563,10.805677</name>
+        <extensions>
+          <oa:Extension>
+            <oa:mapZoom>18</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.912568" lon="10.805562">
+        <ele>696.5</ele>
+      </trkpt>
+      <trkpt lat="45.912504" lon="10.80529">
+        <ele>695.5</ele>
+      </trkpt>
+      <trkpt lat="45.91247" lon="10.805137">
+        <ele>696.7</ele>
+      </trkpt>
+      <trkpt lat="45.912457" lon="10.805108">
+        <ele>696.9</ele>
+      </trkpt>
+      <trkpt lat="45.912423" lon="10.805063">
+        <ele>697.4</ele>
+      </trkpt>
+      <trkpt lat="45.912388" lon="10.805034">
+        <ele>697.7</ele>
+      </trkpt>
+      <trkpt lat="45.912337" lon="10.805017">
+        <ele>697.7</ele>
+      </trkpt>
+      <trkpt lat="45.912293" lon="10.805024">
+        <ele>697.5</ele>
+      </trkpt>
+      <trkpt lat="45.912204" lon="10.805096">
+        <ele>697.6</ele>
+      </trkpt>
+      <trkpt lat="45.912144" lon="10.805161">
+        <ele>698.0</ele>
+      </trkpt>
+      <trkpt lat="45.912076" lon="10.805245">
+        <ele>697.0</ele>
+      </trkpt>
+      <trkpt lat="45.912008" lon="10.805314">
+        <ele>696.8</ele>
+      </trkpt>
+      <trkpt lat="45.91182" lon="10.805515">
+        <ele>696.1</ele>
+      </trkpt>
+      <trkpt lat="45.911766" lon="10.8056">
+        <ele>696.2</ele>
+      </trkpt>
+      <trkpt lat="45.911734" lon="10.805666">
+        <ele>696.2</ele>
+      </trkpt>
+      <trkpt lat="45.911708" lon="10.805725">
+        <ele>696.1</ele>
+      </trkpt>
+      <trkpt lat="45.91167" lon="10.805821">
+        <ele>696.1</ele>
+      </trkpt>
+      <trkpt lat="45.911631" lon="10.805947">
+        <ele>695.1</ele>
+      </trkpt>
+      <trkpt lat="45.911605" lon="10.805994">
+        <ele>695.2</ele>
+      </trkpt>
+      <trkpt lat="45.911511" lon="10.806136">
+        <ele>696.4</ele>
+      </trkpt>
+      <trkpt lat="45.911278" lon="10.806505">
+        <ele>695.6</ele>
+      </trkpt>
+      <trkpt lat="45.911279" lon="10.806499">
+        <ele>695.7</ele>
+        <name>45.911279,10.806499</name>
+        <extensions>
+          <oa:Extension>
+            <oa:mapZoom>18</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

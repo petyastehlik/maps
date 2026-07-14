@@ -8,6 +8,8 @@ import { loadTerrain } from './terrain.js';
 import { initLabels } from './labels.js';
 import { initCycling } from './cycling.js';
 import { initTrails } from './trails.js';
+import { initMtb } from './mtb.js';
+import { initRouteList } from './routelist.js';
 import { initWater } from './water.js';
 import { initBuildings } from './buildings.js';
 import { initTrees } from './trees.js';
@@ -17,6 +19,7 @@ import { initCelestial } from './celestial.js';
 import { initWeather } from './weather.js';
 import { julianDate, siderealTime, setObserver } from './astro.js';
 import { area, switchArea, consumeAutoEnter } from './area.js';
+import { t, translatePage, mountSwitcher } from './i18n.js';
 import { AREAS } from './areas.js';
 
 let resumeSun = null; // set when recovering from a lost WebGL context
@@ -31,8 +34,10 @@ const veilStatus = document.getElementById('veil-status');
 // After the pick the map loads and enters by itself — one tap total.
 // (A reload arriving from a pick or a lost context carries the mapa:enter
 // flag and starts loading straight away.)
-document.title = `${area.title} · 3D LIDAR mapa`;
-document.getElementById('sun-row').title = area.sunRowTitle;
+translatePage();
+mountSwitcher(() => (loadingStarted ? area.id : null));
+document.title = `${area.title} · 3D LIDAR map`;
+document.getElementById('sun-row').title = t('Time of day — sun position over the map');
 document.getElementById('attribution').innerHTML = area.attributionHtml;
 
 const veilTitle = document.getElementById('veil-title');
@@ -51,7 +56,7 @@ function showLoadingState() {
   loadingStarted = true;
   veilTitle.innerHTML = `${area.title}<span>.</span>`;
   veilProgress.hidden = false;
-  veilStatus.textContent = 'připravuji…';
+  veilStatus.textContent = t('preparing…');
   for (const [id, button] of areaButtons) {
     button.classList.toggle('active', id === area.id);
     button.classList.toggle('dim', id !== area.id);
@@ -59,7 +64,7 @@ function showLoadingState() {
   }
   const other = Object.values(AREAS).find((a) => a.id !== area.id);
   if (other) veilHint.textContent =
-    `Načítá se ${area.title} — přepnutím na ${other.title} začne stahování znovu.`;
+    t('Loading %s — switching to %s restarts the download.', area.title, other.title);
   resolveChoice();
 }
 
@@ -76,7 +81,7 @@ for (const a of Object.values(AREAS)) {
     // then come back already loading the chosen map
     veilTitle.innerHTML = `${a.title}<span>.</span>`;
     veilHint.textContent = '';
-    veilStatus.textContent = `přepínám na ${a.title}…`;
+    veilStatus.textContent = t('switching to %s…', a.title);
     switchArea(a.id);
   });
   veilAreas.appendChild(button);
@@ -86,9 +91,9 @@ for (const a of Object.values(AREAS)) {
 if (autoEnter) {
   showLoadingState(); // the pick already happened before the reload
 } else {
-  veilTitle.innerHTML = 'Mapy<span>.</span>';
+  veilTitle.innerHTML = `${t('Maps')}<span>.</span>`;
   veilProgress.hidden = true;
-  veilStatus.textContent = 'zvolte mapu';
+  veilStatus.textContent = t('choose a map');
 }
 
 setObserver(area.lat, area.lon);
@@ -128,15 +133,16 @@ renderer.domElement.addEventListener('webglcontextlost', () => {
 
 await choiceMade; // nothing downloads before the user picks a map
 
+const LOAD_STEPS = ['loading elevation…', 'loading imagery…', 'building the scene…'];
 let terrain;
 try {
-  terrain = await loadTerrain((status, fraction) => {
-    veilStatus.textContent = status;
+  terrain = await loadTerrain((step, fraction) => {
+    veilStatus.textContent = t(LOAD_STEPS[step] ?? LOAD_STEPS[0]);
     veilBar.style.width = `${Math.round(fraction * 100)}%`;
   }, { norm16 });
 } catch (err) {
   // keep the veil (and its area picker) alive so the user can switch back
-  veilStatus.textContent = `data oblasti ${area.title} se nepodařilo načíst (${err.message})`;
+  veilStatus.textContent = `${area.title}: ${err.message}`;
   throw err;
 }
 const { mesh, material, heightField, updateDetail } = terrain;
@@ -185,24 +191,47 @@ const optional = (promise, stub, name) => promise.catch((err) => {
   return typeof stub === 'function' ? stub() : stub;
 });
 const emptyGroup = () => new THREE.Group();
-const [cycling, trails, water, buildings, trees] = await Promise.all([
-  optional(initCycling(material.uniforms),
-    () => ({ lines: emptyGroup(), routeLabels: [] }), 'cyklo'),
-  optional(initTrails(material.uniforms),
-    () => ({ lines: emptyGroup(), trailLabels: [] }), 'traily'),
+// areas with the official signed MTB network (routes.json) swap the two OSM
+// line layers for it — one layer, one toggle, the standard difficulty colours
+const lineStub = () => ({ lines: emptyGroup(), routeLabels: [], trailLabels: [] });
+const [cycling, trails, mtb, water, buildings, trees] = await Promise.all([
+  area.mtbRoutes ? lineStub()
+    : optional(initCycling(material.uniforms), lineStub, 'cyklo'),
+  area.mtbRoutes ? lineStub()
+    : optional(initTrails(material.uniforms), lineStub, 'traily'),
+  area.mtbRoutes ? optional(initMtb(material.uniforms), lineStub, 'mtb') : lineStub(),
   optional(initWater(material.uniforms), // paints into the terrain shader's mask
     () => ({ texture: null }), 'voda'),
   optional(initBuildings(material.uniforms), emptyGroup, 'budovy'),
   optional(initTrees(material.uniforms),
     () => ({ mesh: emptyGroup(), update() {} }), 'stromy'),
 ]);
-scene.add(cycling.lines, trails.lines, buildings, trees.mesh);
+scene.add(cycling.lines, trails.lines, mtb.lines, buildings, trees.mesh);
+
+// while a route card is open its route stays highlighted, whatever opened
+// it; dismissing a PINNED card lets the highlight linger (the card often
+// gets closed exactly to unblock the view of the route) until another
+// route takes over, the map is clicked empty, or Escape
+let activeRoute = null;
+let hoveredRoute = null;
+let lingerRoute = null;
+const applyHighlight = () => mtb.highlight?.(hoveredRoute ?? activeRoute ?? lingerRoute);
 
 const labels = await initLabels({
   camera, heightField,
   getExag: () => material.uniforms.uExag.value,
   container: app,
-  routeLabels: [...cycling.routeLabels, ...trails.trailLabels],
+  routeLabels: [...cycling.routeLabels, ...trails.trailLabels, ...mtb.routeLabels],
+  onRouteSelect: (route, wasPreview) => {
+    if (route) {
+      activeRoute = route;
+      lingerRoute = null;
+    } else {
+      if (!wasPreview && activeRoute) lingerRoute = activeRoute;
+      activeRoute = null;
+    }
+    applyHighlight();
+  },
 });
 
 // clicking into the map closes an open info card
@@ -220,12 +249,117 @@ function wireLayerToggle(id, apply) {
 wireLayerToggle('layer-labels', (on) => labels.setVisible(on));
 wireLayerToggle('layer-cycling', (on) => {
   cycling.lines.visible = on;
+  mtb.lines.visible = on;
   labels.setTypeVisible('route', on);
 });
 wireLayerToggle('layer-trails', (on) => {
   trails.lines.visible = on;
   labels.setTypeVisible('trail', on);
 });
+if (area.mtbRoutes) {
+  // one MTB layer instead of cyklo + traily, plus the route-list panel
+  document.getElementById('layer-cycling').textContent = 'MTB';
+  document.getElementById('layer-trails').hidden = true;
+  if (mtb.routes?.length) initRouteList({ routes: mtb.routes, controls, labels });
+}
+
+// the route lines themselves are hover- and clickable: the cursor's terrain
+// point (CPU ray-march) is matched against the route segments, the whole
+// route lights up in the accent colour, a click opens its card at the
+// cursor; a card opened this way closes again once the pointer leaves the
+// route (hovering the card itself keeps it open — it's outside the canvas)
+if (area.mtbRoutes && mtb.pick) {
+  const canvas = renderer.domElement;
+  const pickRadius = (worldPoint) => {
+    const dist = camera.position.distanceTo(worldPoint);
+    // ~9 px grab zone, never under 25 m
+    return Math.max(25, dist * 9 * 2 * Math.tan(THREE.MathUtils.degToRad(55 / 2))
+      / window.innerHeight);
+  };
+  const routeAt = (clientX, clientY) => {
+    if (!mtb.lines.visible) return null;
+    const g = controls.groundPointAt(clientX, clientY);
+    return g ? mtb.pick(g.x, g.z, pickRadius(g)) : null;
+  };
+  let lastMove = 0;
+  let trailing = 0;
+  let downAt = null;
+
+  // several routes often share a road — a click there opens a small
+  // chooser at the cursor; hovering its rows previews each candidate
+  const chooser = document.createElement('div');
+  chooser.id = 'route-chooser';
+  chooser.hidden = true;
+  document.body.appendChild(chooser);
+  const closeChooser = () => {
+    chooser.hidden = true;
+    applyHighlight();
+  };
+  function openChooser(hits, x, y) {
+    chooser.innerHTML = '';
+    for (const r of hits) {
+      const row = document.createElement('button');
+      row.innerHTML = `<b data-d="${r.difficulty}">${r.sig}</b><span>${r.name}</span>`;
+      row.addEventListener('pointerenter', () => mtb.highlight(r));
+      row.addEventListener('click', () => {
+        closeChooser();
+        labels.selectRouteAt(r.sig, x, y);
+      });
+      chooser.appendChild(row);
+    }
+    chooser.hidden = false;
+    const W = chooser.offsetWidth || 200;
+    const H = chooser.offsetHeight || 120;
+    chooser.style.transform = `translate(${Math.min(x + 12, window.innerWidth - W - 8)}px, `
+      + `${Math.min(Math.max(y - H / 2, 8), window.innerHeight - H - 8)}px)`;
+  }
+  window.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    closeChooser();
+    lingerRoute = null;
+    applyHighlight();
+  });
+
+  const processMove = (x, y) => {
+    const hit = routeAt(x, y);
+    if (hit === hoveredRoute) return;
+    hoveredRoute = hit;
+    applyHighlight();
+    canvas.style.cursor = hoveredRoute ? 'pointer' : '';
+    // hovering the line previews its card right there (clicks pin it)
+    labels.previewRoute(hoveredRoute?.sig ?? null, x, y);
+  };
+  canvas.addEventListener('pointermove', (e) => {
+    if (e.buttons) return; // not mid-drag
+    clearTimeout(trailing);
+    if (performance.now() - lastMove >= 33) {
+      lastMove = performance.now();
+      processMove(e.clientX, e.clientY);
+    } else {
+      // the throttle must not swallow the LAST move before the mouse rests
+      trailing = setTimeout(() => processMove(e.clientX, e.clientY), 40);
+    }
+  });
+  canvas.addEventListener('pointerdown', (e) => {
+    downAt = [e.clientX, e.clientY];
+    closeChooser();
+  });
+  canvas.addEventListener('click', (e) => {
+    if (!downAt || Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) > 5) return;
+    const g = mtb.lines.visible && controls.groundPointAt(e.clientX, e.clientY);
+    const hits = g ? mtb.pickAll(g.x, g.z, pickRadius(g)) : [];
+    if (!hits.length) {
+      lingerRoute = null; // clicking empty ground ends a lingering highlight
+      applyHighlight();
+      return;
+    }
+    if (hits.length === 1) {
+      labels.selectRouteAt(hits[0].sig, e.clientX, e.clientY); // pins
+    } else {
+      openChooser(hits, e.clientX, e.clientY);
+    }
+  });
+}
 wireLayerToggle('layer-buildings', (on) => { buildings.visible = on; });
 wireLayerToggle('layer-trees', (on) => { trees.mesh.visible = on; });
 
@@ -329,6 +463,7 @@ applyTime(startHours);
 
 window.addEventListener('keydown', (e) => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.target instanceof HTMLInputElement) return; // typing a search, not a hotkey
   if (e.key === '1') setMode(0);
   if (e.key === '2') setMode(1);
   if (e.key === 'p' || e.key === 'P') document.getElementById('layer-labels').click();
@@ -361,7 +496,7 @@ function runProbe() {
   const elevation = heightField.elevationAt(hit.x, hit.z);
   const [lon, lat] = heightField.lonLatAt(hit.x, hit.z);
   readoutCoords.textContent = `${lat.toFixed(4)}° N ${lon.toFixed(4)}° E`;
-  readoutElev.textContent = `▲ ${Math.round(elevation)} m n. m.`;
+  readoutElev.textContent = `▲ ${Math.round(elevation)} ${t('m a.s.l.')}`;
   readout.classList.add('visible');
 }
 
@@ -432,7 +567,7 @@ renderer.setAnimationLoop(() => {
 });
 
 // hooks for scripted dogfooding (harmless in production)
-window.__map = { camera, controls, heightField, material, labels, trees, buildings, water, renderer, THREE };
+window.__map = { camera, controls, heightField, material, labels, trees, buildings, water, mtb, renderer, THREE };
 
 veilBar.style.width = '100%';
 enterMap(); // the pick already happened — no second tap needed

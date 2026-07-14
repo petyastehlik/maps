@@ -429,15 +429,15 @@ export async function loadTerrain(onProgress, caps = {}) {
   const metaRes = await fetch(dataUrl('meta.json'));
   // vite's SPA fallback answers missing files with index.html (HTTP 200)
   if (!metaRes.ok || !(metaRes.headers.get('content-type') ?? '').includes('json')) {
-    throw new Error('data oblasti zatím nejsou stažena');
+    throw new Error('map data not baked yet');
   }
   const meta = await metaRes.json();
 
-  onProgress?.('načítám výškopis…', 0.05);
+  onProgress?.(0, 0.05);
   const nx = meta.gridSizeX ?? meta.gridSize;
   const nz = meta.gridSizeZ ?? meta.gridSize;
   const quantized = await fetchHeightRaster('heightmap.png', 'heightmap.bin',
-    nx * nz, (b, total) => onProgress?.('načítám výškopis…',
+    nx * nz, (b, total) => onProgress?.(0,
       0.05 + 0.45 * (b / (total || nx * nz * 2))));
 
   // Uint16 → metres above min, rows flipped so row 0 = south (v=0)
@@ -468,7 +468,7 @@ export async function loadTerrain(onProgress, caps = {}) {
   heightTexture.magFilter = THREE.LinearFilter;
   heightTexture.needsUpdate = true;
 
-  onProgress?.('načítám ortofoto…', 0.55);
+  onProgress?.(1, 0.55);
   const loader = new THREE.TextureLoader();
   const orthoTextures = await Promise.all(['00', '10', '01', '11', 'c'].map(async (suffix) => {
     const texture = await loader.loadAsync(dataUrl(`ortho_${suffix}.jpg`));
@@ -478,7 +478,7 @@ export async function loadTerrain(onProgress, caps = {}) {
     return texture;
   }));
 
-  onProgress?.('stavím model…', 0.9);
+  onProgress?.(2, 0.9);
   const shared = {
     uHeight: { value: heightTexture },
     uHeightD: { value: null },

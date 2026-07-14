@@ -6,9 +6,17 @@ picked, then the map loads and enters by itself (last choice remembered in
 localStorage; deliberately not part of the URL). All areas share one engine — per-area config lives in
 `src/areas.js`, per-area data under `public/data/<area>/`.
 
-Live at **https://petyastehlik.github.io/maps/** — deploys via
-`.github/workflows/pages.yml` when a squashed snapshot is pushed to the
-`pages` remote (local history stays private).
+UI in **English / Italian** (switcher top centre; `mapa:lang` in
+localStorage). Route blurbs come from the official bilingual tour
+descriptions; landmark card texts are Wikipedia article summaries fetched
+per language (`scripts/fetch-info-i18n.mjs` → `info_en.json` /
+`info_it.json`, entries without an article show no blurb).
+
+Live at **https://petyastehlik.github.io/maps/** — the public build carries
+**only the Garda map** (`VITE_AREAS=garda vite build` + halouny data removed
+from the artifact, see `.github/workflows/pages.yml`); deploys when a
+squashed snapshot is pushed to the `pages` remote (local history stays
+private).
 
 **Halouny · Brdy/Hřebeny** (49.8878 N, 14.1978 E — K Vodárně 132), ČÚZK open data:
 
@@ -30,8 +38,24 @@ edge; default převýšení 1×), frame EPSG:32632:
   seamless one across Trentino/Lombardia/Veneto isn't practical — see
   the source-verification brief in the repo history)
 
-Both areas from **OpenStreetMap** — landmark labels, cycling routes, MTB
-trails (mtb:scale), water polygons, building footprints, forest cover.
+Both areas from **OpenStreetMap** — landmark labels, water polygons, building
+footprints, forest cover; Halouny also draws OSM cycling routes and MTB trails
+(mtb:scale).
+
+Garda instead carries the **official Garda Trentino MTB network** — the 37
+signed 7xx routes (743 Bocca di Tovo & co., variants included, 861 km total)
+baked from the tourist board's own GPX via their Outdooractive project
+(`scripts/fetch-mtb-garda.mjs`). Lines are coloured by the official tour
+difficulty (blue/red/black) and drawn with a paper-tone casing so black
+routes stay readable over dark ortho. Route lines are hover- and clickable
+(highlight overlay + card); the card carries the official bilingual blurb,
+stats, an elevation profile from the DEM, photos (Archivio Garda Trentino,
+stored locally), the official surface split, the route's **ITRS disc** — the
+four-quadrant rating from the physical signs (technique / fitness / fall
+risk / remoteness, graded verde/blu/rosso/nero; parsed from the official
+ITRS pictograms) with tooltip explanations — and the GPX itself for
+download. A slide-out **ROUTES** panel lists the whole network with fuzzy
+search and sorting; a click flies the camera to the route's start.
 
 Realism stack: real solar position by time of day (SLUNCE slider, follows the
 actual clock until touched) with a shader sky (dusk glow, sun disk),
@@ -74,6 +98,7 @@ AREA=halouny node scripts/fetch-overlays.mjs   # landmarks.json, cycling.json
 AREA=halouny node scripts/fetch-osm-3d.mjs     # water, buildings, forest, trails
 AREA=garda  node scripts/fetch-overlays.mjs
 AREA=garda  node scripts/fetch-osm-3d.mjs
+AREA=garda  node scripts/fetch-mtb-garda.mjs   # official 7xx MTB routes (GPX + photos)
 
 node scripts/fetch-stars.mjs              # shared: public/data/stars.json (HYG ≤ mag 5)
 node scripts/convert-data-png.mjs         # heightmaps/masks → lossless PNG (~½ size);
@@ -89,8 +114,8 @@ Every output is skipped if it already exists; delete a file to refetch it.
 
 - left-drag — pan (grabs the ground) · middle-drag — turn in place (game-style) · wheel — zoom to cursor
 - double-click — recenter · arrows/`WASD` — glide · `Q`/`E` — turn in place
-- `1` ortofoto · `2` reliéf (hypsometric tint + 20/100 m contours)
-- `P` popisky (labels) · `C` cyklotrasy (cycling routes)
+- `1` orthophoto · `2` relief (hypsometric tint + 20/100 m contours)
+- `P` names · `C` bike routes · `T` trails
 - click a label — info card with researched facts + photos (Wikimedia Commons)
 - slider — vertical exaggeration (1× = real heights; explained in the help dialog)
 - hover — elevation + WGS-84 coordinate probe (CPU ray-march against the height grid)

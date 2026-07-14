@@ -3,7 +3,7 @@
 // so no three.js and no browser globals in here. Adding a third area should
 // require nothing but a new entry (plus its baked data under public/data/).
 
-export const AREAS = {
+const ALL_AREAS = {
   halouny: {
     id: 'halouny',
     title: 'Halouny',
@@ -17,7 +17,7 @@ export const AREAS = {
     dataDir: '/data/halouny',
     exagDefault: 1.5,
     exagAdjustable: true,
-    sunRowTitle: 'Denní doba — poloha slunce nad Halounami',
+
     homeView: { x: 0, z: 0, azimuth: 2.982, polarDeg: 61, distance: 6480 },
     pins: [
       { name: 'Halouny', x: 0, z: 0, color: '#ff7a2f' },
@@ -41,14 +41,26 @@ export const AREAS = {
     // buildings only along the lake corridor — suburban Verona/Rovereto
     // would triple the fetch and render load for nothing lake-related
     osmBuildingsBounds: { south: 45.40, west: 10.45, north: 45.99, east: 10.99 },
-    sunRowTitle: 'Denní doba — poloha slunce nad Gardou',
+
     // high over the south basin, the whole lake running north to Riva
     homeView: { x: -3500, z: 2000, azimuth: -0.05, polarDeg: 58, distance: 40000 },
     pins: [],
-    attributionHtml: 'výškopis © <a href="https://tinitaly.pi.ingv.it" '
+    // the signed 7xx MTB network (routes.json) replaces the OSM line layers
+    mtbRoutes: true,
+    attributionHtml: 'elevation © <a href="https://tinitaly.pi.ingv.it" '
       + 'target="_blank">INGV — TINITALY</a> (CC BY 4.0) · Ortofoto AGEA 2012 — PCN · © '
-      + '<a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+      + '<a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>'
+      + ' · MTB routes © <a href="https://www.gardatrentino.it/en/outdoor/bike/MTB/MTB-tours" '
+      + 'target="_blank">Garda Trentino</a>',
   },
 };
 
-export const DEFAULT_AREA = 'halouny';
+// A build can ship a subset of areas (the public Garda-only deployment:
+// VITE_AREAS=garda vite build). import.meta.env is undefined under node,
+// so the bake scripts always see every area.
+const only = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_AREAS)
+  ?.split(',').map((s) => s.trim()).filter(Boolean);
+export const AREAS = only?.length
+  ? Object.fromEntries(Object.entries(ALL_AREAS).filter(([id]) => only.includes(id)))
+  : ALL_AREAS;
+export const DEFAULT_AREA = AREAS.halouny ? 'halouny' : Object.keys(AREAS)[0];
