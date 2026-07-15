@@ -10,6 +10,7 @@ import { initCycling } from './cycling.js';
 import { initTrails } from './trails.js';
 import { initMtb } from './mtb.js';
 import { initRouteList } from './routelist.js';
+import { initDemo } from './demo.js';
 import { initWater } from './water.js';
 import { initBuildings } from './buildings.js';
 import { initTrees } from './trees.js';
@@ -592,6 +593,10 @@ window.__enterMap = () => {
   controls.flyToView(home.x, home.z, home.azimuth,
     THREE.MathUtils.degToRad(home.polarDeg), home.distance);
 };
+
+if (area.mtbRoutes && mtb.routes?.length) {
+  initDemo({ controls, labels, mtb, camera, heightField, material });
+}
 
 window.__map = { camera, controls, heightField, material, labels, trees, buildings, water, mtb, renderer, THREE };
 

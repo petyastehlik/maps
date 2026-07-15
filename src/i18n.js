@@ -161,6 +161,18 @@ const IT = {
   'total ascent': 'salita totale',
   'official difficulty (easy → difficult)': 'difficoltà ufficiale (facile → difficile)',
   'start %s km from Nago–Torbole · length %s km · ↑%s m': 'partenza a %s km da Nago–Torbole · lunghezza %s km · ↑%s m',
+
+  // pitch demo captions
+  'Play the demo tour': 'Guarda il tour dimostrativo',
+  'The official Garda Trentino MTB network — 42 signed routes, 993 km.': 'La rete MTB ufficiale del Garda Trentino — 42 percorsi segnalati, 993 km.',
+  'Hover any route — official stats, photos and the GPX itself.': 'Passa su un percorso — dati ufficiali, foto e il GPX stesso.',
+  'ITRS — the four ratings straight from the physical trail signs.': 'ITRS — le quattro valutazioni direttamente dalla segnaletica sul percorso.',
+  'Every route — searchable, sortable, one click from its start.': 'Tutti i percorsi — ricerca, ordinamento, un clic e sei alla partenza.',
+  'Tremalzo — the WWI military road, a cult descent.': 'Tremalzo — la strada militare della Grande Guerra, una discesa cult.',
+  'The real sky for any hour — sun, moon and 1,600 stars.': 'Il cielo vero a ogni ora — sole, luna e 1.600 stelle.',
+  'Survey relief with contours, one key away.': 'Rilievo con isoipse, a un tasto di distanza.',
+  'Garda Trentino — and only Garda Trentino. The rest stays in the haze.': 'Garda Trentino — e solo Garda Trentino. Il resto resta nella foschia.',
+  'Your turn — grab the map.': 'Tocca a te — prendi la mappa.',
 };
 
 /** Translate an English source string; %s slots are filled in order. */
