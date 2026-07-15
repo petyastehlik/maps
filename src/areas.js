@@ -15,6 +15,7 @@ const ALL_AREAS = {
       + '+alpha=30.28813972222222 +k=0.9999 +x_0=0 +y_0=0 '
       + '+ellps=bessel +towgs84=589,76,480,0,0,0,0 +units=m +no_defs', // S-JTSK
     dataDir: '/data/halouny',
+    detailTiles: true, // native 2 m DMR 5G tiles under public/data/halouny/h2/
     exagDefault: 1.5,
     exagAdjustable: true,
 

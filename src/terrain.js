@@ -599,7 +599,7 @@ export async function loadTerrain(onProgress, caps = {}) {
       m.position.x = Math.round(focus.x / s) * s;
       m.position.z = Math.round(focus.z / s) * s;
     }
-    if (near) streamDetail(focus); // async, self-throttling
+    if (near && area.detailTiles) streamDetail(focus); // async, self-throttling
   }
 
   const heightField = new HeightField(relHeights, meta);
